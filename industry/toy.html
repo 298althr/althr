@@ -40,7 +40,7 @@
                 background-size: 40px 40px;
             }
             .frosted-glass {
-                background: rgba(255, 255, 255, 0.03);
+                background: rgba(8, 10, 18, 0.95);
                 backdrop-filter: blur(24px);
                 border: 1px solid rgba(255, 255, 255, 0.12);
                 box-shadow: 0 8px 64px 0 rgba(0, 0, 0, 0.6);
@@ -70,37 +70,79 @@
             </div>
             <nav class="hidden lg:flex items-center gap-10"> 
                 <div class="relative group"> 
-                    <button class="text-[14px] font-bold tracking-[0.2em] hover:text-althr-gold transition-colors uppercase flex items-center gap-1"> 
+                    <button class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase flex items-center gap-1"> 
                         Industries <span class="material-symbols-outlined text-[14px]">expand_more</span> 
                     </button> 
                     <div class="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50"> 
                         <div class="frosted-glass p-6 rounded-2xl border border-white/10 w-64 grid grid-cols-1 gap-4"> 
-                            <a href="jewelry.html" class="text-[13px] font-bold tracking-[0.2em] hover:text-althr-gold transition-colors uppercase">Jewelry & Watch</a> 
-                            <a href="furniture.html" class="text-[13px] font-bold tracking-[0.2em] hover:text-althr-gold transition-colors uppercase">Furniture & Decor</a> 
-                            <a href="grocery.html" class="text-[13px] font-bold tracking-[0.2em] hover:text-althr-gold transition-colors uppercase">Grocery</a> 
-                            <a href="equipment.html" class="text-[13px] font-bold tracking-[0.2em] hover:text-althr-gold transition-colors uppercase">Equipment & Supply</a> 
-                            <a href="gadget.html" class="text-[13px] font-bold tracking-[0.2em] hover:text-althr-gold transition-colors uppercase">Gadgets & Tech</a> 
-                            <a href="fashion.html" class="text-[13px] font-bold tracking-[0.2em] hover:text-althr-gold transition-colors uppercase">Fashion Boutique</a> 
-                            <a href="beauty.html" class="text-[13px] font-bold tracking-[0.2em] hover:text-althr-gold transition-colors uppercase">Beauty & Cosmo</a> 
-                            <a href="pet.html" class="text-[13px] font-bold tracking-[0.2em] hover:text-althr-gold transition-colors uppercase">Pet Supply</a> 
-                            <a href="home_goods.html" class="text-[13px] font-bold tracking-[0.2em] hover:text-althr-gold transition-colors uppercase">Home Goods</a> 
-                            <a href="sports.html" class="text-[13px] font-bold tracking-[0.2em] hover:text-althr-gold transition-colors uppercase">Sports Equipment</a> 
-                            <a href="health.html" class="text-[13px] font-bold tracking-[0.2em] hover:text-althr-gold transition-colors uppercase">Health & Wellness</a> 
-                            <a href="toy.html" class="text-[13px] font-bold tracking-[0.2em] hover:text-althr-gold transition-colors uppercase">Toy & Hobby</a> 
+                            <a href="jewelry.html" class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Jewelry & Watch</a> 
+                            <a href="furniture.html" class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Furniture & Decor</a> 
+                            <a href="grocery.html" class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Grocery</a> 
+                            <a href="equipment.html" class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Equipment & Supply</a> 
+                            <a href="gadget.html" class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Gadgets & Tech</a> 
+                            <a href="fashion.html" class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Fashion Boutique</a> 
+                            <a href="beauty.html" class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Beauty & Cosmo</a> 
+                            <a href="pet.html" class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Pet Supply</a> 
+                            <a href="home_goods.html" class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Home Goods</a> 
+                            <a href="sports.html" class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Sports Equipment</a> 
+                            <a href="health.html" class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Health & Wellness</a> 
+                            <a href="toy.html" class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Toy & Hobby</a> 
                         </div> 
                     </div> 
                 </div>
-                <a class="text-[14px] font-bold tracking-[0.2em] hover:text-althr-gold transition-colors uppercase"
-                    href="../services.html">Services</a>
-                <a class="text-[14px] font-bold tracking-[0.2em] hover:text-althr-gold transition-colors uppercase"
+                
+                <div class="relative group">
+                    <button class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase flex items-center gap-1">
+                        Services <span class="material-symbols-outlined text-[14px]">expand_more</span>
+                    </button>
+                    <div class="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <div class="frosted-glass p-6 rounded-2xl border border-white/10 w-72 grid grid-cols-1 gap-4">
+                            <a href="../services.html#crm" class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">CRM Architecture</a>
+                            <a href="../services.html#marketing" class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Marketing Operations</a>
+                            <a href="../services.html#sales" class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Sales Pipeline</a>
+                            <a href="../services.html#ops" class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Operational Flow</a>
+                            <a href="../services.html#lead-gen" class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Lead Generation</a>
+                            <a href="../services.html#lead-track" class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Lead Tracking</a>
+                            <a href="../services.html#social" class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Social Media Management</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
                     href="../intelligence.html">Technology</a>
-                <a class="text-[14px] font-bold tracking-[0.2em] hover:text-althr-gold transition-colors uppercase"
-                    href="../case-studies.html">Results</a>
-                <a class="text-[14px] font-bold tracking-[0.2em] hover:text-althr-gold transition-colors uppercase"
-                    href="../about.html">About</a>
+                <a class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                    href="../results.html">Results</a>
+                <a class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                    href="../about.html">About Us</a>
                 <a href="../contact.html"
-                    class="bg-althr-gold text-althr-navy px-6 py-2.5 rounded-full text-[14px] font-black tracking-[0.2em] uppercase transition-all hover:scale-105 hover:bg-white">Get
+                    class="bg-althr-gold text-althr-navy px-6 py-2.5 rounded-full text-[14px] font-black tracking-normal uppercase transition-all hover:scale-105 hover:bg-white">Get
                     Started</a>
+            
+                <!-- Language Selector -->
+                <div class="relative group ml-4">
+                    <button class="flex items-center gap-2 text-[12px] font-black tracking-normal hover:text-althr-gold transition-colors uppercase">
+                        <span class="material-symbols-outlined text-[18px]">language</span>
+                        <span id="current-lang">EN</span>
+                    </button>
+                    <div class="absolute top-full right-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <div class="frosted-glass p-4 rounded-xl border border-white/10 w-36 grid grid-cols-1 gap-3">
+                            <button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" onclick="setLanguage('en')">
+                                <span class="text-base">🇺🇸</span> English
+                            </button>
+                            <button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" onclick="setLanguage('pl')">
+                                <span class="text-base">🇵🇱</span> Polish
+                            </button>
+                            <button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" onclick="setLanguage('de')">
+                                <span class="text-base">🇩🇪</span> German
+                            </button>
+                            <button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" onclick="setLanguage('fr')">
+                                <span class="text-base">🇫🇷</span> French
+                            </button>
+                            <button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" onclick="setLanguage('es')">
+                                <span class="text-base">🇪🇸</span> Spanish
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </nav>
             <button id="open-menu" class="lg:hidden text-white"><span class="material-symbols-outlined">menu</span></button>
         </div>
@@ -110,12 +152,13 @@
 
         <!-- Hero Section -->
         <section class="min-h-[70vh] flex items-center px-6 md:px-12 py-20 relative">
+        <div class="absolute inset-0 z-0 opacity-10"><img src="../toy_hobby_premium_store.png" class="w-full h-full object-cover grayscale"></div>
             <div class="max-w-[1600px] mx-auto w-full grid lg:grid-cols-12 gap-12 items-center">
                 <div class="lg:col-span-7 space-y-10">
                     <div
                         class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm">
                         <span class="size-2 bg-althr-cyan rounded-full animate-pulse"></span>
-                        <span class="text-[14px] font-bold tracking-[0.3em] uppercase text-althr-cyan">Toy & Hobby
+                        <span class="text-[14px] font-bold tracking-[0.05em] uppercase text-althr-cyan">Toy & Hobby
                             Solutions</span>
                     </div>
                     <h1
@@ -136,14 +179,18 @@
                     </div>
                     <div class="flex flex-wrap gap-6 pt-4">
                         <a href="../contact.html"
-                            class="bg-althr-cyan text-althr-navy font-black text-xs tracking-[0.3em] uppercase px-10 py-5 rounded-full transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(0,240,255,0.4)]">Get
+                            class="bg-althr-cyan text-althr-navy font-black text-xs tracking-[0.05em] uppercase px-10 py-5 rounded-full transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(0,000,255,0.4)]">Get
                             A Demo</a>
                     </div>
                 </div>
 
-                <div class="lg:col-span-5 hidden lg:block relative">
+                <div class="lg:col-span-5 relative mt-12 lg:mt-0">
                     <div
                         class="frosted-glass p-12 rounded-[3.5rem] border border-white/10 relative overflow-hidden aspect-[4/5] flex flex-col justify-between group/card">
+                        <div class="absolute inset-0 z-0 opacity-40 pointer-events-none group-hover/card:scale-110 transition-transform duration-1000">
+                             <img src="../toy_hobby_premium_store.png" class="w-full h-full object-cover">
+                             <div class="absolute inset-0 bg-gradient-to-t from-[#080a12] via-transparent to-transparent"></div>
+                        </div>
                         <!-- Decorative Elements -->
                         <div class="absolute top-10 right-10 size-32 bg-yellow-400/20 blur-[50px] rounded-full"></div>
 
@@ -176,7 +223,7 @@
             <div class="max-w-[1600px] mx-auto">
                 <div class="grid lg:grid-cols-2 gap-20 items-center">
                     <div class="space-y-12">
-                        <span class="text-red-500 font-bold tracking-[0.5em] uppercase text-xs">The Challenge</span>
+                        <span class="text-red-500 font-bold tracking-normal uppercase text-xs">The Challenge</span>
                         <h2
                             class="text-4xl md:text-6xl font-black tracking-tighter text-white uppercase italic leading-none">
                             Showrooming is <br /> <span class="text-slate-500">Draining Your Sales.</span>
@@ -252,7 +299,7 @@
         <section class="px-6 md:px-12 py-32 border-t border-white/5">
             <div class="max-w-[1600px] mx-auto space-y-24">
                 <div class="text-center space-y-6 max-w-3xl mx-auto">
-                    <span class="text-althr-cyan font-bold tracking-[0.5em] uppercase text-xs">The Solution</span>
+                    <span class="text-althr-cyan font-bold tracking-normal uppercase text-xs">The Solution</span>
                     <h2 class="text-5xl md:text-7xl font-black tracking-tighter text-white uppercase italic">
                         The ALTHR Digital <br /><span class="text-althr-gold">Playground</span>
                     </h2>
@@ -332,8 +379,8 @@
                 <div class="grid lg:grid-cols-3 gap-8 max-w-5xl mx-auto items-center">
                     <!-- Setup -->
                     <div class="frosted-glass p-8 rounded-3xl border border-white/10 space-y-4">
-                        <p class="text-xs font-bold text-slate-500 uppercase tracking-widest">One-Time Setup</p>
-                        <p class="text-5xl font-black text-white">$7,000</p>
+                        <p class="text-xs font-bold text-slate-500 uppercase tracking-widest">Base Architecture Setup</p>
+                        <p class="text-5xl font-black text-white">From $7,000</p>
                         <ul
                             class="text-left text-[14px] text-slate-400 space-y-2 uppercase tracking-wide pt-4 border-t border-white/5">
                             <li>• Gift Finder Logic Config</li>
@@ -346,7 +393,7 @@
                     <!-- ROI Highlight -->
                     <div
                         class="frosted-glass p-12 rounded-[3rem] border border-althr-gold/30 bg-althr-gold/5 space-y-6 transform scale-110 relative z-10">
-                        <p class="text-sm font-black text-althr-gold uppercase tracking-[0.3em]">Year 1 ROI</p>
+                        <p class="text-sm font-black text-althr-gold uppercase tracking-[0.05em]">Year 1 ROI</p>
                         <p class="text-7xl font-black text-white italic">130%</p>
                         <p class="text-xs font-bold text-slate-300 uppercase tracking-widest">Collector Lift</p>
                         <div class="text-[14px] text-slate-400 uppercase tracking-wide pt-4 border-t border-white/10">
@@ -379,7 +426,7 @@
                 </h2>
                 <div class="flex flex-wrap justify-center gap-8">
                     <a href="../contact.html"
-                        class="bg-althr-gold text-althr-navy font-black text-sm tracking-[0.4em] uppercase px-14 py-6 rounded-full transition-all hover:scale-110 hover:shadow-[0_0_60px_rgba(212,175,55,0.4)]">Talk
+                        class="bg-althr-gold text-althr-navy font-black text-sm tracking-normal uppercase px-14 py-6 rounded-full transition-all hover:scale-110 hover:shadow-[0_0_60px_rgba(212,000,55,0.4)]">Talk
                         to an Expert</a>
                 </div>
             </div>
@@ -397,17 +444,16 @@
                         </div>
                         <span class="font-black text-2xl tracking-tighter uppercase text-white">ALTHR</span>
                     </div>
-                    <p
-                        class="text-slate-500 text-[14px] font-bold uppercase tracking-[0.3em] leading-loose max-w-xs italic">
+                    <p class="text-slate-400 text-[14px] font-medium leading-relaxed max-w-xs">
                         Transforming complexity into automated simplicity through high-end engineering and strategic
                         logic systems.
                     </p>
                 </div>
 
                 <div>
-                    <h5 class="text-white text-[14px] font-black uppercase tracking-[0.5em] mb-12">Services
+                    <h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12">Services
                     </h5>
-                    <ul class="space-y-5 text-[13px] font-bold text-slate-500 uppercase tracking-[0.4em]">
+                    <ul class="space-y-4 text-[14px] font-medium text-slate-400">
                         <li><a href="../services.html" class="hover:text-althr-gold transition-colors">CRM Automation</a>
                         </li>
                         <li><a href="../services.html" class="hover:text-althr-gold transition-colors">Marketing Logic</a>
@@ -420,9 +466,9 @@
                 </div>
 
                 <div>
-                    <h5 class="text-white text-[14px] font-black uppercase tracking-[0.5em] mb-12">Industries
+                    <h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12">Industries
                     </h5>
-                    <ul class="space-y-4 text-[13px] font-bold text-slate-500 uppercase tracking-[0.4em]">
+                    <ul class="space-y-4 text-[14px] font-medium text-slate-400">
                         <li><a href="jewelry.html" class="hover:text-althr-gold transition-colors">Jewelry & Watch</a></li>
                         <li><a href="furniture.html" class="hover:text-althr-gold transition-colors">Furniture & Decor</a></li>
                         <li><a href="grocery.html" class="hover:text-althr-gold transition-colors">Grocery</a></li>
@@ -431,31 +477,31 @@
                 </div>
 
                 <div>
-                    <h5 class="text-white text-[14px] font-black uppercase tracking-[0.5em] mb-12">Quick Links</h5>
-                    <ul class="space-y-5 text-[13px] font-bold text-slate-500 uppercase tracking-[0.4em]">
+                    <h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12">Quick Links</h5>
+                    <ul class="space-y-4 text-[14px] font-medium text-slate-400">
                         <li><a href="../about.html" class="hover:text-althr-gold transition-colors">Our Story</a></li>
-                        <li><a href="../case-studies.html" class="hover:text-althr-gold transition-colors">Case Studies</a>
+                        <li><a href="../results.html" class="hover:text-althr-gold transition-colors">Results</a>
                         </li>
                         <li><a href="../contact.html" class="hover:text-althr-gold transition-colors">Contact Us</a></li>
-                        <li><a href="../privacy.html" class="hover:text-althr-gold transition-colors">Privacy Policy</a>
+                        <li><a href="../privacy.html" class="hover:text-althr-gold transition-colors">Privacy Protocol</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="space-y-10">
-                    <h5 class="text-white text-[14px] font-black uppercase tracking-[0.5em] mb-12">Pulse Status</h5>
+                    <h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12">Pulse Status</h5>
                     <div class="p-8 bg-white/5 border border-white/10 rounded-[2rem] flex items-center gap-6">
                         <div
-                            class="size-2.5 bg-althr-cyan rounded-full animate-pulse shadow-[0_0_15px_rgba(0,240,255,0.7)]">
+                            class="size-2.5 bg-althr-cyan rounded-full animate-pulse shadow-[0_0_15px_rgba(0,000,255,0.7)]">
                         </div>
-                        <span class="text-[13px] font-black text-althr-cyan uppercase tracking-[0.5em]">Systems
+                        <span class="text-[12px] font-bold text-althr-cyan uppercase tracking-wider">Systems
                             Ready</span>
                     </div>
                 </div>
             </div>
 
             <div
-                class="mt-32 pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[14px] text-slate-600 font-bold uppercase tracking-[0.6em]">
+                class="mt-32 pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[12px] text-slate-500 font-medium">
                 <p>© 2026 ALTHR AGENCY SYSTEMS. SYSTEM_ID: GLOBAL-01</p>
                 <div class="flex gap-12">
                     <a href="../privacy.html" class="hover:text-althr-gold transition-colors">Privacy</a>
@@ -478,7 +524,15 @@
                     <span class="font-black text-2xl tracking-tighter uppercase text-white">ALTHR</span>
                 </div>
             </div>
-            <nav class="flex flex-col gap-10">
+            
+            <div class="flex gap-4 mb-10 border-b border-white/10 pb-10">
+                <button onclick="setLanguage('en')" class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all">🇺🇸</button>
+                <button onclick="setLanguage('pl')" class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all">🇵🇱</button>
+                <button onclick="setLanguage('de')" class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all">🇩🇪</button>
+                <button onclick="setLanguage('fr')" class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all">🇫🇷</button>
+                <button onclick="setLanguage('es')" class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all">🇪🇸</button>
+            </div>
+        <nav class="flex flex-col gap-10">
                 <a href="../index.html" class="group flex items-end gap-4">
                     <span class="text-althr-gold font-mono text-xs mb-2">01</span>
                     <span class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic">Home</span>
@@ -491,7 +545,7 @@
                     <span class="text-althr-gold font-mono text-xs mb-2">03</span>
                     <span class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic">Tech</span>
                 </a>
-                <a href="../case-studies.html" class="group flex items-end gap-4">
+                <a href="../results.html" class="group flex items-end gap-4">
                     <span class="text-althr-gold font-mono text-xs mb-2">04</span>
                     <span class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic">Results</span>
                 </a>
@@ -502,7 +556,7 @@
                 </a>
             </nav>
             <div class="mt-auto border-t border-white/10 pt-8">
-               <p class="text-[10px] font-bold tracking-[0.5em] text-white/30 uppercase">Operational Menu v2.0</p>
+               <p class="text-[10px] font-bold tracking-normal text-white/30 uppercase">Operational Menu v2.0</p>
             </div>
         </div>
     </div>
@@ -534,6 +588,8 @@
             }
         });
     </script>
-    </body>
+    <script src="../translations.js"></script>
+<script src="../i18n.js"></script>
+</body>
 
 </html>
