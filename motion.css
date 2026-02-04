@@ -1,0 +1,87 @@
+/* ALTHR Visual Effects System */
+
+.reveal-init {
+    opacity: 0;
+    transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform, opacity;
+}
+
+.reveal-slide-up {
+    transform: translateY(40px);
+}
+
+.reveal-slide-right {
+    transform: translateX(-40px);
+}
+
+.reveal-zoom-in {
+    transform: scale(0.95);
+}
+
+.reveal-skew {
+    transform: skewY(2deg) translateY(20px);
+}
+
+.reveal-active {
+    opacity: 1 !important;
+    transform: translate(0) scale(1) skew(0) !important;
+}
+
+/* Global Motion Layer */
+#althr-motion-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Card Background Assets */
+.has-bg-asset {
+    position: relative;
+    overflow: hidden;
+}
+
+.has-bg-asset::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.12;
+    z-index: 1;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+.group:hover.has-bg-asset::before {
+    opacity: 0.22;
+}
+
+.asset-demand::before {
+    background-image: url('asset_demand.png');
+}
+
+.asset-growth::before {
+    background-image: url('asset_growth.png');
+}
+
+.asset-logic::before {
+    background-image: url('asset_logic.png');
+}
+
+/* Ensure content stays above background asset */
+.has-bg-asset>div,
+.has-bg-asset>span,
+.has-bg-asset>h1,
+.has-bg-asset>h2,
+.has-bg-asset>h3,
+.has-bg-asset>h4,
+.has-bg-asset>p,
+.has-bg-asset>ul,
+.has-bg-asset>a {
+    position: relative;
+    z-index: 2;
+}

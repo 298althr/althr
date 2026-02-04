@@ -1,19 +1,15 @@
 <!DOCTYPE html>
-<html class="dark" lang="en">
 
+<html class="dark" lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Health & Wellness E-Commerce Solutions | ALTHR Automation</title>
-    <meta name="description"
-        content="Automated e-commerce solutions for health and wellness stores. Lock in recurring revenue with subscription engines, protocol bundles, and digital products by ALTHR.">
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <script id="tailwind-config">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Health &amp; Wellness E-Commerce Solutions | ALTHR Automation</title>
+<meta content="Automated e-commerce solutions for health and wellness stores. Lock in recurring revenue with subscription engines, protocol bundles, and digital products by ALTHR." name="description"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -31,7 +27,7 @@
             },
         }
     </script>
-    <style type="text/tailwindcss">
+<style type="text/tailwindcss">
         @layer utilities {
             .blueprint-grid {
                 background-image: 
@@ -53,516 +49,463 @@
             }
         }
     </style>
+    <link rel="stylesheet" href="../motion.css">
 </head>
-
-<body
-    class="bg-althr-navy font-display text-slate-100 min-h-screen blueprint-grid selection:bg-althr-cyan selection:text-althr-navy">
-    <!-- Navigation -->
-    <header class="fixed top-0 w-full z-50 border-b border-white/5 bg-althr-navy/90 backdrop-blur-md">
-        <div class="max-w-[1600px] mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <a href="../index.html" class="flex items-center gap-3 group">
-                    <div class="size-10 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                        <img src="../logo.png" alt="ALTHR" class="w-full h-full object-contain">
-                    </div>
-                    <span class="font-black text-2xl tracking-tighter uppercase">ALTHR</span>
-                </a>
-            </div>
-            <nav class="hidden lg:flex items-center gap-10"> 
-                <div class="relative group"> 
-                    <button class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase flex items-center gap-1"> 
-                        Industries <span class="material-symbols-outlined text-[14px]">expand_more</span> 
-                    </button> 
-                    <div class="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50"> 
-                        <div class="frosted-glass p-6 rounded-2xl border border-white/10 w-64 grid grid-cols-1 gap-4"> 
-                            <a href="jewelry.html" class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Jewelry & Watch</a> 
-                            <a href="furniture.html" class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Furniture & Decor</a> 
-                            <a href="grocery.html" class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Grocery</a> 
-                            <a href="equipment.html" class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Equipment & Supply</a> 
-                            <a href="gadget.html" class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Gadgets & Tech</a> 
-                            <a href="fashion.html" class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Fashion Boutique</a> 
-                            <a href="beauty.html" class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Beauty & Cosmo</a> 
-                            <a href="pet.html" class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Pet Supply</a> 
-                            <a href="home_goods.html" class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Home Goods</a> 
-                            <a href="sports.html" class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Sports Equipment</a> 
-                            <a href="health.html" class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Health & Wellness</a> 
-                            <a href="toy.html" class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Toy & Hobby</a> 
-                        </div> 
-                    </div> 
-                </div>
-                
-                <div class="relative group">
-                    <button class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase flex items-center gap-1">
-                        Services <span class="material-symbols-outlined text-[14px]">expand_more</span>
-                    </button>
-                    <div class="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                        <div class="frosted-glass p-6 rounded-2xl border border-white/10 w-72 grid grid-cols-1 gap-4">
-                            <a href="../services.html#crm" class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">CRM Architecture</a>
-                            <a href="../services.html#marketing" class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Marketing Operations</a>
-                            <a href="../services.html#sales" class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Sales Pipeline</a>
-                            <a href="../services.html#ops" class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Operational Flow</a>
-                            <a href="../services.html#lead-gen" class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Lead Generation</a>
-                            <a href="../services.html#lead-track" class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Lead Tracking</a>
-                            <a href="../services.html#social" class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Social Media Management</a>
-                        </div>
-                    </div>
-                </div>
-                <a class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
-                    href="../intelligence.html">Technology</a>
-                <a class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
-                    href="../results.html">Results</a>
-                <a class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
-                    href="../about.html">About Us</a>
-                <a href="../contact.html"
-                    class="bg-althr-gold text-althr-navy px-6 py-2.5 rounded-full text-[14px] font-black tracking-normal uppercase transition-all hover:scale-105 hover:bg-white">Get
+<body class="bg-althr-navy font-display text-slate-100 min-h-screen blueprint-grid selection:bg-althr-cyan selection:text-althr-navy">
+<!-- Navigation -->
+<header class="fixed top-0 w-full z-50 border-b border-white/5 bg-althr-navy/90 backdrop-blur-md">
+<div class="max-w-[1600px] mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<a class="flex items-center gap-3 group" data-i18n="industry.jewelry.althr" href="../index.html">
+<div class="size-10 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+<img alt="ALTHR" class="w-full h-full object-contain" src="../logo.png"/>
+</div>
+<span class="font-black text-2xl tracking-tighter uppercase" data-i18n="industry.jewelry.althr">ALTHR</span>
+</a>
+</div>
+<nav class="hidden lg:flex items-center gap-10">
+<div class="relative group">
+<button class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase flex items-center gap-1">
+<span data-i18n="nav.industries">Industries</span> <span class="material-symbols-outlined text-[14px]" data-i18n="industry.jewelry.expandmore" translate="no">expand_more</span>
+</button>
+<div class="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+<div class="frosted-glass p-6 rounded-2xl border border-white/10 w-64 grid grid-cols-1 gap-4">
+<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.jewelry_watch" href="jewelry.html"><span data-i18n="industries.jewelry">Jewelry &amp; Watch</span></a>
+<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.furniture_decor" href="furniture.html"><span data-i18n="industries.furniture">Furniture &amp; Decor</span></a>
+<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" href="grocery.html"><span data-i18n="industries.grocery">Grocery</span></a>
+<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.equipment_supply" href="equipment.html"><span data-i18n="industries.equipment">Equipment &amp; Supply</span></a>
+<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.gadgets_tech" href="gadget.html"><span data-i18n="industries.gadgets">Gadgets &amp; Tech</span></a>
+<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.fashion_boutique" href="fashion.html"><span data-i18n="industries.fashion">Fashion Boutique</span></a>
+<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.beauty_cosmo" href="beauty.html"><span data-i18n="industries.beauty">Beauty &amp; Cosmo</span></a>
+<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.pet_supply" href="pet.html"><span data-i18n="industries.pet">Pet Supply</span></a>
+<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.home_goods" href="home_goods.html"><span data-i18n="industries.home_goods">Home Goods</span></a>
+<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.sports_equipment" href="sports.html"><span data-i18n="industries.sports">Sports Equipment</span></a>
+<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.health_wellness" href="health.html"><span data-i18n="industries.health">Health &amp; Wellness</span></a>
+<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.toy_hobby" href="toy.html"><span data-i18n="industries.toy">Toy &amp; Hobby</span></a>
+</div>
+</div>
+</div>
+<div class="relative group">
+<button class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase flex items-center gap-1">
+<span data-i18n="nav.services">Services</span> <span class="material-symbols-outlined text-[14px]" data-i18n="industry.jewelry.expandmore" translate="no">expand_more</span>
+</button>
+<div class="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+<div class="frosted-glass p-6 rounded-2xl border border-white/10 w-72 grid grid-cols-1 gap-4">
+<a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.crm_architecture" href="../services.html#crm"><span data-i18n="services.crm">CRM Architecture</span></a>
+<a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.marketing_operations" href="../services.html#marketing"><span data-i18n="services.marketing">Marketing Operations</span></a>
+<a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.sales_pipeline" href="../services.html#sales"><span data-i18n="services.sales">Sales Pipeline</span></a>
+<a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.operational_flow" href="../services.html#ops"><span data-i18n="services.ops">Operational Flow</span></a>
+<a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.lead_generation" href="../services.html#lead-gen"><span data-i18n="services.lead_gen">Lead Generation</span></a>
+<a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.lead_tracking" href="../services.html#lead-track"><span data-i18n="services.lead_track">Lead Tracking</span></a>
+<a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.social_media_management" href="../services.html#social"><span data-i18n="services.social">Social Media Management</span></a>
+</div>
+</div>
+</div>
+<a class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" href="../intelligence.html"><span data-i18n="nav.technology">Technology</span></a>
+<a class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" href="../results.html"><span data-i18n="nav.results">Results</span></a>
+<a class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="index.about_us" href="../about.html"><span data-i18n="nav.about">About Us</span></a>
+<a class="bg-althr-gold text-althr-navy px-6 py-2.5 rounded-full text-[14px] font-black tracking-normal uppercase transition-all hover:scale-105 hover:bg-white" data-i18n="nav.get_started" href="../contact.html">Get
                     Started</a>
-            
-                <!-- Language Selector -->
-                <div class="relative group ml-4">
-                    <button class="flex items-center gap-2 text-[12px] font-black tracking-normal hover:text-althr-gold transition-colors uppercase">
-                        <span class="material-symbols-outlined text-[18px]">language</span>
-                        <span id="current-lang">EN</span>
-                    </button>
-                    <div class="absolute top-full right-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                        <div class="frosted-glass p-4 rounded-xl border border-white/10 w-36 grid grid-cols-1 gap-3">
-                            <button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" onclick="setLanguage('en')">
-                                <span class="text-base">🇺🇸</span> English
+<!-- Language Selector -->
+<div class="relative group ml-4">
+<button class="flex items-center gap-2 text-[12px] font-black tracking-normal hover:text-althr-gold transition-colors uppercase">
+<span class="material-symbols-outlined text-[18px]" data-i18n="industry.jewelry.language" translate="no">language</span>
+<span id="current-lang">EN</span>
+</button>
+<div class="absolute top-full right-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+<div class="frosted-glass p-4 rounded-xl border border-white/10 w-36 grid grid-cols-1 gap-3">
+<button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" data-i18n="privacy.english" data-lang="en">
+<span class="text-base">🇺🇸</span> English
                             </button>
-                            <button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" onclick="setLanguage('pl')">
-                                <span class="text-base">🇵🇱</span> Polish
+<button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" data-i18n="privacy.polish" data-lang="pl">
+<span class="text-base">🇵🇱</span> Polish
                             </button>
-                            <button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" onclick="setLanguage('de')">
-                                <span class="text-base">🇩🇪</span> German
+<button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" data-i18n="privacy.german" data-lang="de">
+<span class="text-base">🇩🇪</span> German
                             </button>
-                            <button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" onclick="setLanguage('fr')">
-                                <span class="text-base">🇫🇷</span> French
+<button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" data-i18n="privacy.french" data-lang="fr">
+<span class="text-base">🇫🇷</span> French
                             </button>
-                            <button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" onclick="setLanguage('es')">
-                                <span class="text-base">🇪🇸</span> Spanish
+<button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" data-i18n="privacy.spanish" data-lang="es">
+<span class="text-base">🇪🇸</span> Spanish
                             </button>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            <button id="open-menu" class="lg:hidden text-white"><span class="material-symbols-outlined">menu</span></button>
-        </div>
-    </header>
-
-    <main class="relative overflow-x-hidden pt-20">
-
-        <!-- Hero Section -->
-        <section class="min-h-[70vh] flex items-center px-6 md:px-12 py-20 relative">
-        <div class="absolute inset-0 z-0 opacity-10"><img src="../home_wellness_luxury.png" class="w-full h-full object-cover grayscale"></div>
-            <div class="max-w-[1600px] mx-auto w-full grid lg:grid-cols-12 gap-12 items-center">
-                <div class="lg:col-span-7 space-y-10">
-                    <div
-                        class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm">
-                        <span class="size-2 bg-althr-cyan rounded-full animate-pulse"></span>
-                        <span class="text-[14px] font-bold tracking-[0.05em] uppercase text-althr-cyan">Wellness
+</div>
+</div>
+</div>
+</nav>
+<button class="lg:hidden text-white" data-i18n="industry.jewelry.menu" id="open-menu"><span class="material-symbols-outlined" data-i18n="industry.jewelry.menu" translate="no">menu</span></button>
+</div>
+</header>
+<main class="relative overflow-x-hidden pt-20">
+<!-- Hero Section -->
+<section class="min-h-[70vh] flex items-center px-6 md:px-12 py-20 relative">
+<div class="absolute inset-0 z-0 opacity-20"><img class="w-full h-full object-cover grayscale" src="../home_wellness_luxury.png"/></div>
+<div class="max-w-[1600px] mx-auto w-full grid lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 space-y-10">
+<div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm">
+<span class="size-2 bg-althr-cyan rounded-full animate-pulse"></span>
+<span class="text-[14px] font-bold tracking-[0.05em] uppercase text-althr-cyan" data-i18n="industry.health.wellness_solutions">Wellness
                             Solutions</span>
-                    </div>
-                    <h1
-                        class="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.9] text-white uppercase italic">
-                        The Digital <br />
-                        <span
-                            class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-white to-althr-gold">Clinic</span>
-                    </h1>
-                    <div class="max-w-2xl space-y-6">
-                        <p
-                            class="text-xl md:text-2xl text-slate-400 font-light leading-relaxed uppercase tracking-wide">
-                            Stop <span class="text-white font-bold italic">Amazon Leaks</span>. Own the Habit.
+</div>
+<h1 class="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.9] text-white uppercase italic">
+                        The Digital <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-white to-althr-gold" data-i18n="industry.health.clinic">Clinic</span>
+</h1>
+<div class="max-w-2xl space-y-6">
+<p class="text-xl md:text-2xl text-slate-400 font-light leading-relaxed uppercase tracking-wide">
+                            Stop <span class="text-white font-bold italic" data-i18n="industry.health.amazon_leaks">Amazon Leaks</span>. Own the Habit.
                         </p>
-                        <p class="text-slate-500 text-lg">
+<p class="text-slate-500 text-lg" data-i18n="industry.health.desc">
                             We build health-focussed platforms featuring subscription engines, protocol bundles, and
                             digital product delivery systems.
                         </p>
-                    </div>
-                    <div class="flex flex-wrap gap-6 pt-4">
-                        <a href="../contact.html"
-                            class="bg-althr-cyan text-althr-navy font-black text-xs tracking-[0.05em] uppercase px-10 py-5 rounded-full transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(0,000,255,0.4)]">Get
+</div>
+<div class="flex flex-wrap gap-6 pt-4">
+<a class="bg-althr-cyan text-althr-navy font-black text-xs tracking-[0.05em] uppercase px-10 py-5 rounded-full transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(0,000,255,0.4)]" data-i18n="common.get_demo" href="../contact.html">Get
                             A Demo</a>
-                    </div>
-                </div>
-
-                <div class="lg:col-span-5 relative mt-12 lg:mt-0">
-                    <div
-                        class="frosted-glass p-12 rounded-[3.5rem] border border-white/10 relative overflow-hidden aspect-[4/5] flex flex-col justify-between group/card">
-                        <div class="absolute inset-0 z-0 opacity-40 pointer-events-none group-hover/card:scale-110 transition-transform duration-1000">
-                             <img src="../home_wellness_luxury.png" class="w-full h-full object-cover">
-                             <div class="absolute inset-0 bg-gradient-to-t from-[#080a12] via-transparent to-transparent"></div>
-                        </div>
-                        <!-- Decorative Elements -->
-                        <div class="absolute top-10 right-10 size-32 bg-emerald-500/20 blur-[50px] rounded-full"></div>
-
-                        <div class="space-y-4 relative z-10">
-                            <span class="material-symbols-outlined text-5xl text-emerald-400">spa</span>
-                            <h3 class="font-black text-3xl uppercase italic text-white">Focus &<br />Flow</h3>
-                        </div>
-
-                        <div class="space-y-6 relative z-10 mt-auto">
-                            <div class="grid grid-cols-2 gap-4">
-                                <div>
-                                    <p class="text-[14px] font-bold text-slate-500 uppercase tracking-widest">LTV
+</div>
+</div>
+<div class="lg:col-span-5 relative mt-12 lg:mt-0">
+<div class="frosted-glass p-12 rounded-[3.5rem] border border-white/10 relative overflow-hidden aspect-[4/5] flex flex-col justify-between group/card">
+<div class="absolute inset-0 z-0 opacity-40 pointer-events-none group-hover/card:scale-110 transition-transform duration-1000">
+<img class="w-full h-full object-cover" src="../home_wellness_luxury.png"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#080a12] via-transparent to-transparent"></div>
+</div>
+<!-- Decorative Elements -->
+<div class="absolute top-10 right-10 size-32 bg-emerald-500/20 blur-[50px] rounded-full"></div>
+<div class="space-y-4 relative z-10">
+<span class="material-symbols-outlined text-5xl text-emerald-400" translate="no">spa</span>
+<h3 class="font-black text-3xl uppercase italic text-white">Focus &amp;<br/>Flow</h3>
+</div>
+<div class="space-y-6 relative z-10 mt-auto">
+<div class="grid grid-cols-2 gap-4">
+<div>
+<p class="text-[14px] font-bold text-slate-500 uppercase tracking-widest" data-i18n="industry.beauty.ltv_increase">LTV
                                         Increase</p>
-                                    <p class="text-3xl font-black text-white">600%</p>
-                                </div>
-                                <div>
-                                    <p class="text-[14px] font-bold text-slate-500 uppercase tracking-widest">Growth ROI
+<p class="text-3xl font-black text-white">600%</p>
+</div>
+<div>
+<p class="text-[14px] font-bold text-slate-500 uppercase tracking-widest" data-i18n="industry.sports.growth_roi">Growth ROI
                                     </p>
-                                    <p class="text-3xl font-black text-emerald-400">160%</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Problem Section -->
-        <section class="px-6 md:px-12 py-32 relative border-t border-white/5 bg-white/[0.01]">
-            <div class="max-w-[1600px] mx-auto">
-                <div class="grid lg:grid-cols-2 gap-20 items-center">
-                    <div class="space-y-12">
-                        <span class="text-red-500 font-bold tracking-normal uppercase text-xs">The Challenge</span>
-                        <h2
-                            class="text-4xl md:text-6xl font-black tracking-tighter text-white uppercase italic leading-none">
-                            Expertise Leakage <br /> <span class="text-slate-500">is Draining Sales.</span>
-                        </h2>
-                        <p class="text-xl text-white italic">"They come in, ask me for 20 minutes of advice, write down
+<p class="text-3xl font-black text-emerald-400">160%</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Problem Section -->
+<section class="px-6 md:px-12 py-32 relative border-t border-white/5 bg-white/[0.01]">
+<div class="max-w-[1600px] mx-auto">
+<div class="grid lg:grid-cols-2 gap-20 items-center">
+<div class="space-y-12">
+<span class="text-red-500 font-bold tracking-normal uppercase text-xs" data-i18n="common.challenge">The Challenge</span>
+<h2 class="text-4xl md:text-6xl font-black tracking-tighter text-white uppercase italic leading-none">
+                            Expertise Leakage <br/> <span class="text-slate-500" data-i18n="industry.health.is_draining_sales">is Draining Sales.</span>
+</h2>
+<p class="text-xl text-white italic" data-i18n="industry.health.they_come_in">"They come in, ask me for 20 minutes of advice, write down
                             the brand, and buy it on Amazon."</p>
-
-                        <div class="space-y-8">
-                            <div class="flex gap-6 items-start">
-                                <span class="material-symbols-outlined text-red-500 mt-1">block</span>
-                                <div>
-                                    <h4 class="font-bold text-white uppercase tracking-widest text-sm">Retention Failure
+<div class="space-y-8">
+<div class="flex gap-6 items-start">
+<span class="material-symbols-outlined text-red-500 mt-1" data-i18n="industry.health.block" translate="no">block</span>
+<div>
+<h4 class="font-bold text-white uppercase tracking-widest text-sm" data-i18n="industry.health.retention_failure">Retention Failure
                                     </h4>
-                                    <p class="text-slate-400 text-xs mt-2 uppercase tracking-wide">Vitamins run out in
+<p class="text-slate-400 text-xs mt-2 uppercase tracking-wide" data-i18n="industry.health.vitamins_run_out">Vitamins run out in
                                         30 days. If you don't auto-ship the refill, you lose the year's revenue.</p>
-                                </div>
-                            </div>
-                            <div class="flex gap-6 items-start">
-                                <span class="material-symbols-outlined text-red-500 mt-1">point_of_sale</span>
-                                <div>
-                                    <h4 class="font-bold text-white uppercase tracking-widest text-sm">IP Leakage</h4>
-                                    <p class="text-slate-400 text-xs mt-2 uppercase tracking-wide">Giving away your
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<span class="material-symbols-outlined text-red-500 mt-1" data-i18n="industry.health.pointofsale" translate="no">point_of_sale</span>
+<div>
+<h4 class="font-bold text-white uppercase tracking-widest text-sm" data-i18n="industry.health.ip_leakage">IP Leakage</h4>
+<p class="text-slate-400 text-xs mt-2 uppercase tracking-wide" data-i18n="industry.health.giving_away_your">Giving away your
                                         "Wellness Protocols" for free in-store instead of monetizing them as digital
                                         guides.</p>
-                                </div>
-                            </div>
-                            <div class="flex gap-6 items-start">
-                                <span class="material-symbols-outlined text-red-500 mt-1">trending_down</span>
-                                <div>
-                                    <h4 class="font-bold text-white uppercase tracking-widest text-sm">Commodity Pricing
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<span class="material-symbols-outlined text-red-500 mt-1" data-i18n="industry.gadget.trendingdown" translate="no">trending_down</span>
+<div>
+<h4 class="font-bold text-white uppercase tracking-widest text-sm" data-i18n="industry.health.commodity_pricing">Commodity Pricing
                                     </h4>
-                                    <p class="text-slate-400 text-xs mt-2 uppercase tracking-wide">Selling individual
+<p class="text-slate-400 text-xs mt-2 uppercase tracking-wide" data-i18n="industry.health.selling_individual_skus">Selling individual
                                         SKUs against Amazon's scale instead of unique, high-margin bundles.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="frosted-glass p-10 rounded-[3rem] border border-white/10 space-y-8">
-                        <h3 class="text-2xl font-black text-white uppercase tracking-widest">Financial Leakage</h3>
-                        <div class="space-y-6">
-                            <div
-                                class="bg-white/5 p-6 rounded-2xl border border-white/5 flex justify-between items-center group hover:border-red-500/50 transition-colors">
-                                <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Retention
+</div>
+</div>
+</div>
+</div>
+<div class="frosted-glass p-10 rounded-[3rem] border border-white/10 space-y-8">
+<h3 class="text-2xl font-black text-white uppercase tracking-widest" data-i18n="industry.health.financial_leakage">Financial Leakage</h3>
+<div class="space-y-6">
+<div class="bg-white/5 p-6 rounded-2xl border border-white/5 flex justify-between items-center group hover:border-red-500/50 transition-colors">
+<span class="text-xs font-bold text-slate-400 uppercase tracking-widest" data-i18n="industry.health.retention_failure_loss">Retention
                                     Failure Loss</span>
-                                <span class="text-xl font-black text-red-500">-$60K/yr</span>
-                            </div>
-                            <div
-                                class="bg-white/5 p-6 rounded-2xl border border-white/5 flex justify-between items-center group hover:border-red-500/50 transition-colors">
-                                <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Unmonetized
+<span class="text-xl font-black text-red-500" data-i18n="industry.furniture.60kyr">-$60K/yr</span>
+</div>
+<div class="bg-white/5 p-6 rounded-2xl border border-white/5 flex justify-between items-center group hover:border-red-500/50 transition-colors">
+<span class="text-xs font-bold text-slate-400 uppercase tracking-widest" data-i18n="industry.health.unmonetized_ip">Unmonetized
                                     IP</span>
-                                <span class="text-xl font-black text-red-500">-$30K/yr</span>
-                            </div>
-                            <div
-                                class="bg-white/5 p-6 rounded-2xl border border-white/5 flex justify-between items-center group hover:border-red-500/50 transition-colors">
-                                <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Commodity
+<span class="text-xl font-black text-red-500" data-i18n="industry.toy.30kyr">-$30K/yr</span>
+</div>
+<div class="bg-white/5 p-6 rounded-2xl border border-white/5 flex justify-between items-center group hover:border-red-500/50 transition-colors">
+<span class="text-xs font-bold text-slate-400 uppercase tracking-widest" data-i18n="industry.health.commodity_competition">Commodity
                                     Competition</span>
-                                <span class="text-xl font-black text-red-500">-$30K/yr</span>
-                            </div>
-                            <div class="pt-6 border-t border-white/10 flex justify-between items-center text-red-500">
-                                <span class="text-sm font-black uppercase tracking-widest">Total Annual Loss</span>
-                                <span class="text-3xl font-black italic">$120,000+</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Solution Section -->
-        <section class="px-6 md:px-12 py-32 border-t border-white/5">
-            <div class="max-w-[1600px] mx-auto space-y-24">
-                <div class="text-center space-y-6 max-w-3xl mx-auto">
-                    <span class="text-althr-cyan font-bold tracking-normal uppercase text-xs">The Solution</span>
-                    <h2 class="text-5xl md:text-7xl font-black tracking-tighter text-white uppercase italic">
-                        The ALTHR Wellness <br /><span class="text-althr-gold">Engine</span>
-                    </h2>
-                </div>
-
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div
-                        class="frosted-glass p-10 rounded-3xl border border-white/10 space-y-6 hover:translate-y-[-10px] transition-transform duration-500">
-                        <span class="material-symbols-outlined text-althr-cyan text-4xl">autorenew</span>
-                        <h4 class="font-black text-lg uppercase tracking-widest text-white">Subscription Core</h4>
-                        <p class="text-slate-500 text-xs leading-relaxed uppercase tracking-wider">Predictable revenue
+<span class="text-xl font-black text-red-500" data-i18n="industry.toy.30kyr">-$30K/yr</span>
+</div>
+<div class="pt-6 border-t border-white/10 flex justify-between items-center text-red-500">
+<span class="text-sm font-black uppercase tracking-widest" data-i18n="common.annual_loss">Total Annual Loss</span>
+<span class="text-3xl font-black italic" data-i18n="industry.home_goods.120000">$120,000+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Solution Section -->
+<section class="px-6 md:px-12 py-32 border-t border-white/5">
+<div class="max-w-[1600px] mx-auto space-y-24">
+<div class="text-center space-y-6 max-w-3xl mx-auto">
+<span class="text-althr-cyan font-bold tracking-normal uppercase text-xs" data-i18n="common.solution">The Solution</span>
+<h2 class="text-5xl md:text-7xl font-black tracking-tighter text-white uppercase italic">
+                        The ALTHR Wellness <br/><span class="text-althr-gold" data-i18n="industry.health.engine">Engine</span>
+</h2>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="frosted-glass p-10 rounded-3xl border border-white/10 space-y-6 hover:translate-y-[-10px] transition-transform duration-500">
+<span class="material-symbols-outlined text-althr-cyan text-4xl" data-i18n="industry.beauty.autorenew" translate="no">autorenew</span>
+<h4 class="font-black text-lg uppercase tracking-widest text-white" data-i18n="industry.health.subscription_core">Subscription Core</h4>
+<p class="text-slate-500 text-xs leading-relaxed uppercase tracking-wider" data-i18n="industry.health.predictable_revenue_with">Predictable revenue
                             with 30/60/90 day auto-ship logic. Never lose a refill again.</p>
-                    </div>
-                    <div
-                        class="frosted-glass p-10 rounded-3xl border border-white/10 space-y-6 hover:translate-y-[-10px] transition-transform duration-500">
-                        <span class="material-symbols-outlined text-althr-gold text-4xl">inventory_2</span>
-                        <h4 class="font-black text-lg uppercase tracking-widest text-white">Protocol Bundles</h4>
-                        <p class="text-slate-500 text-xs leading-relaxed uppercase tracking-wider">Sell "Sleep,"
+</div>
+<div class="frosted-glass p-10 rounded-3xl border border-white/10 space-y-6 hover:translate-y-[-10px] transition-transform duration-500">
+<span class="material-symbols-outlined text-althr-gold text-4xl" data-i18n="industry.jewelry.inventory2" translate="no">inventory_2</span>
+<h4 class="font-black text-lg uppercase tracking-widest text-white" data-i18n="industry.health.protocol_bundles">Protocol Bundles</h4>
+<p class="text-slate-500 text-xs leading-relaxed uppercase tracking-wider" data-i18n="industry.health.sell_sleep_focus">Sell "Sleep,"
                             "Focus," or "Immunity" stacks instead of pills. Protect your margins.</p>
-                    </div>
-                    <div
-                        class="frosted-glass p-10 rounded-3xl border border-white/10 space-y-6 hover:translate-y-[-10px] transition-transform duration-500">
-                        <span class="material-symbols-outlined text-althr-cyan text-4xl">download</span>
-                        <h4 class="font-black text-lg uppercase tracking-widest text-white">Digital Delivery</h4>
-                        <p class="text-slate-500 text-xs leading-relaxed uppercase tracking-wider">Attach PDF guides to
+</div>
+<div class="frosted-glass p-10 rounded-3xl border border-white/10 space-y-6 hover:translate-y-[-10px] transition-transform duration-500">
+<span class="material-symbols-outlined text-althr-cyan text-4xl" data-i18n="industry.health.download" translate="no">download</span>
+<h4 class="font-black text-lg uppercase tracking-widest text-white" data-i18n="industry.health.digital_delivery">Digital Delivery</h4>
+<p class="text-slate-500 text-xs leading-relaxed uppercase tracking-wider" data-i18n="industry.health.attach_pdf_guides">Attach PDF guides to
                             physical sales. Monetize your knowledge automatically.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Comparison -->
-        <section class="px-6 md:px-12 py-32 border-t border-white/5 relative">
-            <div class="max-w-[1600px] mx-auto grid lg:grid-cols-2 gap-20">
-                <div class="space-y-10 opacity-50">
-                    <h3 class="text-2xl font-black text-slate-500 uppercase tracking-widest">The Old Way (The Drop-off)
+</div>
+</div>
+</div>
+</section>
+<span data-i18n="industry.common.experience_comparison"><!-- Experience Comparison --></span>
+<section class="px-6 md:px-12 py-32 border-t border-white/5 relative">
+<div class="max-w-[1600px] mx-auto grid lg:grid-cols-2 gap-20">
+<div class="space-y-10 opacity-50">
+<h3 class="text-2xl font-black text-slate-500 uppercase tracking-widest" data-i18n="industry.health.the_old_way">The Old Way (The Drop-off)
                     </h3>
-                    <ul class="space-y-4 text-slate-500 font-mono text-sm">
-                        <li class="flex gap-4"><span class="text-red-500">01.</span> Customer buys Probiotics. "Great
+<ul class="space-y-4 text-slate-500 font-mono text-sm">
+<li class="flex gap-4"><span class="text-red-500">01.</span> Customer buys Probiotics. "Great
                             stuff!"</li>
-                        <li class="flex gap-4"><span class="text-red-500">02.</span> Runs out 30 days later on a Monday.
+<li class="flex gap-4"><span class="text-red-500">02.</span> Runs out 30 days later on a Monday.
                         </li>
-                        <li class="flex gap-4"><span class="text-red-500">03.</span> Forgets to drive to your store
+<li class="flex gap-4"><span class="text-red-500">03.</span> Forgets to drive to your store
                             after work.</li>
-                        <li class="flex gap-4"><span class="text-red-500">04.</span> Stops taking them for a week.</li>
-                        <li class="flex gap-4"><span class="text-red-500">05.</span> Health benefits fade. Revenue
+<li class="flex gap-4"><span class="text-red-500">04.</span> Stops taking them for a week.</li>
+<li class="flex gap-4"><span class="text-red-500">05.</span> Health benefits fade. Revenue
                             stops.</li>
-                        <li class="flex gap-4"><span class="text-red-500">06.</span> Potential Sale: $0.</li>
-                    </ul>
-                </div>
-                <div class="space-y-10">
-                    <h3 class="text-2xl font-black text-althr-gold uppercase tracking-widest">The New Way (The Habit)
+<li class="flex gap-4"><span class="text-red-500">06.</span> Potential Sale: $0.</li>
+</ul>
+</div>
+<div class="space-y-10">
+<h3 class="text-2xl font-black text-althr-gold uppercase tracking-widest" data-i18n="industry.health.the_new_way">The New Way (The Habit)
                     </h3>
-                    <ul class="space-y-4 text-white font-mono text-sm">
-                        <li class="flex gap-4"><span class="text-althr-cyan">01.</span> Buys "Gut Repair Kit" online.
+<ul class="space-y-4 text-white font-mono text-sm">
+<li class="flex gap-4"><span class="text-althr-cyan">01.</span> Buys "Gut Repair Kit" online.
                         </li>
-                        <li class="flex gap-4"><span class="text-althr-cyan">02.</span> Ticks "Subscribe & Save 15%" -
+<li class="flex gap-4"><span class="text-althr-cyan">02.</span> Ticks "Subscribe &amp; Save 15%" -
                             lock in.</li>
-                        <li class="flex gap-4"><span class="text-althr-cyan">03.</span> Gets immediate PDF "5 Foods to
+<li class="flex gap-4"><span class="text-althr-cyan">03.</span> Gets immediate PDF "5 Foods to
                             Avoid."</li>
-                        <li class="flex gap-4"><span class="text-althr-cyan">04.</span> Day 25: Text: "Your refill is
+<li class="flex gap-4"><span class="text-althr-cyan">04.</span> Day 25: Text: "Your refill is
                             shipping!"</li>
-                        <li class="flex gap-4"><span class="text-althr-cyan">05.</span> Day 29: Refill arrives at their
+<li class="flex gap-4"><span class="text-althr-cyan">05.</span> Day 29: Refill arrives at their
                             door.</li>
-                        <li class="flex gap-4"><span class="text-althr-cyan">06.</span> <span
-                                class="text-althr-gold italic">Habit formed. Health improved. Profit secured.</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- ROI Section -->
-        <section class="px-6 md:px-12 py-32 border-t border-white/5 bg-white/[0.02]">
-            <div class="max-w-[1600px] mx-auto text-center space-y-16">
-                <h2 class="text-4xl md:text-6xl font-black tracking-tighter text-white uppercase italic">
-                    Investment & <span class="text-althr-cyan">Return</span>
-                </h2>
-
-                <div class="grid lg:grid-cols-3 gap-8 max-w-5xl mx-auto items-center">
-                    <!-- Setup -->
-                    <div class="frosted-glass p-8 rounded-3xl border border-white/10 space-y-4">
-                        <p class="text-xs font-bold text-slate-500 uppercase tracking-widest">Base Architecture Setup</p>
-                        <p class="text-5xl font-black text-white">From $8,000</p>
-                        <ul
-                            class="text-left text-[14px] text-slate-400 space-y-2 uppercase tracking-wide pt-4 border-t border-white/5">
-                            <li>• Subscription Infrastructure</li>
-                            <li>• Digital Delivery System</li>
-                            <li>• Bundle/Kit Logic Core</li>
-                            <li>• Compliance Framework</li>
-                        </ul>
-                    </div>
-
-                    <!-- ROI Highlight -->
-                    <div
-                        class="frosted-glass p-12 rounded-[3rem] border border-althr-gold/30 bg-althr-gold/5 space-y-6 transform scale-110 relative z-10">
-                        <p class="text-sm font-black text-althr-gold uppercase tracking-[0.05em]">Year 1 ROI</p>
-                        <p class="text-7xl font-black text-white italic">160%</p>
-                        <p class="text-xs font-bold text-slate-300 uppercase tracking-widest">LTV MULTIPLIER</p>
-                        <div class="text-[14px] text-slate-400 uppercase tracking-wide pt-4 border-t border-white/10">
+<li class="flex gap-4"><span class="text-althr-cyan">06.</span> <span class="text-althr-gold italic" data-i18n="industry.health.habit_formed_health">Habit formed. Health improved. Profit secured.</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- ROI Section -->
+<section class="px-6 md:px-12 py-32 border-t border-white/5 bg-white/[0.02]">
+<div class="max-w-[1600px] mx-auto text-center space-y-16">
+<h2 class="text-4xl md:text-6xl font-black tracking-tighter text-white uppercase italic">
+                    Investment &amp; <span class="text-althr-cyan" data-i18n="industry.jewelry.return">Return</span>
+</h2>
+<div class="grid lg:grid-cols-3 gap-8 max-w-5xl mx-auto items-center">
+<!-- Setup -->
+<div class="frosted-glass p-8 rounded-3xl border border-white/10 space-y-4">
+<p class="text-xs font-bold text-slate-500 uppercase tracking-widest" data-i18n="common.setup">Base Architecture Setup</p>
+<p class="text-5xl font-black text-white" data-i18n="industry.fashion.from_8000">From $8,000</p>
+<ul class="text-left text-[14px] text-slate-400 space-y-2 uppercase tracking-wide pt-4 border-t border-white/5">
+<li data-i18n="industry.health.subscription_infrastructure">• Subscription Infrastructure</li>
+<li data-i18n="industry.health.digital_delivery_system">• Digital Delivery System</li>
+<li data-i18n="industry.health.bundlekit_logic_core">• Bundle/Kit Logic Core</li>
+<li data-i18n="industry.health.compliance_framework">• Compliance Framework</li>
+</ul>
+</div>
+<!-- ROI Highlight -->
+<div class="frosted-glass p-12 rounded-[3rem] border border-althr-gold/30 bg-althr-gold/5 space-y-6 transform scale-110 relative z-10">
+<p class="text-sm font-black text-althr-gold uppercase tracking-[0.05em]" data-i18n="common.roi_year1">Year 1 ROI</p>
+<p class="text-7xl font-black text-white italic">160%</p>
+<p class="text-xs font-bold text-slate-300 uppercase tracking-widest" data-i18n="industry.health.ltv_multiplier">LTV MULTIPLIER</p>
+<div class="text-[14px] text-slate-400 uppercase tracking-wide pt-4 border-t border-white/10">
                             Based on converting 50 clients to $50/mo auto-ship
                         </div>
-                    </div>
-
-                    <!-- Monthly -->
-                    <div class="frosted-glass p-8 rounded-3xl border border-white/10 space-y-4">
-                        <p class="text-xs font-bold text-slate-500 uppercase tracking-widest">Ongoing Support</p>
-                        <p class="text-5xl font-black text-white">$600</p>
-                        <ul
-                            class="text-left text-[14px] text-slate-400 space-y-2 uppercase tracking-wide pt-4 border-t border-white/5">
-                            <li>• Sub management SW Fees</li>
-                            <li>• High-Bandwidth Video Hosting</li>
-                            <li>• Data Security & Disclaimers</li>
-                            <li>• Ongoing Optimization</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="px-6 md:px-12 py-48 text-center relative overflow-hidden">
-            <div class="absolute inset-0 bg-emerald-500/5 blur-[150px] rounded-full scale-75 opacity-20"></div>
-            <div class="max-w-4xl mx-auto space-y-14 relative z-10">
-                <h2 class="text-6xl md:text-8xl font-black tracking-tighter uppercase italic text-white leading-none">
-                    Start <br /> <span class="text-emerald-400">The Habit.</span>
-                </h2>
-                <div class="flex flex-wrap justify-center gap-8">
-                    <a href="../contact.html"
-                        class="bg-althr-gold text-althr-navy font-black text-sm tracking-normal uppercase px-14 py-6 rounded-full transition-all hover:scale-110 hover:shadow-[0_0_60px_rgba(212,000,55,0.4)]">Talk
+</div>
+<!-- Monthly -->
+<div class="frosted-glass p-8 rounded-3xl border border-white/10 space-y-4">
+<p class="text-xs font-bold text-slate-500 uppercase tracking-widest" data-i18n="industry.fashion.ongoing_support">Ongoing Support</p>
+<p class="text-5xl font-black text-white" data-i18n="industry.jewelry.850">$850</p>
+<ul class="text-left text-[14px] text-slate-400 space-y-2 uppercase tracking-wide pt-4 border-t border-white/5">
+<li data-i18n="industry.beauty.sub_management_sw">• Sub management SW Fees</li>
+<li data-i18n="industry.health.highbandwidth_video_hosting">• High-Bandwidth Video Hosting</li>
+<li data-i18n="industry.health.data_security_disclaimers">• Data Security &amp; Disclaimers</li>
+<li data-i18n="industry.health.ongoing_optimization">• Ongoing Optimization</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="px-6 md:px-12 py-48 text-center relative overflow-hidden">
+<div class="absolute inset-0 bg-emerald-500/5 blur-[150px] rounded-full scale-75 opacity-20"></div>
+<div class="max-w-4xl mx-auto space-y-14 relative z-10">
+<h2 class="text-6xl md:text-8xl font-black tracking-tighter uppercase italic text-white leading-none">
+                    Start <br/> <span class="text-emerald-400" data-i18n="industry.health.the_habit">The Habit.</span>
+</h2>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="bg-althr-gold text-althr-navy font-black text-sm tracking-normal uppercase px-14 py-6 rounded-full transition-all hover:scale-110 hover:shadow-[0_0_60px_rgba(212,000,55,0.4)]" data-i18n="common.talk_expert" href="../contact.html">Talk
                         to an Expert</a>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-        <footer class="bg-althr-navy border-t border-white/10 py-24 px-6 md:px-12 relative z-20">
-        <div class="max-w-[1600px] mx-auto">
-            <div class="grid lg:grid-cols-5 gap-10">
-                <div class="space-y-10">
-                    <div class="flex items-center gap-3 group">
-                        <div class="size-10 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                            <img src="../logo.png" alt="ALTHR" class="w-full h-full object-contain">
-                        </div>
-                        <span class="font-black text-2xl tracking-tighter uppercase text-white">ALTHR</span>
-                    </div>
-                    <p class="text-slate-400 text-[14px] font-medium leading-relaxed max-w-xs">
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-althr-navy border-t border-white/10 py-24 px-6 md:px-12 relative z-20">
+<div class="max-w-[1600px] mx-auto">
+<div class="grid lg:grid-cols-5 gap-10">
+<div class="space-y-10">
+<div class="flex items-center gap-3 group">
+<div class="size-10 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+<img alt="ALTHR" class="w-full h-full object-contain" src="../logo.png"/>
+</div>
+<span class="font-black text-2xl tracking-tighter uppercase text-white" data-i18n="industry.jewelry.althr">ALTHR</span>
+</div>
+<p class="text-slate-400 text-[14px] font-medium leading-relaxed max-w-xs" data-i18n="footer.desc">
                         Transforming complexity into automated simplicity through high-end engineering and strategic
                         logic systems.
                     </p>
-                </div>
-
-                <div>
-                    <h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12">Services
-                    </h5>
-                    <ul class="space-y-4 text-[14px] font-medium text-slate-400">
-                        <li><a href="../services.html" class="hover:text-althr-gold transition-colors">CRM Automation</a>
-                        </li>
-                        <li><a href="../services.html" class="hover:text-althr-gold transition-colors">Marketing Logic</a>
-                        </li>
-                        <li><a href="../intelligence.html" class="hover:text-althr-gold transition-colors">Advanced
+</div>
+<div>
+<h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12"><span data-i18n="nav.services">Services</span>
+</h5>
+<ul class="space-y-4 text-[14px] font-medium text-slate-400">
+<li data-i18n="industry.jewelry.crm_automation"><a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.crm_automation" href="../services.html">CRM Automation</a>
+</li>
+<li data-i18n="industry.jewelry.marketing_logic"><a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.marketing_logic" href="../services.html">Marketing Logic</a>
+</li>
+<li data-i18n="industry.jewelry.advanced_analytics"><a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.advanced_analytics" href="../intelligence.html">Advanced
                                 Analytics</a></li>
-                        <li><a href="../services.html" class="hover:text-althr-gold transition-colors">Fulfillment Ops</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12">Industries
-                    </h5>
-                    <ul class="space-y-4 text-[14px] font-medium text-slate-400">
-                        <li><a href="jewelry.html" class="hover:text-althr-gold transition-colors">Jewelry & Watch</a></li>
-                        <li><a href="furniture.html" class="hover:text-althr-gold transition-colors">Furniture & Decor</a></li>
-                        <li><a href="grocery.html" class="hover:text-althr-gold transition-colors">Grocery</a></li>
-                        <li><a href="fashion.html" class="hover:text-althr-gold transition-colors">Fashion</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12">Quick Links</h5>
-                    <ul class="space-y-4 text-[14px] font-medium text-slate-400">
-                        <li><a href="../about.html" class="hover:text-althr-gold transition-colors">Our Story</a></li>
-                        <li><a href="../results.html" class="hover:text-althr-gold transition-colors">Results</a>
-                        </li>
-                        <li><a href="../contact.html" class="hover:text-althr-gold transition-colors">Contact Us</a></li>
-                        <li><a href="../privacy.html" class="hover:text-althr-gold transition-colors">Privacy Protocol</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="space-y-10">
-                    <h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12">Pulse Status</h5>
-                    <div class="p-8 bg-white/5 border border-white/10 rounded-[2rem] flex items-center gap-6">
-                        <div
-                            class="size-2.5 bg-althr-cyan rounded-full animate-pulse shadow-[0_0_15px_rgba(0,000,255,0.7)]">
-                        </div>
-                        <span class="text-[12px] font-bold text-althr-cyan uppercase tracking-wider">Systems
+<li data-i18n="industry.jewelry.fulfillment_ops"><a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.fulfillment_ops" href="../services.html">Fulfillment Ops</a>
+</li>
+</ul>
+</div>
+<div>
+<h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12"><span data-i18n="nav.industries">Industries</span>
+</h5>
+<ul class="space-y-4 text-[14px] font-medium text-slate-400">
+<li data-i18n="industry.jewelry.jewelry_watch"><a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.jewelry_watch" href="jewelry.html"><span data-i18n="industries.jewelry">Jewelry &amp; Watch</span></a></li>
+<li data-i18n="industry.jewelry.furniture_decor"><a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.furniture_decor" href="furniture.html"><span data-i18n="industries.furniture">Furniture &amp; Decor</span></a></li>
+<li><a class="hover:text-althr-gold transition-colors" href="grocery.html"><span data-i18n="industries.grocery">Grocery</span></a></li>
+<li data-i18n="industry.jewelry.fashion"><a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.fashion" href="fashion.html">Fashion</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12" data-i18n="industry.jewelry.quick_links">Quick Links</h5>
+<ul class="space-y-4 text-[14px] font-medium text-slate-400">
+<li><a class="hover:text-althr-gold transition-colors" href="../about.html"><span data-i18n="footer.story">Our Story</span></a></li>
+<li><a class="hover:text-althr-gold transition-colors" href="../results.html"><span data-i18n="nav.results">Results</span></a>
+</li>
+<li><a class="hover:text-althr-gold transition-colors" href="../contact.html"><span data-i18n="footer.contact">Contact Us</span></a></li>
+<li data-i18n="industry.jewelry.privacy_protocol"><a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.privacy_protocol" href="../privacy.html"><span data-i18n="footer.privacy">Privacy Protocol</span></a>
+</li>
+</ul>
+</div>
+<div class="space-y-10">
+<h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12"><span data-i18n="footer.pulse">Pulse Status</span></h5>
+<div class="p-8 bg-white/5 border border-white/10 rounded-[2rem] flex items-center gap-6">
+<div class="size-2.5 bg-althr-cyan rounded-full animate-pulse shadow-[0_0_15px_rgba(0,000,255,0.7)]">
+</div>
+<span class="text-[12px] font-bold text-althr-cyan uppercase tracking-wider" data-i18n="common.systems_ready">Systems
                             Ready</span>
-                    </div>
-                </div>
-            </div>
-
-            <div
-                class="mt-32 pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[12px] text-slate-500 font-medium">
-                <p>© 2026 ALTHR AGENCY SYSTEMS. SYSTEM_ID: GLOBAL-01</p>
-                <div class="flex gap-12">
-                    <a href="../privacy.html" class="hover:text-althr-gold transition-colors">Privacy</a>
-                    <a href="#" class="hover:text-althr-gold transition-colors">Terms</a>
-                    <a href="../contact.html" class="hover:text-althr-gold transition-colors">SLA</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed inset-0 z-[100] bg-althr-navy/95 backdrop-blur-2xl translate-x-full transition-transform duration-500 lg:hidden">
-        <div class="flex flex-col h-full p-8 relative">
-            <button id="close-menu" class="absolute top-8 right-8 text-white/50 hover:text-althr-gold transition-colors">
-                <span class="material-symbols-outlined text-4xl">close</span>
-            </button>
-            <div class="mb-16">
-                <div class="flex items-center gap-3">
-                    <img src="../logo.png" alt="ALTHR" class="size-10 object-contain">
-                    <span class="font-black text-2xl tracking-tighter uppercase text-white">ALTHR</span>
-                </div>
-            </div>
-            
-            <div class="flex gap-4 mb-10 border-b border-white/10 pb-10">
-                <button onclick="setLanguage('en')" class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all">🇺🇸</button>
-                <button onclick="setLanguage('pl')" class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all">🇵🇱</button>
-                <button onclick="setLanguage('de')" class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all">🇩🇪</button>
-                <button onclick="setLanguage('fr')" class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all">🇫🇷</button>
-                <button onclick="setLanguage('es')" class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all">🇪🇸</button>
-            </div>
-        <nav class="flex flex-col gap-10">
-                <a href="../index.html" class="group flex items-end gap-4">
-                    <span class="text-althr-gold font-mono text-xs mb-2">01</span>
-                    <span class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic">Home</span>
-                </a>
-                <a href="../services.html" class="group flex items-end gap-4">
-                    <span class="text-althr-gold font-mono text-xs mb-2">02</span>
-                    <span class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic">Services</span>
-                </a>
-                <a href="../intelligence.html" class="group flex items-end gap-4">
-                    <span class="text-althr-gold font-mono text-xs mb-2">03</span>
-                    <span class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic">Tech</span>
-                </a>
-                <a href="../results.html" class="group flex items-end gap-4">
-                    <span class="text-althr-gold font-mono text-xs mb-2">04</span>
-                    <span class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic">Results</span>
-                </a>
-                <a href="../contact.html" class="bg-althr-gold text-althr-navy p-6 rounded-2xl flex items-center justify-between group overflow-hidden relative">
-                    <span class="font-black uppercase tracking-tighter text-xl relative z-10">Start Project</span>
-                    <span class="material-symbols-outlined relative z-10">arrow_forward</span>
-                    <div class="absolute inset-0 bg-white translate-x-[-101%] group-hover:translate-x-0 transition-transform duration-500"></div>
-                </a>
-            </nav>
-            <div class="mt-auto border-t border-white/10 pt-8">
-               <p class="text-[10px] font-bold tracking-normal text-white/30 uppercase">Operational Menu v2.0</p>
-            </div>
-        </div>
-    </div>
-
-    <script>
+</div>
+</div>
+</div>
+<div class="mt-32 pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[12px] text-slate-500 font-medium">
+<p data-i18n="industry.jewelry.2026_althr_agency_systems_european">© 2026 ALTHR AGENCY SYSTEMS | EUROPEAN HQ: POLAND. SYSTEM ID: GLOBAL-01</p>
+<div class="flex gap-12">
+<a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.privacy" href="../privacy.html">Privacy</a>
+<a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.terms" href="#">Terms</a>
+<a class="hover:text-althr-gold transition-colors" href="../contact.html">SLA</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Mobile Menu -->
+<div class="fixed inset-0 z-[100] bg-althr-navy/95 backdrop-blur-2xl translate-x-full transition-transform duration-500 lg:hidden" id="mobile-menu">
+<div class="flex flex-col h-full p-8 relative">
+<button class="absolute top-8 right-8 text-white/50 hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.close" id="close-menu">
+<span class="material-symbols-outlined text-4xl" data-i18n="industry.jewelry.close" translate="no">close</span>
+</button>
+<div class="mb-16">
+<div class="flex items-center gap-3">
+<img alt="ALTHR" class="size-10 object-contain" src="../logo.png"/>
+<span class="font-black text-2xl tracking-tighter uppercase text-white" data-i18n="industry.jewelry.althr">ALTHR</span>
+</div>
+</div>
+<div class="flex gap-4 mb-10 border-b border-white/10 pb-10">
+<button class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all" data-lang="en">🇺🇸</button>
+<button class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all" data-lang="pl">🇵🇱</button>
+<button class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all" data-lang="de">🇩🇪</button>
+<button class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all" data-lang="fr">🇫🇷</button>
+<button class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all" data-lang="es">🇪🇸</button>
+</div>
+<nav class="flex flex-col gap-10">
+<a class="group flex items-end gap-4" href="../index.html">
+<span class="text-althr-gold font-mono text-xs mb-2">01</span>
+<span class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic" data-i18n="industry.jewelry.home">Home</span>
+</a>
+<a class="group flex items-end gap-4" href="../services.html">
+<span class="text-althr-gold font-mono text-xs mb-2">02</span>
+<span class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"><span data-i18n="nav.services">Services</span>
+</span></a>
+<a class="group flex items-end gap-4" href="../intelligence.html">
+<span class="text-althr-gold font-mono text-xs mb-2">03</span>
+<span class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic" data-i18n="industry.jewelry.tech">Tech</span>
+</a>
+<a class="group flex items-end gap-4" href="../results.html">
+<span class="text-althr-gold font-mono text-xs mb-2">04</span>
+<span class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"><span data-i18n="nav.results">Results</span>
+</span></a>
+<a class="bg-althr-gold text-althr-navy p-6 rounded-2xl flex items-center justify-between group overflow-hidden relative" href="../contact.html">
+<span class="font-black uppercase tracking-tighter text-xl relative z-10" data-i18n="industry.jewelry.start_project">Start Project</span>
+<span class="material-symbols-outlined relative z-10" data-i18n="industry.jewelry.arrowforward" translate="no">arrow_forward</span>
+<div class="absolute inset-0 bg-white translate-x-[-101%] group-hover:translate-x-0 transition-transform duration-500"></div>
+</a>
+</nav>
+<div class="mt-auto border-t border-white/10 pt-8">
+<p class="text-[10px] font-bold tracking-normal text-white/30 uppercase" data-i18n="industry.jewelry.operational_menu_v20">Operational Menu v2.0</p>
+</div>
+</div>
+</div>
+<script>
         document.addEventListener('DOMContentLoaded', () => {
             const openBtn = document.getElementById('open-menu');
             const closeBtn = document.getElementById('close-menu');
@@ -589,8 +532,8 @@
             }
         });
     </script>
-    <script src="../translations.js"></script>
+<script src="../translations.js"></script>
 <script src="../i18n.js"></script>
+    <script src="../motion.js"></script>
 </body>
-
 </html>

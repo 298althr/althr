@@ -1,12 +1,14 @@
 <!DOCTYPE html>
+
 <html class="dark" lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>ALTHR Automation | Stop Managing. Start Scaling.</title>
-    <meta name="description"
-        content="Transform your business operations with intelligent automation. Eliminate bottlenecks, reduce costs, and accelerate growth with ALTHR.">
+    <meta
+        content="Transform your business operations with intelligent automation. Eliminate bottlenecks, reduce costs, and accelerate growth with ALTHR."
+        name="description" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
         rel="stylesheet" />
@@ -53,6 +55,7 @@
             }
         }
     </style>
+    <link rel="stylesheet" href="motion.css">
 </head>
 
 <body
@@ -61,108 +64,112 @@
     <header class="fixed top-0 w-full z-50 border-b border-white/5 bg-althr-navy/90 backdrop-blur-md">
         <div class="max-w-[1600px] mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <a href="index.html" class="flex items-center gap-3 group">
+                <a class="flex items-center gap-3 group" data-i18n="industry.jewelry.althr" href="index.html">
                     <div class="size-10 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                        <img src="logo.png" alt="ALTHR" class="w-full h-full object-contain">
+                        <img alt="ALTHR" class="w-full h-full object-contain" src="logo.png" />
                     </div>
-                    <span class="font-black text-2xl tracking-tighter uppercase">ALTHR</span>
+                    <span class="font-black text-2xl tracking-tighter uppercase"
+                        data-i18n="industry.jewelry.althr">ALTHR</span>
                 </a>
             </div>
             <nav class="hidden lg:flex items-center gap-10">
                 <div class="relative group">
                     <button
                         class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase flex items-center gap-1">
-                        Industries <span class="material-symbols-outlined text-[14px]">expand_more</span>
+                        <span data-i18n="nav.industries">Industries</span> <span
+                            class="material-symbols-outlined text-[14px]" data-i18n="industry.jewelry.expandmore"
+                            translate="no">expand_more</span>
                     </button>
                     <div
                         class="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                         <div class="frosted-glass p-6 rounded-2xl border border-white/10 w-64 grid grid-cols-1 gap-4">
-                            <a href="industry/jewelry.html"
-                                class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Jewelry
-                                & Watch</a>
-                            <a href="industry/furniture.html"
-                                class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Furniture
-                                & Decor</a>
-                            <a href="industry/grocery.html"
-                                class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Grocery</a>
-                            <a href="industry/equipment.html"
-                                class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Equipment
-                                & Supply</a>
-                            <a href="industry/gadget.html"
-                                class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Gadgets
-                                & Tech</a>
-                            <a href="industry/fashion.html"
-                                class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Fashion
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.jewelry" href="industry/jewelry.html">Jewelry
+                                &amp; Watch</a>
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.furniture" href="industry/furniture.html">Furniture
+                                &amp; Decor</a>
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                href="industry/grocery.html"><span data-i18n="industries.grocery">Grocery</span></a>
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.equipment" href="industry/equipment.html">Equipment
+                                &amp; Supply</a>
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.gadget" href="industry/gadget.html">Gadgets
+                                &amp; Tech</a>
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.fashion" href="industry/fashion.html">Fashion
                                 Boutique</a>
-                            <a href="industry/beauty.html"
-                                class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Beauty
-                                & Cosmo</a>
-                            <a href="industry/pet.html"
-                                class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Pet
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.beauty" href="industry/beauty.html">Beauty
+                                &amp; Cosmo</a>
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.pet" href="industry/pet.html">Pet
                                 Supply</a>
-                            <a href="industry/home_goods.html"
-                                class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Home
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.home_goods" href="industry/home_goods.html">Home
                                 Goods</a>
-                            <a href="industry/sports.html"
-                                class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Sports
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.sports" href="industry/sports.html">Sports
                                 Equipment</a>
-                            <a href="industry/health.html"
-                                class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Health
-                                & Wellness</a>
-                            <a href="industry/toy.html"
-                                class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Toy
-                                & Hobby</a>
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.health" href="industry/health.html">Health
+                                &amp; Wellness</a>
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.toy" href="industry/toy.html">Toy
+                                &amp; Hobby</a>
                         </div>
                     </div>
                 </div>
-
                 <div class="relative group">
                     <button
                         class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase flex items-center gap-1">
-                        Services <span class="material-symbols-outlined text-[14px]">expand_more</span>
+                        <span data-i18n="nav.services">Services</span> <span
+                            class="material-symbols-outlined text-[14px]" data-i18n="industry.jewelry.expandmore"
+                            translate="no">expand_more</span>
                     </button>
                     <div
                         class="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                         <div class="frosted-glass p-6 rounded-2xl border border-white/10 w-72 grid grid-cols-1 gap-4">
-                            <a href="services.html#crm"
-                                class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">CRM
+                            <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="services.crm.title" href="services.html#crm">CRM
                                 Architecture</a>
-                            <a href="services.html#marketing"
-                                class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Marketing
+                            <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="services.marketing.title" href="services.html#marketing">Marketing
                                 Operations</a>
-                            <a href="services.html#sales"
-                                class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Sales
+                            <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="services.sales.title" href="services.html#sales">Sales
                                 Pipeline</a>
-                            <a href="services.html#ops"
-                                class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Operational
+                            <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="services.ops.title" href="services.html#ops">Operational
                                 Flow</a>
-                            <a href="services.html#lead-gen"
-                                class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Lead
+                            <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industry.jewelry.lead_generation" href="services.html#lead-gen">Lead
                                 Generation</a>
-                            <a href="services.html#lead-track"
-                                class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Lead
+                            <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industry.jewelry.lead_tracking" href="services.html#lead-track">Lead
                                 Tracking</a>
-                            <a href="services.html#social"
-                                class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Social
+                            <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industry.jewelry.social_media_management" href="services.html#social">Social
                                 Media Management</a>
                         </div>
                     </div>
                 </div>
                 <a class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
-                    href="intelligence.html">Technology</a>
+                    href="intelligence.html"><span data-i18n="nav.technology">Technology</span></a>
                 <a class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
-                    href="results.html">Results</a>
+                    href="results.html"><span data-i18n="nav.results">Results</span></a>
                 <a class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
-                    href="about.html">About Us</a>
-                <a href="contact.html"
-                    class="bg-althr-gold text-althr-navy px-6 py-2.5 rounded-full text-[14px] font-black tracking-normal uppercase transition-all hover:scale-105 hover:bg-white">Get
+                    data-i18n="index.about_us" href="about.html"><span data-i18n="nav.about">About Us</span></a>
+                <a class="bg-althr-gold text-althr-navy px-6 py-2.5 rounded-full text-[14px] font-black tracking-normal uppercase transition-all hover:scale-105 hover:bg-white"
+                    data-i18n="nav.get_started" href="contact.html">Get
                     Started</a>
-
                 <!-- Language Selector -->
                 <div class="relative group ml-4">
                     <button
                         class="flex items-center gap-2 text-[12px] font-black tracking-normal hover:text-althr-gold transition-colors uppercase">
-                        <span class="material-symbols-outlined text-[18px]">language</span>
+                        <span class="material-symbols-outlined text-[18px]" data-i18n="industry.jewelry.language"
+                            translate="no">language</span>
                         <span id="current-lang">EN</span>
                     </button>
                     <div
@@ -170,95 +177,97 @@
                         <div class="frosted-glass p-4 rounded-xl border border-white/10 w-36 grid grid-cols-1 gap-3">
                             <button
                                 class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3"
-                                onclick="setLanguage('en')">
+                                data-i18n="privacy.english" data-lang="en">
                                 <span class="text-base">🇺🇸</span> English
                             </button>
                             <button
                                 class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3"
-                                onclick="setLanguage('pl')">
+                                data-i18n="privacy.polish" data-lang="pl">
                                 <span class="text-base">🇵🇱</span> Polish
                             </button>
                             <button
                                 class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3"
-                                onclick="setLanguage('de')">
+                                data-i18n="privacy.german" data-lang="de">
                                 <span class="text-base">🇩🇪</span> German
                             </button>
                             <button
                                 class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3"
-                                onclick="setLanguage('fr')">
+                                data-i18n="privacy.french" data-lang="fr">
                                 <span class="text-base">🇫🇷</span> French
                             </button>
                             <button
                                 class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3"
-                                onclick="setLanguage('es')">
+                                data-i18n="privacy.spanish" data-lang="es">
                                 <span class="text-base">🇪🇸</span> Spanish
                             </button>
                         </div>
                     </div>
                 </div>
             </nav>
-            <button id="open-menu" class="lg:hidden text-white"><span
-                    class="material-symbols-outlined">menu</span></button>
+            <button class="lg:hidden text-white" data-i18n="industry.jewelry.menu" id="open-menu"><span
+                    class="material-symbols-outlined" data-i18n="industry.jewelry.menu"
+                    translate="no">menu</span></button>
         </div>
     </header>
-
     <main class="relative overflow-x-hidden pt-20">
-
         <!-- Hero Section -->
-        <section class="min-h-[85vh] flex items-center px-6 md:px-12 py-20 relative">
+        <section class="min-h-[85vh] flex items-center px-6 md:px-12 py-20 relative overflow-hidden" id="hero-section">
             <div class="max-w-[1600px] mx-auto w-full grid lg:grid-cols-12 gap-12 items-center">
                 <div class="lg:col-span-8 space-y-10">
                     <div
                         class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm">
                         <span class="size-2 bg-althr-cyan rounded-full animate-pulse"></span>
-                        <span class="text-[14px] font-bold tracking-[0.05em] uppercase text-althr-cyan">Growth
+                        <span class="text-[14px] font-bold tracking-[0.05em] uppercase text-althr-cyan"
+                            data-i18n="index.hero.badge">Growth
                             Automation Systems Online</span>
                     </div>
                     <h1
                         class="text-6xl md:text-8xl lg:text-[9rem] font-black tracking-tighter leading-[0.9] text-white uppercase italic">
-                        Stop Managing.<br />
+                        <span data-i18n="hero.title_part1">Stop Managing.</span><br />
                         <span
-                            class="text-transparent bg-clip-text bg-gradient-to-r from-althr-gold via-althr-cyan to-white">Start
-                            Scaling.</span>
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-althr-gold via-althr-cyan to-white"
+                            data-i18n="hero.title_part2">Start Scaling.</span>
                     </h1>
                     <div class="max-w-2xl space-y-6">
                         <p
                             class="text-xl md:text-2xl text-slate-400 font-light leading-relaxed uppercase tracking-wide">
-                            Transform your business operations with <span
-                                class="text-white font-bold italic">Intelligent Automation</span>.
+                            <span data-i18n="hero.subtitle_part1">Transform your business operations with</span> <span
+                                class="text-white font-bold italic"><span
+                                    data-i18n="hero.subtitle_highlight">Intelligent Automation</span>.
+                            </span>
                         </p>
                         <p class="text-slate-500 text-lg">
-                            Manual processes are killing your growth potential. We design and implement custom systems
-                            that eliminate bottlenecks, reduce costs, and accelerate your business growth.
+                            <span data-i18n="index.hero.subtitle">Manual processes are killing your growth potential. We
+                                design and implement custom systems
+                                that eliminate bottlenecks, reduce costs, and accelerate your business growth.</span>
                         </p>
                     </div>
                     <div class="flex flex-wrap gap-6 pt-4">
-                        <a href="contact.html"
-                            class="bg-althr-cyan text-althr-navy font-black text-xs tracking-[0.05em] uppercase px-10 py-5 rounded-full transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(0,000,255,0.4)]">Start
+                        <a class="bg-althr-cyan text-althr-navy font-black text-xs tracking-[0.05em] uppercase px-10 py-5 rounded-full transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(0,000,255,0.4)]"
+                            data-i18n="common.start_growth" href="contact.html">Start
                             Your
                             Growth</a>
-                        <a href="results.html"
-                            class="group flex items-center gap-4 text-white font-bold text-xs tracking-[0.05em] uppercase hover:text-althr-gold transition-colors">
-                            <span>See Our Results</span>
+                        <a class="group flex items-center gap-4 text-white font-bold text-xs tracking-[0.05em] uppercase hover:text-althr-gold transition-colors"
+                            href="results.html">
+                            <span data-i18n="hero.cta_secondary">See Results</span>
                             <span
-                                class="material-symbols-outlined group-hover:translate-x-2 transition-transform font-light">arrow_forward</span>
+                                class="material-symbols-outlined group-hover:translate-x-2 transition-transform font-light"
+                                data-i18n="industry.jewelry.arrowforward" translate="no">arrow_forward</span>
                         </a>
                     </div>
                 </div>
-
-                <div class="lg:col-span-4 hidden lg:block relative">
+                <div class="lg:col-span-4 relative relative">
                     <div
                         class="frosted-glass p-12 rounded-[3.5rem] border border-white/10 relative overflow-hidden aspect-[4/5] flex flex-col justify-between group/card">
                         <div class="space-y-4">
                             <div class="flex justify-between items-start">
-                                <span
-                                    class="material-symbols-outlined text-4xl text-althr-gold animate-pulse">hub</span>
-                                <span
-                                    class="text-[13px] font-black tracking-widest text-slate-700 uppercase">SYS_CONTROL_01</span>
+                                <span class="material-symbols-outlined text-4xl text-althr-gold animate-pulse"
+                                    translate="no">hub</span>
+                                <span class="text-[13px] font-black tracking-widest text-slate-700 uppercase"
+                                    data-i18n="index.system_control_01">SYSTEM CONTROL 01</span>
                             </div>
                             <h3 class="font-black text-2xl uppercase italic text-white/90">Autonomous<br />Workflow</h3>
                         </div>
-
                         <!-- Animated Content -->
                         <div class="flex-grow flex items-center justify-center relative">
                             <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
@@ -288,19 +297,20 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="space-y-6 relative z-10">
                             <div class="h-px bg-white/10 w-full"></div>
                             <div class="grid grid-cols-2 gap-4">
                                 <div>
-                                    <p class="text-[14px] font-bold text-slate-500 uppercase tracking-widest">Efficiency
+                                    <p class="text-[14px] font-bold text-slate-500 uppercase tracking-widest"
+                                        data-i18n="index.efficiency_delta">Efficiency
                                         Delta</p>
-                                    <p class="text-2xl font-black text-althr-cyan">+320%</p>
+                                    <p class="text-2xl font-black text-althr-cyan" data-i18n="index.320">+320%</p>
                                 </div>
                                 <div>
-                                    <p class="text-[14px] font-bold text-slate-500 uppercase tracking-widest">Human
+                                    <p class="text-[14px] font-bold text-slate-500 uppercase tracking-widest"
+                                        data-i18n="index.human_latency">Human
                                         Latency</p>
-                                    <p class="text-2xl font-black text-althr-gold">- 94%</p>
+                                    <p class="text-2xl font-black text-althr-gold" data-i18n="index.94">- 94%</p>
                                 </div>
                             </div>
                         </div>
@@ -309,7 +319,6 @@
                     </div>
                 </div>
             </div>
-
             <div
                 class="absolute top-1/4 -right-20 size-[600px] bg-althr-gold/5 blur-[120px] rounded-full pointer-events-none">
             </div>
@@ -317,55 +326,66 @@
                 class="absolute bottom-1/4 -left-20 size-[600px] bg-althr-cyan/5 blur-[120px] rounded-full pointer-events-none">
             </div>
         </section>
-
         <!-- Problem Diagnostic Section -->
         <section class="px-6 md:px-12 py-32 relative border-t border-white/5 bg-white/[0.01]">
             <div class="max-w-[1600px] mx-auto">
                 <div class="grid lg:grid-cols-2 gap-20 items-center">
                     <div class="space-y-12">
-                        <span class="text-althr-gold font-bold tracking-normal uppercase text-xs">Efficiency
+                        <span class="text-althr-gold font-bold tracking-normal uppercase text-xs"
+                            data-i18n="contact.form.option_audit">Efficiency
                             Audit</span>
                         <h2
                             class="text-5xl md:text-7xl font-black tracking-tighter text-white uppercase italic leading-none">
-                            The Cost of <br /> <span class="text-slate-500">Manual Drag</span>
+                            <span data-i18n="global.cost_of_manual"><span data-i18n="index.diagnostic.title">The Cost
+                                    of</span></span> <br /> <span class="text-slate-500"
+                                data-i18n="services.manual_drag">Manual Drag</span>
                         </h2>
                         <div class="space-y-10">
                             <div class="flex gap-8 items-start group">
                                 <div
                                     class="bg-red-500/10 p-4 rounded-xl text-red-500 border border-red-500/20 group-hover:bg-red-500/20 transition-colors">
-                                    <span class="material-symbols-outlined">person_off</span>
+                                    <span class="material-symbols-outlined" data-i18n="index.personoff"
+                                        translate="no">person_off</span>
                                 </div>
                                 <div class="space-y-2">
-                                    <h4 class="font-bold text-white uppercase tracking-widest">Acquisition Bottlenecks
+                                    <h4 class="font-bold text-white uppercase tracking-widest"
+                                        data-i18n="index.diagnostic.heading_1">Acquisition Bottlenecks
                                     </h4>
-                                    <p class="text-slate-400 leading-relaxed uppercase text-xs tracking-wider max-w-md">
-                                        Manual lead handling results in 60% drop-off rates and missed connections with
+                                    <p class="text-slate-400 leading-relaxed uppercase text-xs tracking-wider max-w-md"
+                                        data-i18n="index.diagnostic.desc_1">Manual lead handling results in 60% drop-off
+                                        rates and missed connections with
                                         high-value prospects.</p>
                                 </div>
                             </div>
                             <div class="flex gap-8 items-start group">
                                 <div
                                     class="bg-red-500/10 p-4 rounded-xl text-red-500 border border-red-500/20 group-hover:bg-red-500/20 transition-colors">
-                                    <span class="material-symbols-outlined">running_with_errors</span>
+                                    <span class="material-symbols-outlined" data-i18n="index.runningwitherrors"
+                                        translate="no">running_with_errors</span>
                                 </div>
                                 <div class="space-y-2">
-                                    <h4 class="font-bold text-white uppercase tracking-widest">Operational Inefficiency
+                                    <h4 class="font-bold text-white uppercase tracking-widest"
+                                        data-i18n="index.diagnostic.heading_2">Operational Inefficiency
                                     </h4>
-                                    <p class="text-slate-400 leading-relaxed uppercase text-xs tracking-wider max-w-md">
-                                        Team members spending 40% of their bandwidth on repetitive tasks instead of
+                                    <p class="text-slate-400 leading-relaxed uppercase text-xs tracking-wider max-w-md"
+                                        data-i18n="index.diagnostic.desc_2">Team members spending 40% of their bandwidth
+                                        on repetitive tasks instead of
                                         strategic growth initiatives.</p>
                                 </div>
                             </div>
                             <div class="flex gap-8 items-start group">
                                 <div
                                     class="bg-red-500/10 p-4 rounded-xl text-red-500 border border-red-500/20 group-hover:bg-red-500/20 transition-colors">
-                                    <span class="material-symbols-outlined">bar_chart_off</span>
+                                    <span class="material-symbols-outlined" data-i18n="index.barchartoff"
+                                        translate="no">bar_chart_off</span>
                                 </div>
                                 <div class="space-y-2">
-                                    <h4 class="font-bold text-white uppercase tracking-widest">Marketing Limitations
+                                    <h4 class="font-bold text-white uppercase tracking-widest"
+                                        data-i18n="index.diagnostic.heading_3">Marketing Limitations
                                     </h4>
-                                    <p class="text-slate-400 leading-relaxed uppercase text-xs tracking-wider max-w-md">
-                                        Disconnected data silos prevent cross-channel visibility and effective scaling
+                                    <p class="text-slate-400 leading-relaxed uppercase text-xs tracking-wider max-w-md"
+                                        data-i18n="index.diagnostic.desc_3">Disconnected data silos prevent
+                                        cross-channel visibility and effective scaling
                                         of marketing spend.</p>
                                 </div>
                             </div>
@@ -377,8 +397,8 @@
                             <div class="relative z-10 space-y-10">
                                 <div
                                     class="flex justify-between items-center text-[14px] font-black tracking-[0.05em] uppercase text-slate-500">
-                                    <span>EFFICIENCY_ADVISORY</span>
-                                    <span class="text-red-500">GROWTH_BLOCK</span>
+                                    <span data-i18n="index.efficiency_advisory">EFFICIENCY ADVISORY</span>
+                                    <span class="text-red-500" data-i18n="index.growth_block">GROWTH BLOCK</span>
                                 </div>
                                 <div class="space-y-4">
                                     <div class="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
@@ -386,14 +406,16 @@
                                         </div>
                                     </div>
                                     <div class="flex justify-between text-[13px] font-bold uppercase tracking-widest">
-                                        <span class="text-red-500">Process Waste Index</span>
-                                        <span class="text-slate-500">94 / 100</span>
+                                        <span class="text-red-500" data-i18n="index.process_waste_index">Process Waste
+                                            Index</span>
+                                        <span class="text-slate-500" data-i18n="index.94_100">94 / 100</span>
                                     </div>
                                 </div>
                                 <p
                                     class="text-slate-500 text-sm uppercase leading-loose italic font-light tracking-wide">
-                                    "Businesses using legacy manual workflows face a 400% higher operational
-                                    cost-per-lead compared to automated competitors."
+                                    <span data-i18n="index.diagnostic.quote">"Businesses using legacy manual workflows
+                                        face a 400% higher operational
+                                        cost-per-lead compared to automated competitors."</span>
                                 </p>
                             </div>
                         </div>
@@ -401,144 +423,165 @@
                 </div>
             </div>
         </section>
-
         <!-- Solution Matrix Section -->
         <section class="px-6 md:px-12 py-32 border-t border-white/5">
             <div class="max-w-[1600px] mx-auto space-y-24">
                 <div class="text-center space-y-6 max-w-3xl mx-auto">
-                    <span class="text-althr-cyan font-bold tracking-normal uppercase text-xs">Intelligence
+                    <span class="text-althr-cyan font-bold tracking-normal uppercase text-xs"
+                        data-i18n="index.solutions.framework">Intelligence
                         Framework</span>
                     <h2 class="text-5xl md:text-7xl font-black tracking-tighter text-white uppercase italic">
-                        Strategic <span
-                            class="text-althr-gold underline decoration-white/20 underline-offset-8">Solutions</span>
+                        <span data-i18n="index.solutions.title">Strategic</span> <span
+                            class="text-althr-gold underline decoration-white/20 underline-offset-8"
+                            data-i18n="index.solutions.subtitle">Solutions</span>
                     </h2>
-                    <p class="text-slate-500 text-lg uppercase tracking-widest">Custom automation solutions
+                    <p class="text-slate-500 text-lg uppercase tracking-widest" data-i18n="index.solutions.desc">Custom
+                        automation solutions
                         tailored for serious business owners.</p>
                 </div>
-
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <!-- Srv 1 -->
                     <div
-                        class="frosted-glass p-10 rounded-3xl border border-white/5 space-y-8 group hover:bg-white/[0.04] transition-all relative overflow-hidden">
+                        class="frosted-glass p-10 rounded-3xl border border-white/5 space-y-8 group hover:bg-white/[0.04] transition-all relative overflow-hidden has-bg-asset asset-logic">
                         <div
                             class="absolute top-0 left-0 w-1 h-0 group-hover:h-full bg-althr-cyan transition-all duration-700">
                         </div>
                         <span
-                            class="material-symbols-outlined text-althr-cyan text-4xl group-hover:scale-110 transition-transform duration-500">database</span>
-                        <h4 class="font-black text-lg uppercase tracking-widest text-white">CRM Architecture</h4>
-                        <p class="text-slate-500 text-[13px] leading-relaxed uppercase tracking-wider font-medium">
+                            class="material-symbols-outlined text-althr-cyan text-4xl group-hover:scale-110 transition-transform duration-500"
+                            data-i18n="services.database" translate="no">database</span>
+                        <h4 class="font-black text-lg uppercase tracking-widest text-white"
+                            data-i18n="industry.jewelry.crm_architecture"><span data-i18n="services.crm">CRM
+                                Architecture</span></h4>
+                        <p class="text-slate-500 text-[13px] leading-relaxed uppercase tracking-wider font-medium"
+                            data-i18n="index.automate_acquisition_and_retention_cycles">
                             Automate acquisition and retention cycles. Sync 200+ platforms in real-time.</p>
                         <ul class="space-y-3 text-[13px] font-bold tracking-widest text-slate-400 uppercase">
-                            <li class="flex items-center gap-3"><span
+                            <li class="flex items-center gap-3" data-i18n="services.lead_lifecycle_automation"><span
                                     class="size-1.5 bg-althr-cyan rounded-full"></span> Lead Lifecycle Automation</li>
-                            <li class="flex items-center gap-3"><span
+                            <li class="flex items-center gap-3" data-i18n="services.zeroinput_data_entry"><span
                                     class="size-1.5 bg-althr-cyan rounded-full"></span> Zero-Input Data Entry</li>
-                            <li class="flex items-center gap-3"><span
+                            <li class="flex items-center gap-3" data-i18n="services.predictive_personalization"><span
                                     class="size-1.5 bg-althr-cyan rounded-full"></span> Predictive Personalization</li>
                         </ul>
                     </div>
                     <!-- Srv 2 -->
                     <div
-                        class="frosted-glass p-10 rounded-3xl border border-white/5 space-y-8 group hover:bg-white/[0.04] transition-all relative overflow-hidden">
+                        class="frosted-glass p-10 rounded-3xl border border-white/5 space-y-8 group hover:bg-white/[0.04] transition-all relative overflow-hidden has-bg-asset asset-logic">
                         <div
                             class="absolute top-0 left-0 w-1 h-0 group-hover:h-full bg-althr-gold transition-all duration-700">
                         </div>
                         <span
-                            class="material-symbols-outlined text-althr-gold text-4xl group-hover:scale-110 transition-transform duration-500">campaign</span>
-                        <h4 class="font-black text-lg uppercase tracking-widest text-white">Marketing Ops</h4>
-                        <p class="text-slate-500 text-[13px] leading-relaxed uppercase tracking-wider font-medium">End
+                            class="material-symbols-outlined text-althr-gold text-4xl group-hover:scale-110 transition-transform duration-500"
+                            data-i18n="services.campaign" translate="no">campaign</span>
+                        <h4 class="font-black text-lg uppercase tracking-widest text-white"
+                            data-i18n="index.marketing_ops">Marketing Ops</h4>
+                        <p class="text-slate-500 text-[13px] leading-relaxed uppercase tracking-wider font-medium"
+                            data-i18n="index.end_the_fragmentation_centralize_campaign">End
                             the fragmentation. Centralize campaign logistics and budget allocation.</p>
                         <ul class="space-y-3 text-[13px] font-bold tracking-widest text-slate-400 uppercase">
-                            <li class="flex items-center gap-3"><span
+                            <li class="flex items-center gap-3" data-i18n="services.campaign_routing_logic"><span
                                     class="size-1.5 bg-althr-gold rounded-full"></span> Campaign Routing Logic</li>
-                            <li class="flex items-center gap-3"><span
+                            <li class="flex items-center gap-3" data-i18n="services.autoscaling_budgets"><span
                                     class="size-1.5 bg-althr-gold rounded-full"></span> Auto-Scaling Budgets</li>
-                            <li class="flex items-center gap-3"><span
+                            <li class="flex items-center gap-3" data-i18n="services.multichannel_intelligence"><span
                                     class="size-1.5 bg-althr-gold rounded-full"></span> Multichannel Intelligence</li>
                         </ul>
                     </div>
                     <!-- Srv 3 -->
                     <div
-                        class="frosted-glass p-10 rounded-3xl border border-white/5 space-y-8 group hover:bg-white/[0.04] transition-all relative overflow-hidden">
+                        class="frosted-glass p-10 rounded-3xl border border-white/5 space-y-8 group hover:bg-white/[0.04] transition-all relative overflow-hidden has-bg-asset asset-logic">
                         <div
                             class="absolute top-0 left-0 w-1 h-0 group-hover:h-full bg-althr-cyan transition-all duration-700">
                         </div>
                         <span
-                            class="material-symbols-outlined text-althr-cyan text-4xl group-hover:scale-110 transition-transform duration-500">payments</span>
-                        <h4 class="font-black text-lg uppercase tracking-widest text-white">Sales Pipeline</h4>
-                        <p class="text-slate-500 text-[13px] leading-relaxed uppercase tracking-wider font-medium">AI
+                            class="material-symbols-outlined text-althr-cyan text-4xl group-hover:scale-110 transition-transform duration-500"
+                            data-i18n="industry.jewelry.payments" translate="no">payments</span>
+                        <h4 class="font-black text-lg uppercase tracking-widest text-white"
+                            data-i18n="industry.jewelry.sales_pipeline"><span data-i18n="services.sales">Sales
+                                Pipeline</span></h4>
+                        <p class="text-slate-500 text-[13px] leading-relaxed uppercase tracking-wider font-medium"
+                            data-i18n="index.ai_sequences_that_feel_human">AI
                             sequences that feel human. Move leads through the funnel with precision.</p>
                         <ul class="space-y-3 text-[13px] font-bold tracking-widest text-slate-400 uppercase">
-                            <li class="flex items-center gap-3"><span
-                                    class="size-1.5 bg-althr-cyan rounded-full"></span> Strategic Follow-up Logic</li>
-                            <li class="flex items-center gap-3"><span
+                            <li class="flex items-center gap-3" data-i18n="services.strategic_followup_logic"><span
+                                    class="size-1.5 bg-althr-cyan rounded-full"></span> <span
+                                    data-i18n="index.solutions.title">Strategic</span> Follow-up Logic</li>
+                            <li class="flex items-center gap-3" data-i18n="services.appointment_autopilot"><span
                                     class="size-1.5 bg-althr-cyan rounded-full"></span> Appointment Autopilot</li>
-                            <li class="flex items-center gap-3"><span
+                            <li class="flex items-center gap-3" data-i18n="services.dynamic_offer_gen"><span
                                     class="size-1.5 bg-althr-cyan rounded-full"></span> Dynamic Offer Gen</li>
                         </ul>
                     </div>
                     <!-- Srv 4 -->
                     <div
-                        class="frosted-glass p-10 rounded-3xl border border-white/5 space-y-8 group hover:bg-white/[0.04] transition-all relative overflow-hidden">
+                        class="frosted-glass p-10 rounded-3xl border border-white/5 space-y-8 group hover:bg-white/[0.04] transition-all relative overflow-hidden has-bg-asset asset-logic">
                         <div
                             class="absolute top-0 left-0 w-1 h-0 group-hover:h-full bg-althr-gold transition-all duration-700">
                         </div>
                         <span
-                            class="material-symbols-outlined text-althr-gold text-4xl group-hover:scale-110 transition-transform duration-500">settings_accessibility</span>
-                        <h4 class="font-black text-lg uppercase tracking-widest text-white">Operational Flow</h4>
-                        <p class="text-slate-500 text-[13px] leading-relaxed uppercase tracking-wider font-medium">The
+                            class="material-symbols-outlined text-althr-gold text-4xl group-hover:scale-110 transition-transform duration-500"
+                            data-i18n="services.settingsaccessibility" translate="no">settings_accessibility</span>
+                        <h4 class="font-black text-lg uppercase tracking-widest text-white"
+                            data-i18n="industry.jewelry.operational_flow"><span data-i18n="services.ops">Operational
+                                Flow</span></h4>
+                        <p class="text-slate-500 text-[13px] leading-relaxed uppercase tracking-wider font-medium"
+                            data-i18n="index.the_backbone_of_business_automate">The
                             backbone of business. Automate internal comms and reporting.</p>
                         <ul class="space-y-3 text-[13px] font-bold tracking-widest text-slate-400 uppercase">
-                            <li class="flex items-center gap-3"><span
+                            <li class="flex items-center gap-3" data-i18n="services.crossdepartmental_sync"><span
                                     class="size-1.5 bg-althr-gold rounded-full"></span> Cross-Departmental Sync</li>
-                            <li class="flex items-center gap-3"><span
+                            <li class="flex items-center gap-3" data-i18n="services.anomaly_detection"><span
                                     class="size-1.5 bg-althr-gold rounded-full"></span> Anomaly Detection</li>
-                            <li class="flex items-center gap-3"><span
+                            <li class="flex items-center gap-3" data-i18n="services.pl_intelligence"><span
                                     class="size-1.5 bg-althr-gold rounded-full"></span> P&amp;L Intelligence</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
-
         <!-- Stats / Proof Section -->
         <section class="px-6 md:px-12 py-32 relative">
             <div class="max-w-[1600px] mx-auto space-y-24">
                 <div class="grid lg:grid-cols-3 gap-8">
                     <div
                         class="frosted-glass p-12 rounded-[2.5rem] border border-white/10 text-center space-y-4 group hover:border-althr-gold transition-colors">
-                        <p class="text-[14px] font-black tracking-normal text-slate-500 uppercase">Processing Speed
+                        <p class="text-[14px] font-black tracking-normal text-slate-500 uppercase"
+                            data-i18n="index.stats.speed">Processing Speed
                         </p>
                         <p
                             class="text-7xl font-black text-white italic tracking-tighter group-hover:text-althr-gold transition-colors">
                             10X</p>
-                        <p class="text-slate-400 text-[14px] font-black leading-relaxed uppercase tracking-normal">
+                        <p class="text-slate-400 text-[14px] font-black leading-relaxed uppercase tracking-normal"
+                            data-i18n="index.stats.speed_desc">
                             Accelerated processing speed for clients.</p>
                     </div>
                     <div
                         class="frosted-glass p-12 rounded-[2.5rem] border border-white/10 text-center space-y-4 group hover:border-althr-cyan transition-colors">
-                        <p class="text-[14px] font-black tracking-normal text-slate-500 uppercase">System Reliability
+                        <p class="text-[14px] font-black tracking-normal text-slate-500 uppercase"
+                            data-i18n="index.stats.reliability">System Reliability
                         </p>
                         <p
                             class="text-7xl font-black text-white italic tracking-tighter group-hover:text-althr-cyan transition-colors">
                             95%</p>
-                        <p class="text-slate-400 text-[14px] font-black leading-relaxed uppercase tracking-normal">Full
+                        <p class="text-slate-400 text-[14px] font-black leading-relaxed uppercase tracking-normal"
+                            data-i18n="index.stats.reliability_desc">Full
                             automation adoption across teams.</p>
                     </div>
                     <div
                         class="frosted-glass p-12 rounded-[2.5rem] border border-white/10 text-center space-y-4 group hover:border-althr-gold transition-colors">
-                        <p class="text-[14px] font-black tracking-normal text-slate-500 uppercase">Data Precision</p>
+                        <p class="text-[14px] font-black tracking-normal text-slate-500 uppercase"
+                            data-i18n="index.stats.precision">Data Precision</p>
                         <p
                             class="text-7xl font-black text-white italic tracking-tighter group-hover:text-althr-gold transition-colors">
                             87%</p>
-                        <p class="text-slate-400 text-[14px] font-black leading-relaxed uppercase tracking-normal">
+                        <p class="text-slate-400 text-[14px] font-black leading-relaxed uppercase tracking-normal"
+                            data-i18n="index.stats.precision_desc">
                             Accuracy in predictive market models.</p>
                     </div>
                 </div>
-
                 <!-- Track Record Reframe -->
                 <div
-                    class="frosted-glass p-12 md:p-24 rounded-[4rem] border border-white/5 relative overflow-hidden group">
+                    class="frosted-glass p-12 md:p-24 rounded-[4rem] border border-white/5 relative overflow-hidden group has-bg-asset asset-demand">
                     <div
                         class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-althr-cyan/5 blur-[120px] rounded-full group-hover:bg-althr-cyan/10 transition-colors">
                     </div>
@@ -546,31 +589,42 @@
                         <div class="space-y-10">
                             <h3
                                 class="text-4xl md:text-6xl font-black text-white uppercase italic tracking-tighter leading-none">
-                                Proven Under <br /><span class="text-althr-cyan">High Demand</span></h3>
+                                <span data-i18n="index.track.title">Proven Under</span> <br /><span
+                                    class="text-althr-cyan" data-i18n="index.track.highlight">High Demand</span>
+                            </h3>
                             <p
                                 class="text-slate-400 text-lg uppercase tracking-wide leading-relaxed font-light font-display">
-                                Our engineering foundation in high-frequency algorithmic systems means your business
-                                automation is built on the most robust, fail-safe architecture available globally.
+                                <span data-i18n="index.track.desc">Our engineering foundation in high-frequency
+                                    algorithmic systems means your business
+                                    automation is built on the most robust, fail-safe architecture available
+                                    globally.</span>
                             </p>
-                            <a href="results.html"
-                                class="inline-flex items-center gap-6 bg-white/5 border border-white/10 text-white font-black text-xs tracking-normal uppercase px-10 py-5 rounded-full hover:bg-white/10 transition-all">
-                                <span>Browse Case Studies</span>
-                                <span class="material-symbols-outlined text-sm font-light">arrow_forward</span>
+                            <a class="inline-flex items-center gap-6 bg-white/5 border border-white/10 text-white font-black text-xs tracking-normal uppercase px-10 py-5 rounded-full hover:bg-white/10 transition-all"
+                                href="results.html">
+                                <span data-i18n="common.browse_results">Browse Results</span>
+                                <span class="material-symbols-outlined text-sm font-light"
+                                    data-i18n="industry.jewelry.arrowforward" translate="no">arrow_forward</span>
                             </a>
                         </div>
-                        <div class="grid grid-cols-2 gap-6 text-white/80">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-white/80">
                             <div class="bg-white/5 p-8 rounded-3xl border border-white/5 space-y-4">
-                                <span class="material-symbols-outlined text-althr-gold text-3xl">terminal</span>
-                                <p class="text-[14px] font-black uppercase tracking-widest text-white/90">Algorithmic
+                                <span class="material-symbols-outlined text-althr-gold text-3xl"
+                                    data-i18n="index.terminal" translate="no">terminal</span>
+                                <p class="text-[14px] font-black uppercase tracking-widest text-white/90"
+                                    data-i18n="index.track.feat_1_title">Algorithmic
                                     Precision</p>
-                                <p class="text-[13px] text-slate-500 uppercase tracking-widest">Fail-safe logic for
+                                <p class="text-[13px] text-slate-500 uppercase tracking-widest"
+                                    data-i18n="index.track.feat_1_desc">Fail-safe logic for
                                     high-stakes ROI environments.</p>
                             </div>
                             <div class="bg-white/5 p-8 rounded-3xl border border-white/5 space-y-4">
-                                <span class="material-symbols-outlined text-althr-cyan text-3xl">speed</span>
-                                <p class="text-[14px] font-black uppercase tracking-widest text-white/90">Execution
+                                <span class="material-symbols-outlined text-althr-cyan text-3xl" data-i18n="about.speed"
+                                    translate="no">speed</span>
+                                <p class="text-[14px] font-black uppercase tracking-widest text-white/90"
+                                    data-i18n="index.track.feat_2_title">Execution
                                     Velocity</p>
-                                <p class="text-[13px] text-slate-500 uppercase tracking-widest">Real-time data
+                                <p class="text-[13px] text-slate-500 uppercase tracking-widest"
+                                    data-i18n="index.track.feat_2_desc">Real-time data
                                     orchestration across distributed grids.</p>
                             </div>
                         </div>
@@ -578,179 +632,213 @@
                 </div>
             </div>
         </section>
-
         <!-- CTA Final -->
-        <section class="px-6 md:px-12 py-48 text-center relative overflow-hidden">
+        <section class="px-6 md:px-12 py-48 text-center relative overflow-hidden has-bg-asset asset-growth">
             <div class="absolute inset-0 bg-althr-gold/5 blur-[150px] rounded-full scale-75 opacity-20"></div>
             <div class="max-w-4xl mx-auto space-y-14 relative z-10">
                 <h2 class="text-6xl md:text-9xl font-black tracking-tighter uppercase italic text-white leading-none">
-                    Unshackle <br /> <span class="text-althr-cyan">Your Growth.</span>
+                    <span data-i18n="index.cta.title">Unshackle</span> <br /> <span class="text-althr-cyan"
+                        data-i18n="index.cta.highlight">Your Growth.</span>
                 </h2>
                 <div class="flex flex-wrap justify-center gap-8">
-                    <a href="contact.html"
-                        class="bg-althr-gold text-althr-navy font-black text-sm tracking-normal uppercase px-14 py-6 rounded-full transition-all hover:scale-110 hover:shadow-[0_0_60px_rgba(212,000,55,0.4)]">Talk
+                    <a class="bg-althr-gold text-althr-navy font-black text-sm tracking-normal uppercase px-14 py-6 rounded-full transition-all hover:scale-110 hover:shadow-[0_0_60px_rgba(212,000,55,0.4)]"
+                        data-i18n="common.talk_expert" href="contact.html">Talk
                         to an
                         Expert</a>
-                    <a href="services.html"
-                        class="bg-white/5 border border-white/20 text-white font-black text-sm tracking-normal uppercase px-14 py-6 rounded-full hover:bg-white/10 transition-all">Explore
+                    <a class="bg-white/5 border border-white/20 text-white font-black text-sm tracking-normal uppercase px-14 py-6 rounded-full hover:bg-white/10 transition-all"
+                        data-i18n="common.explore_solutions" href="services.html">Explore
                         Solutions</a>
                 </div>
             </div>
         </section>
-
     </main>
-
     <footer class="bg-althr-navy border-t border-white/10 py-24 px-6 md:px-12 relative z-20">
         <div class="max-w-[1600px] mx-auto">
             <div class="grid lg:grid-cols-5 gap-10">
                 <div class="space-y-10">
                     <div class="flex items-center gap-3 group">
                         <div class="size-10 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                            <img src="logo.png" alt="ALTHR" class="w-full h-full object-contain">
+                            <img alt="ALTHR" class="w-full h-full object-contain" src="logo.png" />
                         </div>
-                        <span class="font-black text-2xl tracking-tighter uppercase text-white">ALTHR</span>
+                        <span class="font-black text-2xl tracking-tighter uppercase text-white"
+                            data-i18n="industry.jewelry.althr">ALTHR</span>
                     </div>
-                    <p class="text-slate-400 text-[14px] font-medium leading-relaxed max-w-xs">
+                    <p class="text-slate-400 text-[14px] font-medium leading-relaxed max-w-xs" data-i18n="footer.desc">
                         Transforming complexity into automated simplicity through high-end engineering and strategic
                         logic systems.
                     </p>
                 </div>
-
                 <div>
-                    <h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12">Services
+                    <h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12"><span
+                            data-i18n="nav.services">Services</span>
                     </h5>
                     <ul class="space-y-4 text-[14px] font-medium text-slate-400">
-                        <li><a href="services.html" class="hover:text-althr-gold transition-colors">CRM Automation</a>
+                        <li data-i18n="industry.jewelry.crm_automation"><a
+                                class="hover:text-althr-gold transition-colors"
+                                data-i18n="industry.jewelry.crm_automation" href="services.html">CRM Automation</a>
                         </li>
-                        <li><a href="services.html" class="hover:text-althr-gold transition-colors">Marketing Logic</a>
+                        <li data-i18n="industry.jewelry.marketing_logic"><a
+                                class="hover:text-althr-gold transition-colors"
+                                data-i18n="industry.jewelry.marketing_logic" href="services.html">Marketing Logic</a>
                         </li>
-                        <li><a href="intelligence.html" class="hover:text-althr-gold transition-colors">Advanced
+                        <li data-i18n="industry.jewelry.advanced_analytics"><a
+                                class="hover:text-althr-gold transition-colors"
+                                data-i18n="industry.jewelry.advanced_analytics" href="intelligence.html">Advanced
                                 Analytics</a></li>
-                        <li><a href="services.html" class="hover:text-althr-gold transition-colors">Fulfillment Ops</a>
+                        <li data-i18n="industry.jewelry.fulfillment_ops"><a
+                                class="hover:text-althr-gold transition-colors"
+                                data-i18n="industry.jewelry.fulfillment_ops" href="services.html">Fulfillment Ops</a>
                         </li>
                     </ul>
                 </div>
-
                 <div>
-                    <h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12">Industries
+                    <h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12"><span
+                            data-i18n="nav.industries">Industries</span>
                     </h5>
                     <ul class="space-y-4 text-[14px] font-medium text-slate-400">
-                        <li><a href="industry/jewelry.html" class="hover:text-althr-gold transition-colors">Jewelry &
+                        <li data-i18n="industry.jewelry.jewelry_watch"><a
+                                class="hover:text-althr-gold transition-colors" data-i18n="industries.jewelry"
+                                href="industry/jewelry.html">Jewelry &amp;
                                 Watch</a></li>
-                        <li><a href="industry/furniture.html" class="hover:text-althr-gold transition-colors">Furniture
-                                & Decor</a></li>
-                        <li><a href="industry/grocery.html" class="hover:text-althr-gold transition-colors">Grocery</a>
+                        <li data-i18n="industry.jewelry.furniture_decor"><a
+                                class="hover:text-althr-gold transition-colors" data-i18n="industries.furniture"
+                                href="industry/furniture.html">Furniture
+                                &amp; Decor</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" href="industry/grocery.html"><span
+                                    data-i18n="industries.grocery">Grocery</span></a>
                         </li>
-                        <li><a href="industry/fashion.html" class="hover:text-althr-gold transition-colors">Fashion</a>
+                        <li data-i18n="industry.jewelry.fashion"><a class="hover:text-althr-gold transition-colors"
+                                data-i18n="industry.jewelry.fashion" href="industry/fashion.html">Fashion</a>
                         </li>
                     </ul>
                 </div>
-
                 <div>
-                    <h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12">Quick Links</h5>
+                    <h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12"
+                        data-i18n="industry.jewelry.quick_links">Quick Links</h5>
                     <ul class="space-y-4 text-[14px] font-medium text-slate-400">
-                        <li><a href="about.html" class="hover:text-althr-gold transition-colors">Our Story</a></li>
-                        <li><a href="results.html" class="hover:text-althr-gold transition-colors">Results</a>
+                        <li><a class="hover:text-althr-gold transition-colors" href="about.html"><span
+                                    data-i18n="footer.story">Our Story</span></a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" href="results.html"><span
+                                    data-i18n="nav.results">Results</span></a>
                         </li>
-                        <li><a href="contact.html" class="hover:text-althr-gold transition-colors">Contact Us</a></li>
-                        <li><a href="privacy.html" class="hover:text-althr-gold transition-colors">Privacy Protocol</a>
+                        <li><a class="hover:text-althr-gold transition-colors" href="contact.html"><span
+                                    data-i18n="footer.contact">Contact Us</span></a></li>
+                        <li data-i18n="industry.jewelry.privacy_protocol"><a
+                                class="hover:text-althr-gold transition-colors"
+                                data-i18n="industry.jewelry.privacy_protocol" href="privacy.html"><span
+                                    data-i18n="footer.privacy">Privacy Protocol</span></a>
                         </li>
                     </ul>
                 </div>
-
                 <div class="space-y-10">
-                    <h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12">Pulse Status</h5>
+                    <h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12"><span
+                            data-i18n="footer.pulse">Pulse Status</span></h5>
                     <div class="p-8 bg-white/5 border border-white/10 rounded-[2rem] flex items-center gap-6">
                         <div
                             class="size-2.5 bg-althr-cyan rounded-full animate-pulse shadow-[0_0_15px_rgba(0,000,255,0.7)]">
                         </div>
-                        <span class="text-[12px] font-bold text-althr-cyan uppercase tracking-wider">Systems
+                        <span class="text-[12px] font-bold text-althr-cyan uppercase tracking-wider"
+                            data-i18n="common.systems_ready">Systems
                             Ready</span>
                     </div>
                 </div>
             </div>
-
             <div
                 class="mt-32 pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[12px] text-slate-500 font-medium">
-                <p>© 2026 ALTHR AGENCY SYSTEMS. SYSTEM_ID: GLOBAL-01</p>
+                <p data-i18n="industry.jewelry.2026_althr_agency_systems_european">© 2026 ALTHR AGENCY SYSTEMS |
+                    EUROPEAN HQ: POLAND. SYSTEM ID: GLOBAL-01</p>
                 <div class="flex gap-12">
-                    <a href="privacy.html#privacy" class="hover:text-althr-gold transition-colors">Privacy</a>
-                    <a href="privacy.html#terms" class="hover:text-althr-gold transition-colors">Terms</a>
-                    <a href="privacy.html#sla" class="hover:text-althr-gold transition-colors">SLA</a>
+                    <a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.privacy"
+                        href="privacy.html#privacy">Privacy</a>
+                    <a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.terms"
+                        href="privacy.html#terms">Terms</a>
+                    <a class="hover:text-althr-gold transition-colors" href="privacy.html#sla">SLA</a>
                 </div>
             </div>
         </div>
     </footer>
-
     <!-- Mobile Menu -->
-    <div id="mobile-menu"
-        class="fixed inset-0 z-[100] bg-althr-navy/95 backdrop-blur-2xl translate-x-full transition-transform duration-500 lg:hidden">
+    <div class="fixed inset-0 z-[100] bg-althr-navy/95 backdrop-blur-2xl translate-x-full transition-transform duration-500 lg:hidden"
+        id="mobile-menu">
         <div class="flex flex-col h-full p-8 relative">
-            <button id="close-menu"
-                class="absolute top-8 right-8 text-white/50 hover:text-althr-gold transition-colors">
-                <span class="material-symbols-outlined text-4xl">close</span>
+            <button class="absolute top-8 right-8 text-white/50 hover:text-althr-gold transition-colors"
+                data-i18n="industry.jewelry.close" id="close-menu">
+                <span class="material-symbols-outlined text-4xl" data-i18n="industry.jewelry.close"
+                    translate="no">close</span>
             </button>
             <div class="mb-16">
                 <div class="flex items-center gap-3">
-                    <img src="logo.png" alt="ALTHR" class="size-10 object-contain">
-                    <span class="font-black text-2xl tracking-tighter uppercase text-white">ALTHR</span>
+                    <img alt="ALTHR" class="size-10 object-contain" src="logo.png" />
+                    <span class="font-black text-2xl tracking-tighter uppercase text-white"
+                        data-i18n="industry.jewelry.althr">ALTHR</span>
                 </div>
             </div>
-
             <div class="flex gap-4 mb-10 border-b border-white/10 pb-10">
-                <button onclick="setLanguage('en')"
-                    class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all">🇺🇸</button>
-                <button onclick="setLanguage('pl')"
-                    class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all">🇵🇱</button>
-                <button onclick="setLanguage('de')"
-                    class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all">🇩🇪</button>
-                <button onclick="setLanguage('fr')"
-                    class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all">🇫🇷</button>
-                <button onclick="setLanguage('es')"
-                    class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all">🇪🇸</button>
+                <button
+                    class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all"
+                    data-lang="en">🇺🇸</button>
+                <button
+                    class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all"
+                    data-lang="pl">🇵🇱</button>
+                <button
+                    class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all"
+                    data-lang="de">🇩🇪</button>
+                <button
+                    class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all"
+                    data-lang="fr">🇫🇷</button>
+                <button
+                    class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all"
+                    data-lang="es">🇪🇸</button>
             </div>
             <nav class="flex flex-col gap-10">
-                <a href="index.html" class="group flex items-end gap-4">
+                <a class="group flex items-end gap-4" href="index.html">
                     <span class="text-althr-gold font-mono text-xs mb-2">01</span>
                     <span
-                        class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic">Home</span>
+                        class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"
+                        data-i18n="industry.jewelry.home">Home</span>
                 </a>
-                <a href="services.html" class="group flex items-end gap-4">
+                <a class="group flex items-end gap-4" href="services.html">
                     <span class="text-althr-gold font-mono text-xs mb-2">02</span>
                     <span
-                        class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic">Services</span>
-                </a>
-                <a href="intelligence.html" class="group flex items-end gap-4">
+                        class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"><span
+                            data-i18n="nav.services">Services</span>
+                    </span></a>
+                <a class="group flex items-end gap-4" href="intelligence.html">
                     <span class="text-althr-gold font-mono text-xs mb-2">03</span>
                     <span
-                        class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic">Tech</span>
+                        class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"
+                        data-i18n="industry.jewelry.tech">Tech</span>
                 </a>
-                <a href="results.html" class="group flex items-end gap-4">
+                <a class="group flex items-end gap-4" href="results.html">
                     <span class="text-althr-gold font-mono text-xs mb-2">04</span>
                     <span
-                        class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic">Results</span>
-                </a>
-                <a href="about.html" class="group flex items-end gap-4">
+                        class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"><span
+                            data-i18n="nav.results">Results</span>
+                    </span></a>
+                <a class="group flex items-end gap-4" href="about.html">
                     <span class="text-althr-gold font-mono text-xs mb-2">05</span>
                     <span
-                        class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic">About
+                        class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"
+                        data-i18n="nav.about">About
                         Us</span>
                 </a>
-                <a href="contact.html"
-                    class="bg-althr-gold text-althr-navy p-6 rounded-2xl flex items-center justify-between group overflow-hidden relative">
-                    <span class="font-black uppercase tracking-tighter text-xl relative z-10">Start Project</span>
-                    <span class="material-symbols-outlined relative z-10">arrow_forward</span>
+                <a class="bg-althr-gold text-althr-navy p-6 rounded-2xl flex items-center justify-between group overflow-hidden relative"
+                    href="contact.html">
+                    <span class="font-black uppercase tracking-tighter text-xl relative z-10"
+                        data-i18n="industry.jewelry.start_project">Start Project</span>
+                    <span class="material-symbols-outlined relative z-10" data-i18n="industry.jewelry.arrowforward"
+                        translate="no">arrow_forward</span>
                     <div
                         class="absolute inset-0 bg-white translate-x-[-101%] group-hover:translate-x-0 transition-transform duration-500">
                     </div>
                 </a>
             </nav>
             <div class="mt-auto border-t border-white/10 pt-8">
-                <p class="text-[10px] font-bold tracking-normal text-white/30 uppercase">Operational Menu v2.0</p>
+                <p class="text-[10px] font-bold tracking-normal text-white/30 uppercase"
+                    data-i18n="industry.jewelry.operational_menu_v20">Operational Menu v2.0</p>
             </div>
         </div>
     </div>
-
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const openBtn = document.getElementById('open-menu');
@@ -780,6 +868,7 @@
     </script>
     <script src="translations.js"></script>
     <script src="i18n.js"></script>
+    <script src="motion.js"></script>
 </body>
 
 </html>

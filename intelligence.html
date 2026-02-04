@@ -1,19 +1,15 @@
 <!DOCTYPE html>
-<html class="dark" lang="en">
 
+<html class="dark" lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Intelligence Engine | ALTHR Automation</title>
-    <meta name="description"
-        content="Advanced business analytics and intelligence engines. Transform raw data into strategic advantage with ALTHR's predictive models and real-time processing.">
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <script id="tailwind-config">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Intelligence Engine | ALTHR Automation</title>
+<meta content="Advanced business analytics and intelligence engines. Transform raw data into strategic advantage with ALTHR's predictive models and real-time processing." name="description"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -31,7 +27,7 @@
             },
         }
     </script>
-    <style type="text/tailwindcss">
+<style type="text/tailwindcss">
         @layer utilities {
             .blueprint-grid {
                 background-image: 
@@ -47,579 +43,502 @@
             }
         }
     </style>
+    <link rel="stylesheet" href="motion.css">
 </head>
-
-<body
-    class="bg-althr-navy font-display text-slate-100 min-h-screen blueprint-grid selection:bg-althr-cyan selection:text-althr-navy">
-    <!-- Navigation -->
-    <header class="fixed top-0 w-full z-50 border-b border-white/5 bg-althr-navy/90 backdrop-blur-md">
-        <div class="max-w-[1600px] mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <a href="index.html" class="flex items-center gap-3 group">
-                    <div class="size-10 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                        <img src="logo.png" alt="ALTHR" class="w-full h-full object-contain">
-                    </div>
-                    <span class="font-black text-2xl tracking-tighter uppercase">ALTHR</span>
-                </a>
-            </div>
-            <nav class="hidden lg:flex items-center gap-10">
-                <div class="relative group">
-                    <button
-                        class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase flex items-center gap-1">
-                        Industries <span class="material-symbols-outlined text-[14px]">expand_more</span>
-                    </button>
-                    <div
-                        class="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                        <div class="frosted-glass p-6 rounded-2xl border border-white/10 w-64 grid grid-cols-1 gap-4">
-                            <a href="industry/jewelry.html"
-                                class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Jewelry
-                                & Watch</a>
-                            <a href="industry/furniture.html"
-                                class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Furniture
-                                & Decor</a>
-                            <a href="industry/grocery.html"
-                                class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Grocery</a>
-                            <a href="industry/equipment.html"
-                                class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Equipment
-                                & Supply</a>
-                            <a href="industry/gadget.html"
-                                class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Gadgets
-                                & Tech</a>
-                            <a href="industry/fashion.html"
-                                class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Fashion
+<body class="bg-althr-navy font-display text-slate-100 min-h-screen blueprint-grid selection:bg-althr-cyan selection:text-althr-navy">
+<!-- Navigation -->
+<header class="fixed top-0 w-full z-50 border-b border-white/5 bg-althr-navy/90 backdrop-blur-md">
+<div class="max-w-[1600px] mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<a class="flex items-center gap-3 group" data-i18n="industry.jewelry.althr" href="index.html">
+<div class="size-10 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+<img alt="ALTHR" class="w-full h-full object-contain" src="logo.png"/>
+</div>
+<span class="font-black text-2xl tracking-tighter uppercase" data-i18n="industry.jewelry.althr">ALTHR</span>
+</a>
+</div>
+<nav class="hidden lg:flex items-center gap-10">
+<div class="relative group">
+<button class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase flex items-center gap-1">
+<span data-i18n="nav.industries">Industries</span> <span class="material-symbols-outlined text-[14px]" data-i18n="industry.jewelry.expandmore" translate="no">expand_more</span>
+</button>
+<div class="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+<div class="frosted-glass p-6 rounded-2xl border border-white/10 w-64 grid grid-cols-1 gap-4">
+<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industries.jewelry" href="industry/jewelry.html">Jewelry
+                                &amp; Watch</a>
+<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industries.furniture" href="industry/furniture.html">Furniture
+                                &amp; Decor</a>
+<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" href="industry/grocery.html"><span data-i18n="industries.grocery">Grocery</span></a>
+<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industries.equipment" href="industry/equipment.html">Equipment
+                                &amp; Supply</a>
+<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industries.gadget" href="industry/gadget.html">Gadgets
+                                &amp; Tech</a>
+<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industries.fashion" href="industry/fashion.html">Fashion
                                 Boutique</a>
-                            <a href="industry/beauty.html"
-                                class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Beauty
-                                & Cosmo</a>
-                            <a href="industry/pet.html"
-                                class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Pet
+<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industries.beauty" href="industry/beauty.html">Beauty
+                                &amp; Cosmo</a>
+<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industries.pet" href="industry/pet.html">Pet
                                 Supply</a>
-                            <a href="industry/home_goods.html"
-                                class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Home
+<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industries.home_goods" href="industry/home_goods.html">Home
                                 Goods</a>
-                            <a href="industry/sports.html"
-                                class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Sports
+<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industries.sports" href="industry/sports.html">Sports
                                 Equipment</a>
-                            <a href="industry/health.html"
-                                class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Health
-                                & Wellness</a>
-                            <a href="industry/toy.html"
-                                class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Toy
-                                & Hobby</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="relative group">
-                    <button class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase flex items-center gap-1">
-                        Services <span class="material-symbols-outlined text-[14px]">expand_more</span>
-                    </button>
-                    <div class="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                        <div class="frosted-glass p-6 rounded-2xl border border-white/10 w-72 grid grid-cols-1 gap-4">
-                            <a href="services.html#crm" class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">CRM Architecture</a>
-                            <a href="services.html#marketing" class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Marketing Operations</a>
-                            <a href="services.html#sales" class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Sales Pipeline</a>
-                            <a href="services.html#ops" class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Operational Flow</a>
-                            <a href="services.html#lead-gen" class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Lead Generation</a>
-                            <a href="services.html#lead-track" class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Lead Tracking</a>
-                            <a href="services.html#social" class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase">Social Media Management</a>
-                        </div>
-                    </div>
-                </div>
-                <a class="text-[14px] font-bold tracking-normal text-althr-cyan decoration-althr-cyan/40 underline underline-offset-8 uppercase"
-                    href="intelligence.html">Technology</a>
-                <a class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
-                    href="results.html">Results</a>
-                <a class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
-                    href="about.html">About Us</a>
-                <a href="contact.html"
-                    class="bg-althr-gold text-althr-navy px-6 py-2.5 rounded-full text-[14px] font-black tracking-normal uppercase transition-all hover:scale-105 hover:bg-white">Get
+<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industries.health" href="industry/health.html">Health
+                                &amp; Wellness</a>
+<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industries.toy" href="industry/toy.html">Toy
+                                &amp; Hobby</a>
+</div>
+</div>
+</div>
+<div class="relative group">
+<button class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase flex items-center gap-1">
+<span data-i18n="nav.services">Services</span> <span class="material-symbols-outlined text-[14px]" data-i18n="industry.jewelry.expandmore" translate="no">expand_more</span>
+</button>
+<div class="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+<div class="frosted-glass p-6 rounded-2xl border border-white/10 w-72 grid grid-cols-1 gap-4">
+<a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.crm_architecture" href="services.html#crm"><span data-i18n="services.crm">CRM Architecture</span></a>
+<a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.marketing_operations" href="services.html#marketing"><span data-i18n="services.marketing">Marketing Operations</span></a>
+<a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.sales_pipeline" href="services.html#sales"><span data-i18n="services.sales">Sales Pipeline</span></a>
+<a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.operational_flow" href="services.html#ops"><span data-i18n="services.ops">Operational Flow</span></a>
+<a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.lead_generation" href="services.html#lead-gen"><span data-i18n="services.lead_gen">Lead Generation</span></a>
+<a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.lead_tracking" href="services.html#lead-track"><span data-i18n="services.lead_track">Lead Tracking</span></a>
+<a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.social_media_management" href="services.html#social"><span data-i18n="services.social">Social Media Management</span></a>
+</div>
+</div>
+</div>
+<a class="text-[14px] font-bold tracking-normal text-althr-cyan decoration-althr-cyan/40 underline underline-offset-8 uppercase" href="intelligence.html"><span data-i18n="nav.technology">Technology</span></a>
+<a class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" href="results.html"><span data-i18n="nav.results">Results</span></a>
+<a class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="index.about_us" href="about.html"><span data-i18n="nav.about">About Us</span></a>
+<a class="bg-althr-gold text-althr-navy px-6 py-2.5 rounded-full text-[14px] font-black tracking-normal uppercase transition-all hover:scale-105 hover:bg-white" data-i18n="nav.get_started" href="contact.html">Get
                     Started</a>
-            
-                <!-- Language Selector -->
-                <div class="relative group ml-4">
-                    <button class="flex items-center gap-2 text-[12px] font-black tracking-normal hover:text-althr-gold transition-colors uppercase">
-                        <span class="material-symbols-outlined text-[18px]">language</span>
-                        <span id="current-lang">EN</span>
-                    </button>
-                    <div class="absolute top-full right-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                        <div class="frosted-glass p-4 rounded-xl border border-white/10 w-36 grid grid-cols-1 gap-3">
-                            <button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" onclick="setLanguage('en')">
-                                <span class="text-base">🇺🇸</span> English
+<!-- Language Selector -->
+<div class="relative group ml-4">
+<button class="flex items-center gap-2 text-[12px] font-black tracking-normal hover:text-althr-gold transition-colors uppercase">
+<span class="material-symbols-outlined text-[18px]" data-i18n="industry.jewelry.language" translate="no">language</span>
+<span id="current-lang">EN</span>
+</button>
+<div class="absolute top-full right-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+<div class="frosted-glass p-4 rounded-xl border border-white/10 w-36 grid grid-cols-1 gap-3">
+<button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" data-i18n="privacy.english" data-lang="en">
+<span class="text-base">🇺🇸</span> English
                             </button>
-                            <button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" onclick="setLanguage('pl')">
-                                <span class="text-base">🇵🇱</span> Polish
+<button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" data-i18n="privacy.polish" data-lang="pl">
+<span class="text-base">🇵🇱</span> Polish
                             </button>
-                            <button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" onclick="setLanguage('de')">
-                                <span class="text-base">🇩🇪</span> German
+<button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" data-i18n="privacy.german" data-lang="de">
+<span class="text-base">🇩🇪</span> German
                             </button>
-                            <button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" onclick="setLanguage('fr')">
-                                <span class="text-base">🇫🇷</span> French
+<button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" data-i18n="privacy.french" data-lang="fr">
+<span class="text-base">🇫🇷</span> French
                             </button>
-                            <button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" onclick="setLanguage('es')">
-                                <span class="text-base">🇪🇸</span> Spanish
+<button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" data-i18n="privacy.spanish" data-lang="es">
+<span class="text-base">🇪🇸</span> Spanish
                             </button>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            <button id="open-menu" class="lg:hidden text-white"><span class="material-symbols-outlined">menu</span></button>
-        </div>
-    </header>
-
-    <main class="relative pt-32 overflow-x-hidden">
-
-        <!-- Hero Section -->
-        <section class="px-6 md:px-12 py-20 relative">
-            <div class="max-w-[1600px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
-                <div class="space-y-10">
-                    <span class="text-althr-cyan font-bold tracking-normal uppercase text-[14px]">AI Engine
+</div>
+</div>
+</div>
+</nav>
+<button class="lg:hidden text-white" data-i18n="industry.jewelry.menu" id="open-menu"><span class="material-symbols-outlined" data-i18n="industry.jewelry.menu" translate="no">menu</span></button>
+</div>
+</header>
+<main class="relative pt-32 overflow-x-hidden">
+<!-- Hero Section -->
+<section class="px-6 md:px-12 py-20 relative">
+<div class="max-w-[1600px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
+<div class="space-y-10">
+<span class="text-althr-cyan font-bold tracking-normal uppercase text-[14px]" data-i18n="intelligence.ai_engine_online">AI Engine
                         Online</span>
-                    <h1
-                        class="text-6xl md:text-9xl font-black tracking-tighter leading-tight text-white uppercase italic">
-                        ALTHR <br /> <span
-                            class="text-transparent bg-clip-text bg-gradient-to-r from-althr-gold via-althr-cyan to-white">Technology
+<h1 class="text-6xl md:text-9xl font-black tracking-tighter leading-tight text-white uppercase italic">
+                        ALTHR <br/> <span class="text-transparent bg-clip-text bg-gradient-to-r from-althr-gold via-althr-cyan to-white" data-i18n="intelligence.technology_engine">Technology
                             Engine</span>
-                    </h1>
-                    <p class="text-slate-500 text-xl font-light leading-relaxed uppercase tracking-wider">
+</h1>
+<p class="text-slate-500 text-xl font-light leading-relaxed uppercase tracking-wider" data-i18n="intelligence.advanced_analytics_for">
                         Advanced Analytics for Business Dominance. Transform raw data into strategic advantage and drive
                         market leadership.
                     </p>
-                    <div class="flex gap-6">
-                        <a href="contact.html"
-                            class="bg-althr-cyan text-althr-navy font-black text-xs tracking-[0.05em] uppercase px-12 py-5 rounded-full hover:scale-105 transition-all">Request
+<div class="flex gap-6">
+<a class="bg-althr-cyan text-althr-navy font-black text-xs tracking-[0.05em] uppercase px-12 py-5 rounded-full hover:scale-105 transition-all" data-i18n="intelligence.request_efficiency_audit" href="contact.html">Request
                             Efficiency Audit</a>
-                    </div>
-                </div>
-                <div class="relative hidden lg:block">
-                    <div
-                        class="frosted-glass p-12 rounded-[4rem] border border-white/10 aspect-square flex items-center justify-center">
-                        <div
-                            class="relative size-full border border-white/5 rounded-full flex items-center justify-center animate-[spin_20s_linear_infinite]">
-                            <div
-                                class="absolute inset-0 border border-althr-cyan/20 rounded-full scale-75 animate-[ping_3s_ease-in-out_infinite]">
-                            </div>
-                            <span
-                                class="material-symbols-outlined text-althr-gold text-8xl !leading-none">insights</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Technology Architecture -->
-        <section class="px-6 md:px-12 py-32 border-t border-white/5 bg-white/[0.01]">
-            <div class="max-w-[1600px] mx-auto space-y-24">
-                <div class="text-center space-y-4">
-                    <h2 class="text-5xl md:text-7xl font-black text-white uppercase italic tracking-tighter">The
-                        Architecture of <span
-                            class="text-althr-gold underline decoration-white/10 underline-offset-8">Certainty</span>
-                    </h2>
-                </div>
-
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Unit 1 -->
-                    <div
-                        class="frosted-glass p-12 rounded-[2.5rem] border border-white/10 space-y-8 group hover:translate-y-[-10px] transition-all">
-                        <div
-                            class="size-16 bg-white/5 rounded-2xl flex items-center justify-center text-althr-cyan border border-white/10 group-hover:bg-althr-cyan/10 transition-colors">
-                            <span class="material-symbols-outlined text-4xl">timeline</span>
-                        </div>
-                        <h4 class="font-black text-xl text-white uppercase tracking-widest">Predictive Analytics</h4>
-                        <p class="text-slate-400 text-xs uppercase leading-relaxed font-light tracking-wide">Forecast
+</div>
+</div>
+<div class="relative hidden lg:block">
+<div class="frosted-glass p-12 rounded-[4rem] border border-white/10 aspect-square flex items-center justify-center">
+<div class="relative size-full border border-white/5 rounded-full flex items-center justify-center animate-[spin_20s_linear_infinite]">
+<div class="absolute inset-0 border border-althr-cyan/20 rounded-full scale-75 animate-[ping_3s_ease-in-out_infinite]">
+</div>
+<span class="material-symbols-outlined text-althr-gold text-8xl !leading-none" data-i18n="intelligence.insights" translate="no">insights</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technology Architecture -->
+<section class="px-6 md:px-12 py-32 border-t border-white/5 bg-white/[0.01]">
+<div class="max-w-[1600px] mx-auto space-y-24">
+<div class="text-center space-y-4">
+<h2 class="text-5xl md:text-7xl font-black text-white uppercase italic tracking-tighter">The
+                        Architecture of <span class="text-althr-gold underline decoration-white/10 underline-offset-8" data-i18n="intelligence.certainty">Certainty</span>
+</h2>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Unit 1 -->
+<div class="frosted-glass p-12 rounded-[2.5rem] border border-white/10 space-y-8 group hover:translate-y-[-10px] transition-all">
+<div class="size-16 bg-white/5 rounded-2xl flex items-center justify-center text-althr-cyan border border-white/10 group-hover:bg-althr-cyan/10 transition-colors">
+<span class="material-symbols-outlined text-4xl" data-i18n="intelligence.timeline" translate="no">timeline</span>
+</div>
+<h4 class="font-black text-xl text-white uppercase tracking-widest" data-i18n="intelligence.predictive_analytics">Predictive Analytics</h4>
+<p class="text-slate-400 text-xs uppercase leading-relaxed font-light tracking-wide" data-i18n="intelligence.forecast_market_trends">Forecast
                             market trends with 94% accuracy. Anticipate customer behavior before your competitors can
                             react.</p>
-                    </div>
-                    <!-- Unit 2 -->
-                    <div
-                        class="frosted-glass p-12 rounded-[2.5rem] border border-white/10 space-y-8 group hover:translate-y-[-10px] transition-all">
-                        <div
-                            class="size-16 bg-white/5 rounded-2xl flex items-center justify-center text-althr-gold border border-white/10 group-hover:bg-althr-gold/10 transition-colors">
-                            <span class="material-symbols-outlined text-4xl">bolt</span>
-                        </div>
-                        <h4 class="font-black text-xl text-white uppercase tracking-widest">Real-Time Processing</h4>
-                        <p class="text-slate-400 text-xs uppercase leading-relaxed font-light tracking-wide">Analyze
+</div>
+<!-- Unit 2 -->
+<div class="frosted-glass p-12 rounded-[2.5rem] border border-white/10 space-y-8 group hover:translate-y-[-10px] transition-all">
+<div class="size-16 bg-white/5 rounded-2xl flex items-center justify-center text-althr-gold border border-white/10 group-hover:bg-althr-gold/10 transition-colors">
+<span class="material-symbols-outlined text-4xl" translate="no">bolt</span>
+</div>
+<h4 class="font-black text-xl text-white uppercase tracking-widest" data-i18n="intelligence.realtime_processing">Real-Time Processing</h4>
+<p class="text-slate-400 text-xs uppercase leading-relaxed font-light tracking-wide" data-i18n="intelligence.analyze_streaming_data">Analyze
                             streaming data at 1M+ events/second. Instant insights for immediate, data-backed
                             decision-making.</p>
-                    </div>
-                    <!-- Unit 3 -->
-                    <div
-                        class="frosted-glass p-12 rounded-[2.5rem] border border-white/10 space-y-8 group hover:translate-y-[-10px] transition-all">
-                        <div
-                            class="size-16 bg-white/5 rounded-2xl flex items-center justify-center text-althr-cyan border border-white/10 group-hover:bg-althr-cyan/10 transition-colors">
-                            <span class="material-symbols-outlined text-4xl">pattern</span>
-                        </div>
-                        <h4 class="font-black text-xl text-white uppercase tracking-widest">Pattern Recognition</h4>
-                        <p class="text-slate-400 text-xs uppercase leading-relaxed font-light tracking-wide">Identify
+</div>
+<!-- Unit 3 -->
+<div class="frosted-glass p-12 rounded-[2.5rem] border border-white/10 space-y-8 group hover:translate-y-[-10px] transition-all">
+<div class="size-16 bg-white/5 rounded-2xl flex items-center justify-center text-althr-cyan border border-white/10 group-hover:bg-althr-cyan/10 transition-colors">
+<span class="material-symbols-outlined text-4xl" data-i18n="intelligence.pattern" translate="no">pattern</span>
+</div>
+<h4 class="font-black text-xl text-white uppercase tracking-widest" data-i18n="intelligence.pattern_recognition">Pattern Recognition</h4>
+<p class="text-slate-400 text-xs uppercase leading-relaxed font-light tracking-wide" data-i18n="intelligence.identify_hidden_opportunities">Identify
                             hidden opportunities in complex datasets. ML models trained on industry-specific variables.
                         </p>
-                    </div>
-                    <!-- Unit 4 -->
-                    <div
-                        class="frosted-glass p-12 rounded-[2.5rem] border border-white/10 space-y-8 group hover:translate-y-[-10px] transition-all">
-                        <div
-                            class="size-16 bg-white/5 rounded-2xl flex items-center justify-center text-althr-gold border border-white/10 group-hover:bg-althr-gold/10 transition-colors">
-                            <span class="material-symbols-outlined text-4xl">target</span>
-                        </div>
-                        <h4 class="font-black text-xl text-white uppercase tracking-widest">Competitive Intelligence
+</div>
+<!-- Unit 4 -->
+<div class="frosted-glass p-12 rounded-[2.5rem] border border-white/10 space-y-8 group hover:translate-y-[-10px] transition-all">
+<div class="size-16 bg-white/5 rounded-2xl flex items-center justify-center text-althr-gold border border-white/10 group-hover:bg-althr-gold/10 transition-colors">
+<span class="material-symbols-outlined text-4xl" data-i18n="intelligence.target" translate="no">target</span>
+</div>
+<h4 class="font-black text-xl text-white uppercase tracking-widest" data-i18n="intelligence.competitive_intelligence">Competitive Intelligence
                         </h4>
-                        <p class="text-slate-400 text-xs uppercase leading-relaxed font-light tracking-wide">Monitor
+<p class="text-slate-400 text-xs uppercase leading-relaxed font-light tracking-wide" data-i18n="intelligence.monitor_market_movements">Monitor
                             market movements and competitor stratagems. Automated alerts for strategic advantage
                             acquisition.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Tech Stack Grid -->
-        <section class="px-6 md:px-12 py-32 border-t border-white/5">
-            <div class="max-w-[1600px] mx-auto">
-                <div class="grid lg:grid-cols-2 gap-24 items-center">
-                    <div class="space-y-12">
-                        <h2 class="text-4xl md:text-6xl font-black text-white uppercase italic tracking-tighter">The
-                            Advanced <br /> <span class="text-althr-cyan">Technology Stack</span></h2>
-
-                        <div class="grid sm:grid-cols-2 gap-10">
-                            <!-- Category 1 -->
-                            <div class="space-y-6">
-                                <h5
-                                    class="text-white font-black uppercase text-xs tracking-normal flex items-center gap-3">
-                                    <span class="size-1.5 bg-althr-gold rounded-full"></span> Data Core
+</div>
+</div>
+</div>
+</section>
+<!-- Tech Stack Grid -->
+<section class="px-6 md:px-12 py-32 border-t border-white/5">
+<div class="max-w-[1600px] mx-auto">
+<div class="grid lg:grid-cols-2 gap-24 items-center">
+<div class="space-y-12">
+<h2 class="text-4xl md:text-6xl font-black text-white uppercase italic tracking-tighter">The
+                            Advanced <br/> <span class="text-althr-cyan" data-i18n="intelligence.technology_stack">Technology Stack</span></h2>
+<div class="grid sm:grid-cols-2 gap-10">
+<!-- Category 1 -->
+<div class="space-y-6">
+<h5 class="text-white font-black uppercase text-xs tracking-normal flex items-center gap-3" data-i18n="intelligence.data_core">
+<span class="size-1.5 bg-althr-gold rounded-full"></span> Data Core
                                 </h5>
-                                <ul class="space-y-4 text-[14px] font-black text-slate-500 uppercase tracking-widest">
-                                    <li>Apache Spark: Scaling Compute</li>
-                                    <li>Kafka Streams: Real-time Data</li>
-                                    <li>Elasticsearch: Advanced Analytics</li>
-                                    <li>Custom Vector Databases</li>
-                                </ul>
-                            </div>
-                            <!-- Category 2 -->
-                            <div class="space-y-6">
-                                <h5
-                                    class="text-white font-black uppercase text-xs tracking-normal flex items-center gap-3">
-                                    <span class="size-1.5 bg-althr-cyan rounded-full"></span> AI Core
+<ul class="space-y-4 text-[14px] font-black text-slate-500 uppercase tracking-widest">
+<li data-i18n="intelligence.apache_spark_scaling">Apache Spark: Scaling Compute</li>
+<li data-i18n="intelligence.kafka_streams_realtime">Kafka Streams: Real-time Data</li>
+<li data-i18n="intelligence.elasticsearch_advanced_analytics">Elasticsearch: Advanced Analytics</li>
+<li data-i18n="intelligence.custom_vector_databases">Custom Vector Databases</li>
+</ul>
+</div>
+<!-- Category 2 -->
+<div class="space-y-6">
+<h5 class="text-white font-black uppercase text-xs tracking-normal flex items-center gap-3" data-i18n="intelligence.ai_core">
+<span class="size-1.5 bg-althr-cyan rounded-full"></span> AI Core
                                 </h5>
-                                <ul class="space-y-4 text-[14px] font-black text-slate-500 uppercase tracking-widest">
-                                    <li>TensorFlow: Model Production</li>
-                                    <li>NLP: Sentiment & Context</li>
-                                    <li>Computer Vision: Visual Logic</li>
-                                    <li>Deep Reinforcement Learning</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-white/5 p-16 rounded-[4rem] border border-white/10 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-althr-cyan/5 blur-[80px]"></div>
-                        <div class="relative z-10 space-y-12">
-                            <div class="space-y-4">
-                                <h4 class="text-2xl font-black text-white uppercase italic">Infrastructure <br />
+<ul class="space-y-4 text-[14px] font-black text-slate-500 uppercase tracking-widest">
+<li data-i18n="intelligence.tensorflow_model_production">TensorFlow: Model Production</li>
+<li data-i18n="intelligence.nlp_sentiment_context">NLP: Sentiment &amp; Context</li>
+<li data-i18n="intelligence.computer_vision_visual">Computer Vision: Visual Logic</li>
+<li data-i18n="intelligence.deep_reinforcement_learning">Deep Reinforcement Learning</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="bg-white/5 p-16 rounded-[4rem] border border-white/10 relative overflow-hidden">
+<div class="absolute inset-0 bg-althr-cyan/5 blur-[80px]"></div>
+<div class="relative z-10 space-y-12">
+<div class="space-y-4">
+<h4 class="text-2xl font-black text-white uppercase italic">Infrastructure <br/>
                                     Resilience</h4>
-                                <p class="text-slate-500 text-[14px] font-bold uppercase tracking-normal">System
+<p class="text-slate-500 text-[14px] font-bold uppercase tracking-normal" data-i18n="intelligence.system_cluster_status">System
                                     Cluster
                                     Status: Optimal</p>
-                            </div>
-                            <div class="space-y-6">
-                                <div class="space-y-2">
-                                    <div
-                                        class="flex justify-between text-[14px] font-black uppercase tracking-widest text-slate-500">
-                                        <span>GPU CLUSTER ACCELERATION</span>
-                                        <span>ACTIVE</span>
-                                    </div>
-                                    <div class="h-1 w-full bg-white/10 rounded-full overflow-hidden">
-                                        <div class="h-full bg-althr-cyan w-[82%]"></div>
-                                    </div>
-                                </div>
-                                <div class="space-y-2">
-                                    <div
-                                        class="flex justify-between text-[14px] font-black uppercase tracking-widest text-slate-500">
-                                        <span>EDGE PROCESSING LATENCY</span>
-                                        <span>&lt; 5MS</span>
-                                    </div>
-                                    <div class="h-1 w-full bg-white/10 rounded-full overflow-hidden">
-                                        <div class="h-full bg-althr-gold w-[94%]"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Industry Applications -->
-        <section class="px-6 md:px-12 py-32 border-t border-white/5 bg-white/[0.01]">
-            <div class="max-w-[1600px] mx-auto space-y-24">
-                <div class="text-center space-y-4">
-                    <h2 class="text-4xl md:text-6xl font-black text-white uppercase italic tracking-tighter">
-                        Sector-Specific <span
-                            class="text-althr-gold underline decoration-white/10 underline-offset-8">Intelligence</span>
-                    </h2>
-                </div>
-
-                <div class="grid md:grid-cols-2 gap-12">
-                    <div
-                        class="frosted-glass p-12 rounded-[3rem] border border-white/5 space-y-6 group hover:border-althr-cyan transition-colors">
-                        <h4
-                            class="text-2xl font-black text-white uppercase italic group-hover:text-althr-cyan transition-colors">
-                            Retail & E-commerce</h4>
-                        <p class="text-slate-400 text-xs uppercase leading-loose tracking-wide font-light">Customer
+</div>
+<div class="space-y-6">
+<div class="space-y-2">
+<div class="flex justify-between text-[14px] font-black uppercase tracking-widest text-slate-500">
+<span data-i18n="intelligence.gpu_cluster_acceleration">GPU CLUSTER ACCELERATION</span>
+<span data-i18n="intelligence.active">ACTIVE</span>
+</div>
+<div class="h-1 w-full bg-white/10 rounded-full overflow-hidden">
+<div class="h-full bg-althr-cyan w-[82%]"></div>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between text-[14px] font-black uppercase tracking-widest text-slate-500">
+<span data-i18n="intelligence.edge_processing_latency">EDGE PROCESSING LATENCY</span>
+<span data-i18n="intelligence.5ms">&lt; 5MS</span>
+</div>
+<div class="h-1 w-full bg-white/10 rounded-full overflow-hidden">
+<div class="h-full bg-althr-gold w-[94%]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Industry Applications -->
+<section class="px-6 md:px-12 py-32 border-t border-white/5 bg-white/[0.01]">
+<div class="max-w-[1600px] mx-auto space-y-24">
+<div class="text-center space-y-4">
+<h2 class="text-4xl md:text-6xl font-black text-white uppercase italic tracking-tighter">
+                        Sector-Specific <span class="text-althr-gold underline decoration-white/10 underline-offset-8" data-i18n="industry.jewelry.intelligence">Intelligence</span>
+</h2>
+</div>
+<div class="grid md:grid-cols-2 gap-12">
+<div class="frosted-glass p-12 rounded-[3rem] border border-white/5 space-y-6 group hover:border-althr-cyan transition-colors">
+<h4 class="text-2xl font-black text-white uppercase italic group-hover:text-althr-cyan transition-colors" data-i18n="intelligence.retail_ecommerce">
+                            Retail &amp; E-commerce</h4>
+<p class="text-slate-400 text-xs uppercase leading-loose tracking-wide font-light" data-i18n="intelligence.customer_lifetime_value">Customer
                             lifetime value prediction, inventory optimization, and price elasticity modeling for
                             high-scale retail operations.</p>
-                    </div>
-                    <div
-                        class="frosted-glass p-12 rounded-[3rem] border border-white/5 space-y-6 group hover:border-althr-gold transition-colors">
-                        <h4
-                            class="text-2xl font-black text-white uppercase italic group-hover:text-althr-gold transition-colors">
+</div>
+<div class="frosted-glass p-12 rounded-[3rem] border border-white/5 space-y-6 group hover:border-althr-gold transition-colors">
+<h4 class="text-2xl font-black text-white uppercase italic group-hover:text-althr-gold transition-colors" data-i18n="intelligence.financial_services">
                             Financial Services</h4>
-                        <p class="text-slate-400 text-xs uppercase leading-loose tracking-wide font-light">Risk
+<p class="text-slate-400 text-xs uppercase leading-loose tracking-wide font-light" data-i18n="intelligence.risk_assessment_algorithms">Risk
                             assessment algorithms, fraud detection, trading pattern analysis, and automated compliance
                             monitoring.</p>
-                    </div>
-                    <div
-                        class="frosted-glass p-12 rounded-[3rem] border border-white/5 space-y-6 group hover:border-althr-cyan transition-colors">
-                        <h4
-                            class="text-2xl font-black text-white uppercase italic group-hover:text-althr-cyan transition-colors">
-                            Automotive & Industrial</h4>
-                        <p class="text-slate-400 text-xs uppercase leading-loose tracking-wide font-light">Lead scoring
+</div>
+<div class="frosted-glass p-12 rounded-[3rem] border border-white/5 space-y-6 group hover:border-althr-cyan transition-colors">
+<h4 class="text-2xl font-black text-white uppercase italic group-hover:text-althr-cyan transition-colors" data-i18n="intelligence.automotive_industrial">
+                            Automotive &amp; Industrial</h4>
+<p class="text-slate-400 text-xs uppercase leading-loose tracking-wide font-light" data-i18n="intelligence.lead_scoring_models">Lead scoring
                             models, customer behavior prediction, service cycle optimization, and market trend analysis.
                         </p>
-                    </div>
-                    <div
-                        class="frosted-glass p-12 rounded-[3rem] border border-white/5 space-y-6 group hover:border-althr-gold transition-colors">
-                        <h4
-                            class="text-2xl font-black text-white uppercase italic group-hover:text-althr-gold transition-colors">
+</div>
+<div class="frosted-glass p-12 rounded-[3rem] border border-white/5 space-y-6 group hover:border-althr-gold transition-colors">
+<h4 class="text-2xl font-black text-white uppercase italic group-hover:text-althr-gold transition-colors" data-i18n="intelligence.advanced_manufacturing">
                             Advanced Manufacturing</h4>
-                        <p class="text-slate-400 text-xs uppercase leading-loose tracking-wide font-light">Supply chain
+<p class="text-slate-400 text-xs uppercase leading-loose tracking-wide font-light" data-i18n="intelligence.supply_chain_optimization">Supply chain
                             optimization, predictive maintenance data, quality control automation, and demand
                             forecasting logic.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Results/Case Studies -->
-        <section class="px-6 md:px-12 py-32">
-            <div class="max-w-[1600px] mx-auto space-y-20">
-                <div class="text-center">
-                    <h2 class="text-3xl font-black text-white uppercase italic tracking-normal">Case Studies</h2>
-                </div>
-
-                <div class="grid lg:grid-cols-3 gap-8">
-                    <!-- Case 1 -->
-                    <div class="frosted-glass p-10 rounded-3xl border border-white/5 space-y-6">
-                        <div
-                            class="flex justify-between items-center text-[14px] font-black text-althr-gold tracking-normal uppercase">
-                            <span>Case Study 101</span>
-                            <span>Result: 87% Acc</span>
-                        </div>
-                        <h5 class="text-lg font-black text-white uppercase tracking-widest">Algorithmic Execution</h5>
-                        <p class="text-[14px] text-slate-500 uppercase leading-relaxed font-bold tracking-widest">
+</div>
+</div>
+</div>
+</section>
+<!-- Results/Results -->
+<section class="px-6 md:px-12 py-32">
+<div class="max-w-[1600px] mx-auto space-y-20">
+<div class="text-center">
+<h2 class="text-3xl font-black text-white uppercase italic tracking-normal"><span data-i18n="nav.results">Results</span></h2>
+</div>
+<div class="grid lg:grid-cols-3 gap-8">
+<!-- Case 1 -->
+<div class="frosted-glass p-10 rounded-3xl border border-white/5 space-y-6">
+<div class="flex justify-between items-center text-[14px] font-black text-althr-gold tracking-normal uppercase">
+<span data-i18n="intelligence.result_101">Result 101</span>
+<span data-i18n="intelligence.result_87_acc">Result: 87% Acc</span>
+</div>
+<h5 class="text-lg font-black text-white uppercase tracking-widest" data-i18n="intelligence.algorithmic_execution">Algorithmic Execution</h5>
+<p class="text-[14px] text-slate-500 uppercase leading-relaxed font-bold tracking-widest" data-i18n="intelligence.trading_automation_service">
                             Trading Automation Service</p>
-                        <p class="text-slate-400 text-xs uppercase leading-loose tracking-wide font-light">Real-time
+<p class="text-slate-400 text-xs uppercase leading-loose tracking-wide font-light" data-i18n="intelligence.realtime_sentiment_analysis">Real-time
                             sentiment analysis and pattern recognition for market volatility navigation. 500+ daily
                             automated trades.</p>
-                    </div>
-                    <!-- Case 2 -->
-                    <div class="frosted-glass p-10 rounded-3xl border border-white/5 space-y-6">
-                        <div
-                            class="flex justify-between items-center text-[14px] font-black text-althr-cyan tracking-normal uppercase">
-                            <span>Case Study 204</span>
-                            <span>Result: 10x ROI</span>
-                        </div>
-                        <h5 class="text-lg font-black text-white uppercase tracking-widest">Engagement Optimization</h5>
-                        <p class="text-[14px] text-slate-500 uppercase leading-relaxed font-bold tracking-widest">
+</div>
+<!-- Case 2 -->
+<div class="frosted-glass p-10 rounded-3xl border border-white/5 space-y-6">
+<div class="flex justify-between items-center text-[14px] font-black text-althr-cyan tracking-normal uppercase">
+<span data-i18n="intelligence.result_204">Result 204</span>
+<span data-i18n="intelligence.result_10x_roi">Result: 10x ROI</span>
+</div>
+<h5 class="text-lg font-black text-white uppercase tracking-widest" data-i18n="intelligence.engagement_optimization">Engagement Optimization</h5>
+<p class="text-[14px] text-slate-500 uppercase leading-relaxed font-bold tracking-widest" data-i18n="intelligence.predictive_lead_logic">
                             Predictive Lead Logic</p>
-                        <p class="text-slate-400 text-xs uppercase leading-loose tracking-wide font-light">Predictive
+<p class="text-slate-400 text-xs uppercase leading-loose tracking-wide font-light" data-i18n="intelligence.predictive_lead_scoring">Predictive
                             lead scoring + behavioral analytics for high-value customer acquisition cycles and funnel
                             velocity.</p>
-                    </div>
-                    <!-- Case 3 -->
-                    <div class="frosted-glass p-10 rounded-3xl border border-white/5 space-y-6">
-                        <div
-                            class="flex justify-between items-center text-[14px] font-black text-white/40 tracking-normal uppercase">
-                            <span>Case Study 402</span>
-                            <span>Result: 300% Engagement</span>
-                        </div>
-                        <h5 class="text-lg font-black text-white uppercase tracking-widest">Social Intelligence</h5>
-                        <p class="text-[14px] text-slate-500 uppercase leading-relaxed font-bold tracking-widest">
+</div>
+<!-- Case 3 -->
+<div class="frosted-glass p-10 rounded-3xl border border-white/5 space-y-6">
+<div class="flex justify-between items-center text-[14px] font-black text-white/40 tracking-normal uppercase">
+<span data-i18n="intelligence.result_402">Result 402</span>
+<span data-i18n="intelligence.result_300_engagement">Result: 300% Engagement</span>
+</div>
+<h5 class="text-lg font-black text-white uppercase tracking-widest" data-i18n="intelligence.social_intelligence">Social Intelligence</h5>
+<p class="text-[14px] text-slate-500 uppercase leading-relaxed font-bold tracking-widest" data-i18n="intelligence.content_recommendation_service">
                             Content Recommendation Service</p>
-                        <p class="text-slate-400 text-xs uppercase leading-loose tracking-wide font-light">Sentiment
+<p class="text-slate-400 text-xs uppercase leading-loose tracking-wide font-light" data-i18n="intelligence.sentiment_analysis_trend">Sentiment
                             analysis + trend prediction algorithms for automated content optimization and community
                             growth.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Method Section -->
-        <section class="px-6 md:px-12 py-32 border-t border-white/5 bg-althr-cyan/[0.01]">
-            <div class="max-w-[1600px] mx-auto text-center space-y-24">
-                <h2 class="text-5xl md:text-7xl font-black text-white uppercase italic tracking-tighter leading-none">
-                    Intelligence <br /> <span class="text-althr-cyan">Integration Process</span></h2>
-
-                <div class="grid md:grid-cols-4 gap-12 relative">
-                    <div class="space-y-6">
-                        <div class="text-white font-black text-6xl opacity-5">01</div>
-                        <h5 class="text-white font-black uppercase text-sm tracking-widest">Data Assessment</h5>
-                        <p class="text-slate-500 text-[14px] uppercase font-bold tracking-widest leading-relaxed">Audit
-                            of sources & KPI definition.</p>
-                    </div>
-                    <div class="space-y-6">
-                        <div class="text-white font-black text-6xl opacity-5">02</div>
-                        <h5 class="text-white font-black uppercase text-sm tracking-widest">Model Development</h5>
-                        <p class="text-slate-500 text-[14px] uppercase font-bold tracking-widest leading-relaxed">Custom
-                            AI training & validation.</p>
-                    </div>
-                    <div class="space-y-6">
-                        <div class="text-white font-black text-6xl opacity-5">03</div>
-                        <h5 class="text-white font-black uppercase text-sm tracking-widest">System Integration</h5>
-                        <p class="text-slate-500 text-[14px] uppercase font-bold tracking-widest leading-relaxed">
-                            Pipeline deployment & infra sync.</p>
-                    </div>
-                    <div class="space-y-6">
-                        <div class="text-white font-black text-6xl opacity-5">04</div>
-                        <h5 class="text-white font-black uppercase text-sm tracking-widest">Scale Optimization</h5>
-                        <p class="text-slate-500 text-[14px] uppercase font-bold tracking-widest leading-relaxed">
-                            Continuous learning & adaptation.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="bg-althr-navy border-t border-white/10 py-24 px-6 md:px-12 relative z-20">
-        <div class="max-w-[1600px] mx-auto">
-            <div class="grid lg:grid-cols-5 gap-10">
-                <div class="space-y-10">
-                    <div class="flex items-center gap-3 group">
-                        <div class="size-10 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                            <img src="logo.png" alt="ALTHR" class="w-full h-full object-contain">
-                        </div>
-                        <span class="font-black text-2xl tracking-tighter uppercase text-white">ALTHR</span>
-                    </div>
-                    <p class="text-slate-400 text-[14px] font-medium leading-relaxed max-w-xs">
+</div>
+</div>
+</div>
+</section>
+<!-- Method Section -->
+<section class="px-6 md:px-12 py-32 border-t border-white/5 bg-althr-cyan/[0.01]">
+<div class="max-w-[1600px] mx-auto text-center space-y-24">
+<h2 class="text-5xl md:text-7xl font-black text-white uppercase italic tracking-tighter leading-none">
+                    Intelligence <br/> <span class="text-althr-cyan" data-i18n="intelligence.integration_process">Integration Process</span></h2>
+<div class="grid md:grid-cols-4 gap-12 relative">
+<div class="space-y-6">
+<div class="text-white font-black text-6xl opacity-5">01</div>
+<h5 class="text-white font-black uppercase text-sm tracking-widest" data-i18n="intelligence.data_assessment">Data Assessment</h5>
+<p class="text-slate-500 text-[14px] uppercase font-bold tracking-widest leading-relaxed" data-i18n="intelligence.audit_of_sources">Audit
+                            of sources &amp; KPI definition.</p>
+</div>
+<div class="space-y-6">
+<div class="text-white font-black text-6xl opacity-5">02</div>
+<h5 class="text-white font-black uppercase text-sm tracking-widest" data-i18n="intelligence.model_development">Model Development</h5>
+<p class="text-slate-500 text-[14px] uppercase font-bold tracking-widest leading-relaxed" data-i18n="intelligence.custom_ai_training">Custom
+                            AI training &amp; validation.</p>
+</div>
+<div class="space-y-6">
+<div class="text-white font-black text-6xl opacity-5">03</div>
+<h5 class="text-white font-black uppercase text-sm tracking-widest" data-i18n="intelligence.system_integration">System Integration</h5>
+<p class="text-slate-500 text-[14px] uppercase font-bold tracking-widest leading-relaxed" data-i18n="intelligence.pipeline_deployment_infra">
+                            Pipeline deployment &amp; infra sync.</p>
+</div>
+<div class="space-y-6">
+<div class="text-white font-black text-6xl opacity-5">04</div>
+<h5 class="text-white font-black uppercase text-sm tracking-widest" data-i18n="intelligence.scale_optimization">Scale Optimization</h5>
+<p class="text-slate-500 text-[14px] uppercase font-bold tracking-widest leading-relaxed" data-i18n="intelligence.continuous_learning_adaptation">
+                            Continuous learning &amp; adaptation.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-althr-navy border-t border-white/10 py-24 px-6 md:px-12 relative z-20">
+<div class="max-w-[1600px] mx-auto">
+<div class="grid lg:grid-cols-5 gap-10">
+<div class="space-y-10">
+<div class="flex items-center gap-3 group">
+<div class="size-10 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+<img alt="ALTHR" class="w-full h-full object-contain" src="logo.png"/>
+</div>
+<span class="font-black text-2xl tracking-tighter uppercase text-white" data-i18n="industry.jewelry.althr">ALTHR</span>
+</div>
+<p class="text-slate-400 text-[14px] font-medium leading-relaxed max-w-xs" data-i18n="footer.desc">
                         Transforming complexity into automated simplicity through high-end engineering and strategic
                         logic systems.
                     </p>
-                </div>
-
-                <div>
-                    <h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12">Services
-                    </h5>
-                    <ul class="space-y-4 text-[14px] font-medium text-slate-400">
-                        <li><a href="services.html" class="hover:text-althr-gold transition-colors">CRM Automation</a>
-                        </li>
-                        <li><a href="services.html" class="hover:text-althr-gold transition-colors">Marketing Logic</a>
-                        </li>
-                        <li><a href="intelligence.html" class="hover:text-althr-gold transition-colors">Advanced
+</div>
+<div>
+<h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12"><span data-i18n="nav.services">Services</span>
+</h5>
+<ul class="space-y-4 text-[14px] font-medium text-slate-400">
+<li data-i18n="industry.jewelry.crm_automation"><a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.crm_automation" href="services.html">CRM Automation</a>
+</li>
+<li data-i18n="industry.jewelry.marketing_logic"><a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.marketing_logic" href="services.html">Marketing Logic</a>
+</li>
+<li data-i18n="industry.jewelry.advanced_analytics"><a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.advanced_analytics" href="intelligence.html">Advanced
                                 Analytics</a></li>
-                        <li><a href="services.html" class="hover:text-althr-gold transition-colors">Fulfillment Ops</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12">Industries
-                    </h5>
-                    <ul class="space-y-4 text-[14px] font-medium text-slate-400">
-                        <li><a href="industry/jewelry.html" class="hover:text-althr-gold transition-colors">Jewelry &
+<li data-i18n="industry.jewelry.fulfillment_ops"><a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.fulfillment_ops" href="services.html">Fulfillment Ops</a>
+</li>
+</ul>
+</div>
+<div>
+<h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12"><span data-i18n="nav.industries">Industries</span>
+</h5>
+<ul class="space-y-4 text-[14px] font-medium text-slate-400">
+<li data-i18n="industry.jewelry.jewelry_watch"><a class="hover:text-althr-gold transition-colors" data-i18n="industries.jewelry" href="industry/jewelry.html">Jewelry &amp;
                                 Watch</a></li>
-                        <li><a href="industry/furniture.html" class="hover:text-althr-gold transition-colors">Furniture
-                                & Decor</a></li>
-                        <li><a href="industry/grocery.html" class="hover:text-althr-gold transition-colors">Grocery</a>
-                        </li>
-                        <li><a href="industry/fashion.html" class="hover:text-althr-gold transition-colors">Fashion</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12">Quick Links</h5>
-                    <ul class="space-y-4 text-[14px] font-medium text-slate-400">
-                        <li><a href="about.html" class="hover:text-althr-gold transition-colors">Our Story</a></li>
-                        <li><a href="results.html" class="hover:text-althr-gold transition-colors">Results</a>
-                        </li>
-                        <li><a href="contact.html" class="hover:text-althr-gold transition-colors">Contact Us</a></li>
-                        <li><a href="privacy.html" class="hover:text-althr-gold transition-colors">Privacy Protocol</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="space-y-10">
-                    <h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12">Pulse Status</h5>
-                    <div class="p-8 bg-white/5 border border-white/10 rounded-[2rem] flex items-center gap-6">
-                        <div
-                            class="size-2.5 bg-althr-cyan rounded-full animate-pulse shadow-[0_0_15px_rgba(0,000,255,0.7)]">
-                        </div>
-                        <span class="text-[12px] font-bold text-althr-cyan uppercase tracking-wider">Systems
+<li data-i18n="industry.jewelry.furniture_decor"><a class="hover:text-althr-gold transition-colors" data-i18n="industries.furniture" href="industry/furniture.html">Furniture
+                                &amp; Decor</a></li>
+<li><a class="hover:text-althr-gold transition-colors" href="industry/grocery.html"><span data-i18n="industries.grocery">Grocery</span></a>
+</li>
+<li data-i18n="industry.jewelry.fashion"><a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.fashion" href="industry/fashion.html">Fashion</a>
+</li>
+</ul>
+</div>
+<div>
+<h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12" data-i18n="industry.jewelry.quick_links">Quick Links</h5>
+<ul class="space-y-4 text-[14px] font-medium text-slate-400">
+<li><a class="hover:text-althr-gold transition-colors" href="about.html"><span data-i18n="footer.story">Our Story</span></a></li>
+<li><a class="hover:text-althr-gold transition-colors" href="results.html"><span data-i18n="nav.results">Results</span></a>
+</li>
+<li><a class="hover:text-althr-gold transition-colors" href="contact.html"><span data-i18n="footer.contact">Contact Us</span></a></li>
+<li data-i18n="industry.jewelry.privacy_protocol"><a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.privacy_protocol" href="privacy.html"><span data-i18n="footer.privacy">Privacy Protocol</span></a>
+</li>
+</ul>
+</div>
+<div class="space-y-10">
+<h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12"><span data-i18n="footer.pulse">Pulse Status</span></h5>
+<div class="p-8 bg-white/5 border border-white/10 rounded-[2rem] flex items-center gap-6">
+<div class="size-2.5 bg-althr-cyan rounded-full animate-pulse shadow-[0_0_15px_rgba(0,000,255,0.7)]">
+</div>
+<span class="text-[12px] font-bold text-althr-cyan uppercase tracking-wider" data-i18n="common.systems_ready">Systems
                             Ready</span>
-                    </div>
-                </div>
-            </div>
-
-            <div
-                class="mt-32 pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[12px] text-slate-500 font-medium">
-                <p>© 2026 ALTHR AGENCY SYSTEMS. SYSTEM_ID: GLOBAL-01</p>
-                <div class="flex gap-12">
-                    <a href="privacy.html" class="hover:text-althr-gold transition-colors">Privacy</a>
-                    <a href="#" class="hover:text-althr-gold transition-colors">Terms</a>
-                    <a href="contact.html" class="hover:text-althr-gold transition-colors">SLA</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed inset-0 z-[100] bg-althr-navy/95 backdrop-blur-2xl translate-x-full transition-transform duration-500 lg:hidden">
-        <div class="flex flex-col h-full p-8 relative">
-            <button id="close-menu" class="absolute top-8 right-8 text-white/50 hover:text-althr-gold transition-colors">
-                <span class="material-symbols-outlined text-4xl">close</span>
-            </button>
-            <div class="mb-16">
-                <div class="flex items-center gap-3">
-                    <img src="logo.png" alt="ALTHR" class="size-10 object-contain">
-                    <span class="font-black text-2xl tracking-tighter uppercase text-white">ALTHR</span>
-                </div>
-            </div>
-            
-            <div class="flex gap-4 mb-10 border-b border-white/10 pb-10">
-                <button onclick="setLanguage('en')" class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all">🇺🇸</button>
-                <button onclick="setLanguage('pl')" class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all">🇵🇱</button>
-                <button onclick="setLanguage('de')" class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all">🇩🇪</button>
-                <button onclick="setLanguage('fr')" class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all">🇫🇷</button>
-                <button onclick="setLanguage('es')" class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all">🇪🇸</button>
-            </div>
-        <nav class="flex flex-col gap-10">
-                <a href="index.html" class="group flex items-end gap-4">
-                    <span class="text-althr-gold font-mono text-xs mb-2">01</span>
-                    <span class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic">Home</span>
-                </a>
-                <a href="services.html" class="group flex items-end gap-4">
-                    <span class="text-althr-gold font-mono text-xs mb-2">02</span>
-                    <span class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic">Services</span>
-                </a>
-                <a href="intelligence.html" class="group flex items-end gap-4">
-                    <span class="text-althr-gold font-mono text-xs mb-2">03</span>
-                    <span class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic">Tech</span>
-                </a>
-                <a href="results.html" class="group flex items-end gap-4">
-                    <span class="text-althr-gold font-mono text-xs mb-2">04</span>
-                    <span class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic">Results</span>
-                </a>
-                <a href="contact.html" class="bg-althr-gold text-althr-navy p-6 rounded-2xl flex items-center justify-between group overflow-hidden relative">
-                    <span class="font-black uppercase tracking-tighter text-xl relative z-10">Start Project</span>
-                    <span class="material-symbols-outlined relative z-10">arrow_forward</span>
-                    <div class="absolute inset-0 bg-white translate-x-[-101%] group-hover:translate-x-0 transition-transform duration-500"></div>
-                </a>
-            </nav>
-            <div class="mt-auto border-t border-white/10 pt-8">
-               <p class="text-[10px] font-bold tracking-normal text-white/30 uppercase">Operational Menu v2.0</p>
-            </div>
-        </div>
-    </div>
-
-    <script>
+</div>
+</div>
+</div>
+<div class="mt-32 pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[12px] text-slate-500 font-medium">
+<p data-i18n="industry.jewelry.2026_althr_agency_systems_european">© 2026 ALTHR AGENCY SYSTEMS | EUROPEAN HQ: POLAND. SYSTEM ID: GLOBAL-01</p>
+<div class="flex gap-12">
+<a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.privacy" href="privacy.html">Privacy</a>
+<a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.terms" href="#">Terms</a>
+<a class="hover:text-althr-gold transition-colors" href="contact.html">SLA</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Mobile Menu -->
+<div class="fixed inset-0 z-[100] bg-althr-navy/95 backdrop-blur-2xl translate-x-full transition-transform duration-500 lg:hidden" id="mobile-menu">
+<div class="flex flex-col h-full p-8 relative">
+<button class="absolute top-8 right-8 text-white/50 hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.close" id="close-menu">
+<span class="material-symbols-outlined text-4xl" data-i18n="industry.jewelry.close" translate="no">close</span>
+</button>
+<div class="mb-16">
+<div class="flex items-center gap-3">
+<img alt="ALTHR" class="size-10 object-contain" src="logo.png"/>
+<span class="font-black text-2xl tracking-tighter uppercase text-white" data-i18n="industry.jewelry.althr">ALTHR</span>
+</div>
+</div>
+<div class="flex gap-4 mb-10 border-b border-white/10 pb-10">
+<button class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all" data-lang="en">🇺🇸</button>
+<button class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all" data-lang="pl">🇵🇱</button>
+<button class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all" data-lang="de">🇩🇪</button>
+<button class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all" data-lang="fr">🇫🇷</button>
+<button class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all" data-lang="es">🇪🇸</button>
+</div>
+<nav class="flex flex-col gap-10">
+<a class="group flex items-end gap-4" href="index.html">
+<span class="text-althr-gold font-mono text-xs mb-2">01</span>
+<span class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic" data-i18n="industry.jewelry.home">Home</span>
+</a>
+<a class="group flex items-end gap-4" href="services.html">
+<span class="text-althr-gold font-mono text-xs mb-2">02</span>
+<span class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"><span data-i18n="nav.services">Services</span>
+</span></a>
+<a class="group flex items-end gap-4" href="intelligence.html">
+<span class="text-althr-gold font-mono text-xs mb-2">03</span>
+<span class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic" data-i18n="industry.jewelry.tech">Tech</span>
+</a>
+<a class="group flex items-end gap-4" href="results.html">
+<span class="text-althr-gold font-mono text-xs mb-2">04</span>
+<span class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"><span data-i18n="nav.results">Results</span>
+</span></a>
+<a class="bg-althr-gold text-althr-navy p-6 rounded-2xl flex items-center justify-between group overflow-hidden relative" href="contact.html">
+<span class="font-black uppercase tracking-tighter text-xl relative z-10" data-i18n="industry.jewelry.start_project">Start Project</span>
+<span class="material-symbols-outlined relative z-10" data-i18n="industry.jewelry.arrowforward" translate="no">arrow_forward</span>
+<div class="absolute inset-0 bg-white translate-x-[-101%] group-hover:translate-x-0 transition-transform duration-500"></div>
+</a>
+</nav>
+<div class="mt-auto border-t border-white/10 pt-8">
+<p class="text-[10px] font-bold tracking-normal text-white/30 uppercase" data-i18n="industry.jewelry.operational_menu_v20">Operational Menu v2.0</p>
+</div>
+</div>
+</div>
+<script>
         document.addEventListener('DOMContentLoaded', () => {
             const openBtn = document.getElementById('open-menu');
             const closeBtn = document.getElementById('close-menu');
@@ -646,8 +565,8 @@
             }
         });
     </script>
-    <script src="translations.js"></script>
+<script src="translations.js"></script>
 <script src="i18n.js"></script>
+    <script src="motion.js"></script>
 </body>
-
 </html>
