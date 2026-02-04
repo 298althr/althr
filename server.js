@@ -19,13 +19,15 @@ app.use(helmet({
             imgSrc: ["'self'", "data:", "https:", "blob:"],
             connectSrc: ["'self'", "https://cdn.tailwindcss.com", "https://fonts.googleapis.com", "https://fonts.gstatic.com"]
         }
-    }
+    },
+    crossOriginEmbedderPolicy: false,
+    crossOriginResourcePolicy: { policy: "cross-origin" }
 }));
 
 // CORS configuration
 app.use(cors({
     origin: process.env.NODE_ENV === 'production'
-        ? ['https://althr-automation.railway.app']
+        ? ['https://althr.up.railway.app']
         : ['http://localhost:3000', 'http://localhost:8080'],
     credentials: true
 }));
