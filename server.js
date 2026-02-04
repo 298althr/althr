@@ -13,18 +13,18 @@ app.use(helmet({
     contentSecurityPolicy: {
         directives: {
             defaultSrc: ["'self'"],
-            styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
-            fontSrc: ["'self'", "https://fonts.gstatic.com"],
-            scriptSrc: ["'self'", "'unsafe-inline'"],
-            imgSrc: ["'self'", "data:", "https:"],
-            connectSrc: ["'self'"]
+            styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com", "https://cdn.tailwindcss.com"],
+            fontSrc: ["'self'", "https://fonts.gstatic.com", "https://fonts.googleapis.com"],
+            scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'", "https://cdn.tailwindcss.com"],
+            imgSrc: ["'self'", "data:", "https:", "blob:"],
+            connectSrc: ["'self'", "https://cdn.tailwindcss.com", "https://fonts.googleapis.com", "https://fonts.gstatic.com"]
         }
     }
 }));
 
 // CORS configuration
 app.use(cors({
-    origin: process.env.NODE_ENV === 'production' 
+    origin: process.env.NODE_ENV === 'production'
         ? ['https://althr-automation.railway.app']
         : ['http://localhost:3000', 'http://localhost:8080'],
     credentials: true
@@ -56,12 +56,12 @@ app.get('/api/health', (req, res) => {
 app.get('*', (req, res) => {
     // Don't intercept API calls
     if (req.path.startsWith('/api/')) {
-        return res.status(404).json({ 
-            success: false, 
-            message: 'API endpoint not found' 
+        return res.status(404).json({
+            success: false,
+            message: 'API endpoint not found'
         });
     }
-    
+
     // Serve index.html for all other routes
     res.sendFile(path.join(__dirname, 'index.html'));
 });
@@ -69,18 +69,18 @@ app.get('*', (req, res) => {
 // Error handling middleware
 app.use((error, req, res, next) => {
     console.error('Server error:', error);
-    
+
     if (error.type === 'entity.parse.failed') {
         return res.status(400).json({
             success: false,
             message: 'Invalid JSON in request body'
         });
     }
-    
+
     res.status(500).json({
         success: false,
-        message: process.env.NODE_ENV === 'production' 
-            ? 'Internal server error' 
+        message: process.env.NODE_ENV === 'production'
+            ? 'Internal server error'
             : error.message
     });
 });
