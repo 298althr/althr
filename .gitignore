@@ -16,16 +16,6 @@ data/
 # Uploads and user content
 uploads/
 
-# Large image files (these are ~20-30MB total)
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.svg
-*.pdf
-*.zip
-*.tar.gz
-
 # Logs
 *.log
 npm-debug.log*
@@ -94,18 +84,29 @@ temp/
 ehthumbs.db
 Thumbs.db
 
+# Admin and backend files to exclude
+admin.html
+analytics-integration.html
+config/
+middleware/
+routes/
+scripts/
+
+# Documentation and pitch files
+*.md
+!README.md
+pitches/
+
+# Test files
+i18n_test.html
+package-lock.json
+
 # Keep important files (exclude from gitignore)
 !README.md
 !package.json
-!package-lock.json
 !server.js
-!admin.html
 !.env.example
 !Dockerfile
 !docker-compose.yml
 !railway.toml
 !healthcheck.js
-!scripts/
-!config/
-!middleware/
-!routes/
