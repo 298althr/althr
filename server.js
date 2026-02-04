@@ -3,17 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
 const morgan = require('morgan');
-const rateLimit = require('express-rate-limit');
 const path = require('path');
-const fs = require('fs');
-
-// Initialize database
-require('./config/database');
-
-// Import routes
-const authRoutes = require('./routes/auth');
-const adminRoutes = require('./routes/admin');
-const contactRoutes = require('./routes/contact');
 
 const app = express();
 const PORT = process.env.PORT || 8080;
@@ -25,25 +15,17 @@ app.use(helmet({
             defaultSrc: ["'self'"],
             styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
             fontSrc: ["'self'", "https://fonts.gstatic.com"],
-            scriptSrc: ["'self'", "'unsafe-inline'", "https://www.googletagmanager.com"],
+            scriptSrc: ["'self'", "'unsafe-inline'"],
             imgSrc: ["'self'", "data:", "https:"],
-            connectSrc: ["'self'", "https://www.google-analytics.com"]
+            connectSrc: ["'self'"]
         }
     }
 }));
 
-// Rate limiting
-const limiter = rateLimit({
-    windowMs: parseInt(process.env.RATE_LIMIT_WINDOW_MS) || 15 * 60 * 1000, // 15 minutes
-    max: parseInt(process.env.RATE_LIMIT_MAX_REQUESTS) || 100,
-    message: { success: false, message: 'Too many requests, please try again later' }
-});
-app.use('/api/', limiter);
-
 // CORS configuration
 app.use(cors({
     origin: process.env.NODE_ENV === 'production' 
-        ? ['https://althr-automation.onrender.com', 'https://althr-automation.railway.app']
+        ? ['https://althr-automation.railway.app']
         : ['http://localhost:3000', 'http://localhost:8080'],
     credentials: true
 }));
@@ -60,11 +42,6 @@ app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 // Static file serving
 app.use(express.static(path.join(__dirname)));
 
-// API routes
-app.use('/api/auth', authRoutes);
-app.use('/api/admin', adminRoutes);
-app.use('/api/contact', contactRoutes);
-
 // Health check endpoint
 app.get('/api/health', (req, res) => {
     res.json({
@@ -75,19 +52,7 @@ app.get('/api/health', (req, res) => {
     });
 });
 
-// Serve frontend routes - API routes first, then static files
-app.get('/admin*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'admin.html'));
-});
-
-app.get('/api/*', (req, res) => {
-    res.status(404).json({ 
-        success: false, 
-        message: 'API endpoint not found' 
-    });
-});
-
-// Catch all handler for SPA routing
+// Serve frontend routes
 app.get('*', (req, res) => {
     // Don't intercept API calls
     if (req.path.startsWith('/api/')) {
