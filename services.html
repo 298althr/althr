@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html class="dark" lang="en">
+
 <head>
-    <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Solutions Matrix | ALTHR Automation</title>
-<meta content="Strategic automation solutions for high-performance business scaling. CRM, Marketing, Sales, and Operational architectures." name="description"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
- tailwind.config = {
- darkMode: "class",
- theme: {
- extend: {
- colors: {
- "althr-navy": "#080a12",
- "althr-gold": "#d4af37",
- "althr-cyan": "#00f0ff",
- "glass-white": "rgba(255, 255, 255, 0.05)",
- },
- fontFamily: {
- "display": ["Inter", "sans-serif"]
- },
- },
- },
- }
- </script>
-<style type="text/tailwindcss">
- @layer utilities {
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Solutions Matrix | ALTHR Automation</title>
+    <meta
+        content="Strategic automation solutions for high-performance business scaling. CRM, Marketing, Sales, and Operational architectures."
+        name="description" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "althr-navy": "#080a12",
+                        "althr-gold": "#d4af37",
+                        "althr-cyan": "#00f0ff",
+                        "glass-white": "rgba(255, 255, 255, 0.05)",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
  .blueprint-grid {
  background-image: 
  linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
@@ -42,16 +48,18 @@
  }
  }
  </style>
- <link rel="stylesheet" href="motion.css">
+    <link rel="stylesheet" href="motion.css">
     <script src="translations.js"></script>
     <script src="i18n.js"></script>
 </head>
-<body class="bg-althr-navy font-display text-slate-100 min-h-screen blueprint-grid selection:bg-althr-cyan selection:text-althr-navy">
+
+<body
+    class="bg-althr-navy font-display text-slate-100 min-h-screen blueprint-grid selection:bg-althr-cyan selection:text-althr-navy">
     <!-- Navigation -->
     <header class="fixed top-0 w-full z-50 border-b border-white/5 bg-althr-navy/90 backdrop-blur-md">
         <div class="max-w-[1600px] mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <a class="flex items-center gap-3 group" data-i18n="industry.jewelry.althr" href="index.html">
+                <a class="flex items-center gap-3 group" href="index.html">
                     <div class="size-10 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
                         <img alt="ALTHR" class="w-full h-full object-contain" src="logo.png" />
                     </div>
@@ -136,6 +144,13 @@
                             <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
                                 data-i18n="industry.jewelry.social_media_management" href="services/social.html">Social
                                 Media Management</a>
+                            <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="services.ai.title" href="services/ai.html">AI Orchestration</a>
+                            <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="services.tax.title" href="services/tax.html">Tax Optimization</a>
+                            <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="services.sentiment.title" href="services/sentiment.html">Market Sentiment
+                                Engine</a>
                         </div>
                     </div>
                 </div>
@@ -193,397 +208,581 @@
                     translate="no">menu</span></button>
         </div>
     </header>
-    
+
     <main class="relative pt-32 overflow-x-hidden">
-<!-- Hero Section -->
-<section class="px-6 md:px-12 py-20 relative">
-<div class="max-w-[1600px] mx-auto text-center space-y-10">
-<span class="text-althr-gold font-bold tracking-normal uppercase text-[14px]" data-i18n="services.strategic_solutions_matrix">Strategic Solutions
- Matrix</span>
-<h1 class="text-6xl md:text-9xl font-black tracking-tighter leading-tight text-white uppercase italic">
- Universal <br/> <span class="text-transparent bg-clip-text bg-gradient-to-r from-althr-gold via-althr-cyan to-white" data-i18n="services.growth_protocols">Growth
- Protocols</span>
-</h1>
-<p class="text-slate-500 text-xl font-light max-w-3xl mx-auto leading-relaxed uppercase tracking-wider" data-i18n="services.hero.subtitle">Targeted automation architectures designed for high-performance business dominance. Stop managing
- complexity; start orchestrating growth.</p>
-</div>
-</section>
-<!-- Solution Matrix Grid -->
-<section class="px-6 md:px-12 pb-32">
-<div class="max-w-[1600px] mx-auto grid lg:grid-cols-2 gap-16">
-<!-- Solution 1: CRM Architecture -->
-<div class="space-y-10 group">
-<div class="flex items-center gap-6">
-<div class="size-16 bg-althr-gold/10 rounded-2xl flex items-center justify-center text-althr-gold border border-althr-gold/20 group-hover:scale-110 transition-transform duration-500">
-<span class="material-symbols-outlined text-4xl" data-i18n="services.database" translate="no">database</span>
-</div>
-<h2 class="text-3xl font-black text-white uppercase tracking-widest italic group-hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.crm_architecture">
-<span data-i18n="services.crm">CRM Architecture</span></h2>
-</div>
-<div class="frosted-glass p-12 rounded-[3.5rem] border border-white/5 space-y-10 relative overflow-hidden">
-<div class="absolute top-0 right-0 w-32 h-32 bg-althr-gold/5 blur-[40px]"></div>
-<p class="text-slate-400 text-lg uppercase leading-relaxed font-light tracking-wide" data-i18n="services.crm.desc">Automate acquisition and retention cycles. We synchronize 200+ platforms in real-time to
- create a seamless, self-correcting customer data engine.</p>
-<div class="grid sm:grid-cols-2 gap-8">
-<div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
-<p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none" data-i18n="services.automated_sync">
- Automated Sync</p>
-<p class="text-xl font-black text-white italic" data-i18n="services.200_systems">200+ SYSTEMS</p>
-</div>
-<div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
-<p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none" data-i18n="services.data_accuracy">
- Data Accuracy</p>
-<p class="text-xl font-black text-white italic" data-i18n="services.999_uptime">99.9% UPTIME</p>
-</div>
-</div>
-<ul class="space-y-4">
-<li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]" data-i18n="services.lead_lifecycle_automation">
-<span class="size-1.5 bg-althr-gold rounded-full"></span> Lead Lifecycle Automation
- </li>
-<li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]" data-i18n="services.predictive_personalization">
-<span class="size-1.5 bg-althr-gold rounded-full"></span> Predictive Personalization
- </li>
-<li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]" data-i18n="services.zeroinput_data_entry">
-<span class="size-1.5 bg-althr-gold rounded-full"></span> Zero-Input Data Entry
- </li>
-</ul>
-</div>
-</div>
-<!-- Solution 2: Marketing Ops -->
-<div class="space-y-10 group">
-<div class="flex items-center gap-6">
-<div class="size-16 bg-althr-cyan/10 rounded-2xl flex items-center justify-center text-althr-cyan border border-althr-cyan/20 group-hover:scale-110 transition-transform duration-500">
-<span class="material-symbols-outlined text-4xl" data-i18n="services.campaign" translate="no">campaign</span>
-</div>
-<h2 class="text-3xl font-black text-white uppercase tracking-widest italic group-hover:text-althr-cyan transition-colors" data-i18n="industry.jewelry.marketing_operations">
-<span data-i18n="services.marketing">Marketing Operations</span></h2>
-</div>
-<div class="frosted-glass p-12 rounded-[3.5rem] border border-white/5 space-y-10 relative overflow-hidden">
-<div class="absolute top-0 right-0 w-32 h-32 bg-althr-cyan/5 blur-[40px]"></div>
-<p class="text-slate-400 text-lg uppercase leading-relaxed font-light tracking-wide" data-i18n="services.marketing.desc">Centralize campaign logistics and budget allocation. End the fragmentation and ensure every
- dollar is deployed where it generates the maximum yield.</p>
-<div class="grid sm:grid-cols-2 gap-8">
-<div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
-<p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none" data-i18n="services.budget_efficiency">
- Budget Efficiency</p>
-<p class="text-xl font-black text-white italic" data-i18n="services.40_yield">+40% YIELD</p>
-</div>
-<div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
-<p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none" data-i18n="services.manual_drag">
- Manual Drag</p>
-<p class="text-xl font-black text-white italic" data-i18n="services.90_latency">-90% LATENCY</p>
-</div>
-</div>
-<ul class="space-y-4">
-<li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]" data-i18n="services.campaign_routing_logic">
-<span class="size-1.5 bg-althr-cyan rounded-full"></span> Campaign Routing Logic
- </li>
-<li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]" data-i18n="services.autoscaling_budgets">
-<span class="size-1.5 bg-althr-cyan rounded-full"></span> Auto-Scaling Budgets
- </li>
-<li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]" data-i18n="services.multichannel_intelligence">
-<span class="size-1.5 bg-althr-cyan rounded-full"></span> Multichannel Intelligence
- </li>
-</ul>
-</div>
-</div>
-<!-- Solution 3: Sales Pipeline -->
-<div class="space-y-10 group">
-<div class="flex items-center gap-6">
-<div class="size-16 bg-althr-gold/10 rounded-2xl flex items-center justify-center text-althr-gold border border-althr-gold/20 group-hover:scale-110 transition-transform duration-500">
-<span class="material-symbols-outlined text-4xl" data-i18n="industry.jewelry.payments" translate="no">payments</span>
-</div>
-<h2 class="text-3xl font-black text-white uppercase tracking-widest italic group-hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.sales_pipeline">
-<span data-i18n="services.sales">Sales Pipeline</span></h2>
-</div>
-<div class="frosted-glass p-12 rounded-[3.5rem] border border-white/5 space-y-10 relative overflow-hidden">
-<div class="absolute top-0 right-0 w-32 h-32 bg-althr-gold/5 blur-[40px]"></div>
-<p class="text-slate-400 text-lg uppercase leading-relaxed font-light tracking-wide" data-i18n="services.sales.desc">AI-driven sequences that deliver human-centric precision. Move leads through the funnel with
- autonomous follow-ups and dynamic offer generation.</p>
-<div class="grid sm:grid-cols-2 gap-8">
-<div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
-<p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none" data-i18n="services.pipeline_speed">
- Pipeline Speed</p>
-<p class="text-xl font-black text-white italic" data-i18n="services.4x_velocity">4X VELOCITY</p>
-</div>
-<div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
-<p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none" data-i18n="services.bot_avoidance">
- Bot Avoidance</p>
-<p class="text-xl font-black text-white italic" data-i18n="services.99_human_feel">99% HUMAN FEEL</p>
-</div>
-</div>
-<ul class="space-y-4">
-<li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]" data-i18n="services.strategic_followup_logic">
-<span class="size-1.5 bg-althr-gold rounded-full"></span> Strategic Follow-up Logic
- </li>
-<li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]" data-i18n="services.appointment_autopilot">
-<span class="size-1.5 bg-althr-gold rounded-full"></span> Appointment Autopilot
- </li>
-<li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]" data-i18n="services.dynamic_offer_gen">
-<span class="size-1.5 bg-althr-gold rounded-full"></span> Dynamic Offer Gen
- </li>
-</ul>
-</div>
-</div>
-<!-- Solution 4: Operational Flow -->
-<div class="space-y-10 group" id="ops">
-<div class="flex items-center gap-6">
-<div class="size-16 bg-althr-cyan/10 rounded-2xl flex items-center justify-center text-althr-cyan border border-althr-cyan/20 group-hover:scale-110 transition-transform duration-500">
-<span class="material-symbols-outlined text-4xl" data-i18n="services.settingsaccessibility" translate="no">settings_accessibility</span>
-</div>
-<h2 class="text-3xl font-black text-white uppercase tracking-widest italic group-hover:text-althr-cyan transition-colors" data-i18n="industry.jewelry.operational_flow">
-<span data-i18n="services.ops">Operational Flow</span></h2>
-</div>
-<div class="frosted-glass p-12 rounded-[3.5rem] border border-white/5 space-y-10 relative overflow-hidden">
-<div class="absolute top-0 right-0 w-32 h-32 bg-althr-cyan/5 blur-[40px]"></div>
-<p class="text-slate-400 text-lg uppercase leading-relaxed font-light tracking-wide" data-i18n="services.ops.desc">The backbone of business dominance. Automate internal communications, cross-departmental
- syncs, and real-time P&amp;L intelligence reports.</p>
-<div class="grid sm:grid-cols-2 gap-8">
-<div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
-<p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none" data-i18n="services.internal_sync">
- Internal Sync</p>
-<p class="text-xl font-black text-white italic" data-i18n="services.full_stack">FULL STACK</p>
-</div>
-<div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
-<p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none" data-i18n="services.error_margin">
- Error Margin</p>
-<p class="text-xl font-black text-white italic" data-i18n="services.near_zero">NEAR ZERO</p>
-</div>
-</div>
-<ul class="space-y-4">
-<li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]" data-i18n="services.crossdepartmental_sync">
-<span class="size-1.5 bg-althr-cyan rounded-full"></span> Cross-Departmental Sync
- </li>
-<li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]" data-i18n="services.anomaly_detection">
-<span class="size-1.5 bg-althr-cyan rounded-full"></span> Anomaly Detection
- </li>
-<li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]" data-i18n="services.pl_intelligence">
-<span class="size-1.5 bg-althr-cyan rounded-full"></span> P&amp;L Intelligence
- </li>
-</ul>
-</div>
-</div>
-<!-- Solution 5: AI Orchestration -->
-<div class="space-y-10 group" id="ai-training">
-<div class="flex items-center gap-6">
-<div class="size-16 bg-althr-gold/10 rounded-2xl flex items-center justify-center text-althr-gold border border-althr-gold/20 group-hover:scale-110 transition-transform duration-500">
-<span class="material-symbols-outlined text-4xl" data-i18n="services.memory" translate="no">memory</span>
-</div>
-<h2 class="text-3xl font-black text-white uppercase tracking-widest italic group-hover:text-althr-gold transition-colors" data-i18n="services.ai_orchestration">
- AI Orchestration</h2>
-</div>
-<div class="frosted-glass p-12 rounded-[3.5rem] border border-white/5 space-y-10 relative overflow-hidden">
-<div class="absolute top-0 right-0 w-32 h-32 bg-althr-gold/5 blur-[40px]"></div>
-<p class="text-slate-400 text-lg uppercase leading-relaxed font-light tracking-wide" data-i18n="services.ai.desc">Private AI models trained specifically on your business data. We fine-tune autonomous agents
- that stay within your infrastructure, ensuring absolute data privacy and sovereign
- intelligence.</p>
-<div class="grid sm:grid-cols-2 gap-8">
-<div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
-<p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none" data-i18n="industry.jewelry.privacy">
- Privacy</p>
-<p class="text-xl font-black text-white italic" data-i18n="services.100_sovereign">100% SOVEREIGN</p>
-</div>
-<div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
-<p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none" data-i18n="services.hardware">
- Hardware</p>
-<p class="text-xl font-black text-white italic" data-i18n="services.onpremise_gpu">ON-PREMISE GPU</p>
-</div>
-</div>
-<ul class="space-y-4">
-<li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]" data-i18n="services.model_finetuning">
-<span class="size-1.5 bg-althr-gold rounded-full"></span> Model Fine-Tuning
- </li>
-<li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]" data-i18n="services.data_sovereign_training">
-<span class="size-1.5 bg-althr-gold rounded-full"></span> Data Sovereign Training
- </li>
-<li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]" data-i18n="services.bespoke_ai_infrastructure">
-<span class="size-1.5 bg-althr-gold rounded-full"></span> Bespoke AI Infrastructure
- </li>
-<li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]" data-i18n="services.advanced_ai_integration_suites">
-<span class="size-1.5 bg-althr-gold rounded-full"></span> Advanced AI Integration Suites
- </li>
-</ul>
-</div>
-</div>
-<!-- Solution 6: Tax & Admin Logic -->
-<div class="space-y-10 group" id="tax-admin">
-<div class="flex items-center gap-6">
-<div class="size-16 bg-althr-cyan/10 rounded-2xl flex items-center justify-center text-althr-cyan border border-althr-cyan/20 group-hover:scale-110 transition-transform duration-500">
-<span class="material-symbols-outlined text-4xl" data-i18n="services.accountbalance" translate="no">account_balance</span>
-</div>
-<h2 class="text-3xl font-black text-white uppercase tracking-widest italic group-hover:text-althr-cyan transition-colors" data-i18n="services.tax_admin_logic">
- Tax &amp; Admin Logic</h2>
-</div>
-<div class="frosted-glass p-12 rounded-[3.5rem] border border-white/5 space-y-10 relative overflow-hidden">
-<div class="absolute top-0 right-0 w-32 h-32 bg-althr-cyan/5 blur-[40px]"></div>
-<p class="text-slate-400 text-lg uppercase leading-relaxed font-light tracking-wide" data-i18n="services.tax.desc">Automate local tax filing and optimization directly from your administrative dashboard. We
- bridge the gap between operational data and regional compliance, eliminating manual filing
- overhead.</p>
-<div class="grid sm:grid-cols-2 gap-8">
-<div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
-<p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none" data-i18n="services.compliance">
- Compliance</p>
-<p class="text-xl font-black text-white italic" data-i18n="services.autonomous_filing">AUTONOMOUS FILING</p>
-</div>
-<div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
-<p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none" data-i18n="services.efficiency">
- Efficiency</p>
-<p class="text-xl font-black text-white italic" data-i18n="services.85_overhead">-85% OVERHEAD</p>
-</div>
-</div>
-<ul class="space-y-4">
-<li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]" data-i18n="services.local_tax_automation">
-<span class="size-1.5 bg-althr-cyan rounded-full"></span> Local Tax Automation
- </li>
-<li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]" data-i18n="services.admin_section_integration">
-<span class="size-1.5 bg-althr-cyan rounded-full"></span> Admin Section Integration
- </li>
-<li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]" data-i18n="services.compliance_bridge_protocols">
-<span class="size-1.5 bg-althr-cyan rounded-full"></span> Compliance Bridge Protocols
- </li>
-</ul>
-</div>
-</div>
-<!-- Solution 7: Growth Acceleration -->
-<div class="space-y-10 group" id="growth">
-<div class="flex items-center gap-6">
-<div class="size-16 bg-althr-gold/10 rounded-2xl flex items-center justify-center text-althr-gold border border-althr-gold/20 group-hover:scale-110 transition-transform duration-500">
-<span class="material-symbols-outlined text-4xl" data-i18n="industry.jewelry.trendingup" translate="no">trending_up</span>
-</div>
-<h2 class="text-3xl font-black text-white uppercase tracking-widest italic group-hover:text-althr-gold transition-colors" data-i18n="services.acceleration.title">
- Growth Acceleration</h2>
-</div>
-<div class="frosted-glass p-12 rounded-[3.5rem] border border-white/5 space-y-10 relative overflow-hidden">
-<div class="absolute top-0 right-0 w-32 h-32 bg-althr-gold/5 blur-[40px]"></div>
-<p class="text-slate-400 text-lg uppercase leading-relaxed font-light tracking-wide" data-i18n="services.acceleration.desc">Hyper-targeted customer acquisition through automated lead generation, cross-platform
- tracking, and social media orchestration engines.</p>
-<div class="grid sm:grid-cols-2 gap-8">
-<div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
-<p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none" data-i18n="services.lead_flow">
- Lead Flow</p>
-<p class="text-xl font-black text-white italic" data-i18n="services.3x_volume">3X VOLUME</p>
-</div>
-<div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
-<p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none" data-i18n="services.conversion">
- Conversion</p>
-<p class="text-xl font-black text-white italic" data-i18n="services.220_roi">+220% ROI</p>
-</div>
-</div>
-<ul class="space-y-4">
-<li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]" data-i18n="services.automated_lead_generation">
-<span class="size-1.5 bg-althr-gold rounded-full"></span> Automated Lead Generation
- </li>
-<li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]" data-i18n="services.multichannel_lead_tracking">
-<span class="size-1.5 bg-althr-gold rounded-full"></span> Multi-Channel Lead Tracking
- </li>
-<li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]" data-i18n="services.social_media_orchestration">
-<span class="size-1.5 bg-althr-gold rounded-full"></span> Social Media Orchestration
- </li>
-</ul>
-</div>
-</div>
-<!-- Solution 8: Sentiment & News Intelligence -->
-<div class="space-y-10 group" id="sentiment">
-<div class="flex items-center gap-6">
-<div class="size-16 bg-althr-cyan/10 rounded-2xl flex items-center justify-center text-althr-cyan border border-althr-cyan/20 group-hover:scale-110 transition-transform duration-500">
-<span class="material-symbols-outlined text-4xl" data-i18n="services.analytics" translate="no">analytics</span>
-</div>
-<h2 class="text-3xl font-black text-white uppercase tracking-widest italic group-hover:text-althr-cyan transition-colors" data-i18n="services.sentiment_news_intel">
- Sentiment &amp; News Intel</h2>
-</div>
-<div class="frosted-glass p-12 rounded-[3.5rem] border border-white/5 space-y-10 relative overflow-hidden">
-<div class="absolute top-0 right-0 w-32 h-32 bg-althr-cyan/5 blur-[40px]"></div>
-<p class="text-slate-400 text-lg uppercase leading-relaxed font-light tracking-wide" data-i18n="services.sentiment.desc">Scale your business using real-time market sentiment and news cycles. For luxury verticals
- like Jewelry, we integrate live gold price telemetry and global economic news to
- automatically adjust pricing and marketing spend.</p>
-<div class="grid sm:grid-cols-2 gap-8">
-<div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
-<p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none" data-i18n="services.latency">
- Latency</p>
-<p class="text-xl font-black text-white italic" data-i18n="services.realtime">REAL-TIME</p>
-</div>
-<div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
-<p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none" data-i18n="services.integration">
- Integration</p>
-<p class="text-xl font-black text-white italic" data-i18n="services.news_firehose">NEWS FIREHOSE</p>
-</div>
-</div>
-<ul class="space-y-4">
-<li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]" data-i18n="services.live_commodity_telemetry">
-<span class="size-1.5 bg-althr-cyan rounded-full"></span> Live Commodity Telemetry
- </li>
-<li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]" data-i18n="services.market_sentiment_scraper">
-<span class="size-1.5 bg-althr-cyan rounded-full"></span> Market Sentiment Scraper
- </li>
-<li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]" data-i18n="services.dynamic_pricing_engines">
-<span class="size-1.5 bg-althr-cyan rounded-full"></span> Dynamic Pricing Engines
- </li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<!-- Strategic Infrastructure Engines -->
-<section class="px-6 md:px-12 py-32 border-t border-white/5 bg-white/[0.01]">
-<div class="max-w-[1600px] mx-auto space-y-24">
-<div class="text-center space-y-6">
-<span class="text-althr-gold font-bold tracking-normal uppercase text-xs" data-i18n="services.core_infrastructure">Core Infrastructure</span>
-<h2 class="text-4xl md:text-6xl font-black text-white uppercase italic tracking-tighter leading-none" data-i18n="services.strategic_infrastructure_engines"><span data-i18n="index.solutions.title">
- Strategic </span><span class="text-althr-cyan underline underline-offset-8 decoration-white/10" data-i18n="services.infrastructure_engines">Infrastructure
- Engines</span>
-</h2>
-</div>
-<div class="grid lg:grid-cols-3 gap-12">
-<!-- Engine 1 -->
-<div class="frosted-glass p-12 rounded-[3rem] border border-white/5 space-y-8 hover:translate-y-[-10px] transition-all duration-500 group">
-<div class="size-16 bg-althr-gold/10 rounded-2xl flex items-center justify-center text-althr-gold border border-althr-gold/20 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-4xl" translate="no">dns</span>
-</div>
-<h4 class="text-2xl font-black text-white uppercase tracking-widest" data-i18n="services.global_data_grids">Global Data Grids</h4>
-<p class="text-slate-400 text-[14px] uppercase leading-relaxed font-light tracking-wide" data-i18n="services.highthroughput_data_pipelines_designed_for">
- High-throughput data pipelines designed for sub-millisecond latency across multi-region
- cloud clusters. We ensure your data is where it needs to be, before you need it.
- </p>
-<ul class="space-y-3 pt-6 border-t border-white/5">
-<li class="flex items-center gap-3 text-[12px] font-bold text-slate-500 uppercase" data-i18n="services.multiregion_sync"><span class="size-1 bg-althr-gold rounded-full"></span> Multi-Region Sync</li>
-<li class="flex items-center gap-3 text-[12px] font-bold text-slate-500 uppercase" data-i18n="services.subms_latency"><span class="size-1 bg-althr-gold rounded-full"></span> Sub-ms Latency</li>
-</ul>
-</div>
-<!-- Engine 2 -->
-<div class="frosted-glass p-12 rounded-[3rem] border border-white/5 space-y-8 hover:translate-y-[-10px] transition-all duration-500 group">
-<div class="size-16 bg-althr-cyan/10 rounded-2xl flex items-center justify-center text-althr-cyan border border-althr-cyan/20 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-4xl" data-i18n="services.automode" translate="no">auto_mode</span>
-</div>
-<h4 class="text-2xl font-black text-white uppercase tracking-widest" data-i18n="services.logic_synthesis">Logic Synthesis</h4>
-<p class="text-slate-400 text-[14px] uppercase leading-relaxed font-light tracking-wide" data-i18n="services.automated_business_logic_deployment_that">
- Automated business logic deployment that adapts to real-time market conditions without
- manual intervention. Self-healing protocols for continuous operation.
- </p>
-<ul class="space-y-3 pt-6 border-t border-white/5">
-<li class="flex items-center gap-3 text-[12px] font-bold text-slate-500 uppercase" data-i18n="services.adaptive_execution"><span class="size-1 bg-althr-cyan rounded-full"></span> Adaptive Execution</li>
-<li class="flex items-center gap-3 text-[12px] font-bold text-slate-500 uppercase" data-i18n="services.selfhealing_logic"><span class="size-1 bg-althr-cyan rounded-full"></span> Self-Healing Logic</li>
-</ul>
-</div>
-<!-- Engine 3 -->
-<div class="frosted-glass p-12 rounded-[3rem] border border-white/5 space-y-8 hover:translate-y-[-10px] transition-all duration-500 group">
-<div class="size-16 bg-white/10 rounded-2xl flex items-center justify-center text-white border border-white/20 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-4xl" data-i18n="services.verifieduser" translate="no">verified_user</span>
-</div>
-<h4 class="text-2xl font-black text-white uppercase tracking-widest" data-i18n="services.protocol_integrity">Protocol Integrity</h4>
-<p class="text-slate-400 text-[14px] uppercase leading-relaxed font-light tracking-wide" data-i18n="services.hardened_security_layers_and_soc2ready">
- Hardened security layers and SOC2-ready automation workflows for mission-critical enterprise
- operations. Zero-trust architecture baked into every component.
- </p>
-<ul class="space-y-3 pt-6 border-t border-white/5">
-<li class="flex items-center gap-3 text-[12px] font-bold text-slate-500 uppercase" data-i18n="services.zerotrust_security"><span class="size-1 bg-white rounded-full"></span> Zero-Trust Security</li>
-<li class="flex items-center gap-3 text-[12px] font-bold text-slate-500 uppercase" data-i18n="services.compliance_ready"><span class="size-1 bg-white rounded-full"></span> Compliance Ready</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-</main>
-    
+        <!-- Hero Section -->
+        <section class="px-6 md:px-12 py-20 relative">
+            <div class="max-w-[1600px] mx-auto text-center space-y-10">
+                <span class="text-althr-gold font-bold tracking-normal uppercase text-[14px]"
+                    data-i18n="services.strategic_solutions_matrix">Strategic Solutions
+                    Matrix</span>
+                <h1 class="text-6xl md:text-9xl font-black tracking-tighter leading-tight text-white uppercase italic">
+                    Universal <br /> <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-althr-gold via-althr-cyan to-white"
+                        data-i18n="services.growth_protocols">Growth
+                        Protocols</span>
+                </h1>
+                <p class="text-slate-500 text-xl font-light max-w-3xl mx-auto leading-relaxed uppercase tracking-wider"
+                    data-i18n="services.hero.subtitle">Targeted automation architectures designed for high-performance
+                    business dominance. Stop managing
+                    complexity; start orchestrating growth.</p>
+            </div>
+        </section>
+        <!-- Solution Matrix Grid -->
+        <section class="px-6 md:px-12 pb-32">
+            <div class="max-w-[1600px] mx-auto grid lg:grid-cols-2 gap-16">
+                <!-- Solution 1: CRM Architecture -->
+                <div class="space-y-10 group">
+                    <a href="services/crm.html" class="flex items-center gap-6 group/title">
+                        <div
+                            class="size-16 bg-althr-gold/10 rounded-2xl flex items-center justify-center text-althr-gold border border-althr-gold/20 group-hover:scale-110 transition-transform duration-500">
+                            <span class="material-symbols-outlined text-4xl" data-i18n="services.database"
+                                translate="no">database</span>
+                        </div>
+                        <h2 class="text-3xl font-black text-white uppercase tracking-widest italic group-hover:text-althr-gold transition-colors"
+                            data-i18n="industry.jewelry.crm_architecture">
+                            <span data-i18n="services.crm">CRM Architecture</span>
+                        </h2>
+                    </a>
+                    <div
+                        class="frosted-glass p-12 rounded-[3.5rem] border border-white/5 space-y-10 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-althr-gold/5 blur-[40px]"></div>
+                        <p class="text-slate-400 text-lg uppercase leading-relaxed font-light tracking-wide"
+                            data-i18n="services.crm.desc">Automate acquisition and retention cycles. We synchronize 200+
+                            platforms in real-time to
+                            create a seamless, self-correcting customer data engine.</p>
+                        <div class="grid sm:grid-cols-2 gap-8">
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
+                                <p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none"
+                                    data-i18n="services.automated_sync">
+                                    Automated Sync</p>
+                                <p class="text-xl font-black text-white italic" data-i18n="services.200_systems">200+
+                                    SYSTEMS</p>
+                            </div>
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
+                                <p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none"
+                                    data-i18n="services.data_accuracy">
+                                    Data Accuracy</p>
+                                <p class="text-xl font-black text-white italic" data-i18n="services.999_uptime">99.9%
+                                    UPTIME</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]"
+                                data-i18n="services.lead_lifecycle_automation">
+                                <span class="size-1.5 bg-althr-gold rounded-full"></span> Lead Lifecycle Automation
+                            </li>
+                            <li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]"
+                                data-i18n="services.predictive_personalization">
+                                <span class="size-1.5 bg-althr-gold rounded-full"></span> Predictive Personalization
+                            </li>
+                            <li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]"
+                                data-i18n="services.zeroinput_data_entry">
+                                <span class="size-1.5 bg-althr-gold rounded-full"></span> Zero-Input Data Entry
+                            </li>
+                        </ul>
+                        <a href="services/crm.html"
+                            class="inline-flex items-center gap-2 text-althr-gold text-xs font-black uppercase tracking-widest pt-4 hover:gap-4 transition-all">
+                            <span data-i18n="common.view_solution">View Solution</span>
+                            <span class="material-symbols-outlined text-sm" translate="no">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Solution 2: Marketing Ops -->
+                <div class="space-y-10 group">
+                    <a href="services/marketing.html" class="flex items-center gap-6 group/title">
+                        <div
+                            class="size-16 bg-althr-cyan/10 rounded-2xl flex items-center justify-center text-althr-cyan border border-althr-cyan/20 group-hover:scale-110 transition-transform duration-500">
+                            <span class="material-symbols-outlined text-4xl" data-i18n="services.campaign"
+                                translate="no">campaign</span>
+                        </div>
+                        <h2 class="text-3xl font-black text-white uppercase tracking-widest italic group-hover:text-althr-cyan transition-colors"
+                            data-i18n="industry.jewelry.marketing_operations">
+                            <span data-i18n="services.marketing">Marketing Operations</span>
+                        </h2>
+                    </a>
+                    <div
+                        class="frosted-glass p-12 rounded-[3.5rem] border border-white/5 space-y-10 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-althr-cyan/5 blur-[40px]"></div>
+                        <p class="text-slate-400 text-lg uppercase leading-relaxed font-light tracking-wide"
+                            data-i18n="services.marketing.desc">Centralize campaign logistics and budget allocation. End
+                            the fragmentation and ensure every
+                            dollar is deployed where it generates the maximum yield.</p>
+                        <div class="grid sm:grid-cols-2 gap-8">
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
+                                <p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none"
+                                    data-i18n="services.budget_efficiency">
+                                    Budget Efficiency</p>
+                                <p class="text-xl font-black text-white italic" data-i18n="services.40_yield">+40% YIELD
+                                </p>
+                            </div>
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
+                                <p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none"
+                                    data-i18n="services.manual_drag">
+                                    Manual Drag</p>
+                                <p class="text-xl font-black text-white italic" data-i18n="services.90_latency">-90%
+                                    LATENCY</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]"
+                                data-i18n="services.campaign_routing_logic">
+                                <span class="size-1.5 bg-althr-cyan rounded-full"></span> Campaign Routing Logic
+                            </li>
+                            <li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]"
+                                data-i18n="services.autoscaling_budgets">
+                                <span class="size-1.5 bg-althr-cyan rounded-full"></span> Auto-Scaling Budgets
+                            </li>
+                            <li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]"
+                                data-i18n="services.multichannel_intelligence">
+                                <span class="size-1.5 bg-althr-cyan rounded-full"></span> Multichannel Intelligence
+                            </li>
+                        </ul>
+                        <a href="services/marketing.html"
+                            class="inline-flex items-center gap-2 text-althr-cyan text-xs font-black uppercase tracking-widest pt-4 hover:gap-4 transition-all">
+                            <span data-i18n="common.view_solution">View Solution</span>
+                            <span class="material-symbols-outlined text-sm" translate="no">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Solution 3: Sales Pipeline -->
+                <div class="space-y-10 group">
+                    <a href="services/sales.html" class="flex items-center gap-6 group/title">
+                        <div
+                            class="size-16 bg-althr-gold/10 rounded-2xl flex items-center justify-center text-althr-gold border border-althr-gold/20 group-hover:scale-110 transition-transform duration-500">
+                            <span class="material-symbols-outlined text-4xl" data-i18n="industry.jewelry.payments"
+                                translate="no">payments</span>
+                        </div>
+                        <h2 class="text-3xl font-black text-white uppercase tracking-widest italic group-hover:text-althr-gold transition-colors"
+                            data-i18n="industry.jewelry.sales_pipeline">
+                            <span data-i18n="services.sales">Sales Pipeline</span>
+                        </h2>
+                    </a>
+                    <div
+                        class="frosted-glass p-12 rounded-[3.5rem] border border-white/5 space-y-10 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-althr-gold/5 blur-[40px]"></div>
+                        <p class="text-slate-400 text-lg uppercase leading-relaxed font-light tracking-wide"
+                            data-i18n="services.sales.desc">AI-driven sequences that deliver human-centric precision.
+                            Move leads through the funnel with
+                            autonomous follow-ups and dynamic offer generation.</p>
+                        <div class="grid sm:grid-cols-2 gap-8">
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
+                                <p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none"
+                                    data-i18n="services.pipeline_speed">
+                                    Pipeline Speed</p>
+                                <p class="text-xl font-black text-white italic" data-i18n="services.4x_velocity">4X
+                                    VELOCITY</p>
+                            </div>
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
+                                <p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none"
+                                    data-i18n="services.bot_avoidance">
+                                    Bot Avoidance</p>
+                                <p class="text-xl font-black text-white italic" data-i18n="services.99_human_feel">99%
+                                    HUMAN FEEL</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]"
+                                data-i18n="services.strategic_followup_logic">
+                                <span class="size-1.5 bg-althr-gold rounded-full"></span> Strategic Follow-up Logic
+                            </li>
+                            <li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]"
+                                data-i18n="services.appointment_autopilot">
+                                <span class="size-1.5 bg-althr-gold rounded-full"></span> Appointment Autopilot
+                            </li>
+                            <li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]"
+                                data-i18n="services.dynamic_offer_gen">
+                                <span class="size-1.5 bg-althr-gold rounded-full"></span> Dynamic Offer Gen
+                            </li>
+                        </ul>
+                        <a href="services/sales.html"
+                            class="inline-flex items-center gap-2 text-althr-gold text-xs font-black uppercase tracking-widest pt-4 hover:gap-4 transition-all">
+                            <span data-i18n="common.view_solution">View Solution</span>
+                            <span class="material-symbols-outlined text-sm" translate="no">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Solution 4: Operational Flow -->
+                <div class="space-y-10 group" id="ops">
+                    <a href="services/ops.html" class="flex items-center gap-6 group/title">
+                        <div
+                            class="size-16 bg-althr-cyan/10 rounded-2xl flex items-center justify-center text-althr-cyan border border-althr-cyan/20 group-hover:scale-110 transition-transform duration-500">
+                            <span class="material-symbols-outlined text-4xl" data-i18n="services.settingsaccessibility"
+                                translate="no">settings_accessibility</span>
+                        </div>
+                        <h2 class="text-3xl font-black text-white uppercase tracking-widest italic group-hover:text-althr-cyan transition-colors"
+                            data-i18n="industry.jewelry.operational_flow">
+                            <span data-i18n="services.ops">Operational Flow</span>
+                        </h2>
+                    </a>
+                    <div
+                        class="frosted-glass p-12 rounded-[3.5rem] border border-white/5 space-y-10 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-althr-cyan/5 blur-[40px]"></div>
+                        <p class="text-slate-400 text-lg uppercase leading-relaxed font-light tracking-wide"
+                            data-i18n="services.ops.desc">The backbone of business dominance. Automate internal
+                            communications, cross-departmental
+                            syncs, and real-time P&amp;L intelligence reports.</p>
+                        <div class="grid sm:grid-cols-2 gap-8">
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
+                                <p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none"
+                                    data-i18n="services.internal_sync">
+                                    Internal Sync</p>
+                                <p class="text-xl font-black text-white italic" data-i18n="services.full_stack">FULL
+                                    STACK</p>
+                            </div>
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
+                                <p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none"
+                                    data-i18n="services.error_margin">
+                                    Error Margin</p>
+                                <p class="text-xl font-black text-white italic" data-i18n="services.near_zero">NEAR ZERO
+                                </p>
+                            </div>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]"
+                                data-i18n="services.crossdepartmental_sync">
+                                <span class="size-1.5 bg-althr-cyan rounded-full"></span> Cross-Departmental Sync
+                            </li>
+                            <li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]"
+                                data-i18n="services.anomaly_detection">
+                                <span class="size-1.5 bg-althr-cyan rounded-full"></span> Anomaly Detection
+                            </li>
+                            <li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]"
+                                data-i18n="services.pl_intelligence">
+                                <span class="size-1.5 bg-althr-cyan rounded-full"></span> P&amp;L Intelligence
+                            </li>
+                        </ul>
+                        <a href="services/ops.html"
+                            class="inline-flex items-center gap-2 text-althr-cyan text-xs font-black uppercase tracking-widest pt-4 hover:gap-4 transition-all">
+                            <span data-i18n="common.view_solution">View Solution</span>
+                            <span class="material-symbols-outlined text-sm" translate="no">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Solution 5: AI Orchestration -->
+                <div class="space-y-10 group" id="ai-training">
+                    <a href="services/ai.html" class="flex items-center gap-6 group/title">
+                        <div
+                            class="size-16 bg-althr-gold/10 rounded-2xl flex items-center justify-center text-althr-gold border border-althr-gold/20 group-hover:scale-110 transition-transform duration-500">
+                            <span class="material-symbols-outlined text-4xl" data-i18n="services.memory"
+                                translate="no">memory</span>
+                        </div>
+                        <h2 class="text-3xl font-black text-white uppercase tracking-widest italic group-hover:text-althr-gold transition-colors"
+                            data-i18n="services.ai.title">
+                            AI Orchestration</h2>
+                    </a>
+                    <div
+                        class="frosted-glass p-12 rounded-[3.5rem] border border-white/5 space-y-10 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-althr-gold/5 blur-[40px]"></div>
+                        <p class="text-slate-400 text-lg uppercase leading-relaxed font-light tracking-wide"
+                            data-i18n="services.ai.desc">Private AI models trained specifically on your business data.
+                            We fine-tune autonomous agents
+                            that stay within your infrastructure, ensuring absolute data privacy and sovereign
+                            intelligence.</p>
+                        <div class="grid sm:grid-cols-2 gap-8">
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
+                                <p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none"
+                                    data-i18n="industry.jewelry.privacy">
+                                    Privacy</p>
+                                <p class="text-xl font-black text-white italic" data-i18n="services.100_sovereign">100%
+                                    SOVEREIGN</p>
+                            </div>
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
+                                <p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none"
+                                    data-i18n="services.hardware">
+                                    Hardware</p>
+                                <p class="text-xl font-black text-white italic" data-i18n="services.onpremise_gpu">
+                                    ON-PREMISE GPU</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]"
+                                data-i18n="services.model_finetuning">
+                                <span class="size-1.5 bg-althr-gold rounded-full"></span> Model Fine-Tuning
+                            </li>
+                            <li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]"
+                                data-i18n="services.data_sovereign_training">
+                                <span class="size-1.5 bg-althr-gold rounded-full"></span> Data Sovereign Training
+                            </li>
+                            <li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]"
+                                data-i18n="services.bespoke_ai_infrastructure">
+                                <span class="size-1.5 bg-althr-gold rounded-full"></span> Bespoke AI Infrastructure
+                            </li>
+                            <li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]"
+                                data-i18n="services.advanced_ai_integration_suites">
+                                <span class="size-1.5 bg-althr-gold rounded-full"></span> Advanced AI Integration Suites
+                            </li>
+                        </ul>
+                        <a href="services/ai.html"
+                            class="inline-flex items-center gap-2 text-althr-gold text-xs font-black uppercase tracking-widest pt-4 hover:gap-4 transition-all">
+                            <span data-i18n="common.view_solution">View Solution</span>
+                            <span class="material-symbols-outlined text-sm" translate="no">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Solution 6: Tax & Admin Logic -->
+                <div class="space-y-10 group" id="tax-admin">
+                    <a href="services/tax.html" class="flex items-center gap-6 group/title">
+                        <div
+                            class="size-16 bg-althr-cyan/10 rounded-2xl flex items-center justify-center text-althr-cyan border border-althr-cyan/20 group-hover:scale-110 transition-transform duration-500">
+                            <span class="material-symbols-outlined text-4xl" data-i18n="services.accountbalance"
+                                translate="no">account_balance</span>
+                        </div>
+                        <h2 class="text-3xl font-black text-white uppercase tracking-widest italic group-hover:text-althr-cyan transition-colors"
+                            data-i18n="services.tax.title">
+                            Tax &amp; Admin Logic</h2>
+                    </a>
+                    <div
+                        class="frosted-glass p-12 rounded-[3.5rem] border border-white/5 space-y-10 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-althr-cyan/5 blur-[40px]"></div>
+                        <p class="text-slate-400 text-lg uppercase leading-relaxed font-light tracking-wide"
+                            data-i18n="services.tax.desc">Automate local tax filing and optimization directly from your
+                            administrative dashboard. We
+                            bridge the gap between operational data and regional compliance, eliminating manual filing
+                            overhead.</p>
+                        <div class="grid sm:grid-cols-2 gap-8">
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
+                                <p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none"
+                                    data-i18n="services.compliance">
+                                    Compliance</p>
+                                <p class="text-xl font-black text-white italic" data-i18n="services.autonomous_filing">
+                                    AUTONOMOUS FILING</p>
+                            </div>
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
+                                <p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none"
+                                    data-i18n="services.efficiency">
+                                    Efficiency</p>
+                                <p class="text-xl font-black text-white italic" data-i18n="services.85_overhead">-85%
+                                    OVERHEAD</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]"
+                                data-i18n="services.local_tax_automation">
+                                <span class="size-1.5 bg-althr-cyan rounded-full"></span> Local Tax Automation
+                            </li>
+                            <li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]"
+                                data-i18n="services.admin_section_integration">
+                                <span class="size-1.5 bg-althr-cyan rounded-full"></span> Admin Section Integration
+                            </li>
+                            <li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]"
+                                data-i18n="services.compliance_bridge_protocols">
+                                <span class="size-1.5 bg-althr-cyan rounded-full"></span> Compliance Bridge Protocols
+                            </li>
+                        </ul>
+                        <a href="services/tax.html"
+                            class="inline-flex items-center gap-2 text-althr-cyan text-xs font-black uppercase tracking-widest pt-4 hover:gap-4 transition-all">
+                            <span data-i18n="common.view_solution">View Solution</span>
+                            <span class="material-symbols-outlined text-sm" translate="no">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Solution 7: Growth Acceleration -->
+                <div class="space-y-10 group" id="growth">
+                    <a href="services/growth.html" class="flex items-center gap-6 group/title">
+                        <div
+                            class="size-16 bg-althr-gold/10 rounded-2xl flex items-center justify-center text-althr-gold border border-althr-gold/20 group-hover:scale-110 transition-transform duration-500">
+                            <span class="material-symbols-outlined text-4xl" data-i18n="industry.jewelry.trendingup"
+                                translate="no">trending_up</span>
+                        </div>
+                        <h2 class="text-3xl font-black text-white uppercase tracking-widest italic group-hover:text-althr-gold transition-colors"
+                            data-i18n="services.acceleration.title">
+                            Growth Acceleration</h2>
+                    </a>
+                    <div
+                        class="frosted-glass p-12 rounded-[3.5rem] border border-white/5 space-y-10 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-althr-gold/5 blur-[40px]"></div>
+                        <p class="text-slate-400 text-lg uppercase leading-relaxed font-light tracking-wide"
+                            data-i18n="services.acceleration.desc">Hyper-targeted customer acquisition through automated
+                            lead generation, cross-platform
+                            tracking, and social media orchestration engines.</p>
+                        <div class="grid sm:grid-cols-2 gap-8">
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
+                                <p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none"
+                                    data-i18n="services.lead_flow">
+                                    Lead Flow</p>
+                                <p class="text-xl font-black text-white italic" data-i18n="services.3x_volume">3X VOLUME
+                                </p>
+                            </div>
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
+                                <p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none"
+                                    data-i18n="services.conversion">
+                                    Conversion</p>
+                                <p class="text-xl font-black text-white italic" data-i18n="services.220_roi">+220% ROI
+                                </p>
+                            </div>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]"
+                                data-i18n="services.automated_lead_generation">
+                                <span class="size-1.5 bg-althr-gold rounded-full"></span> Automated Lead Generation
+                            </li>
+                            <li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]"
+                                data-i18n="services.multichannel_lead_tracking">
+                                <span class="size-1.5 bg-althr-gold rounded-full"></span> Multi-Channel Lead Tracking
+                            </li>
+                            <li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]"
+                                data-i18n="services.social_media_orchestration">
+                                <span class="size-1.5 bg-althr-gold rounded-full"></span> Social Media Orchestration
+                            </li>
+                        </ul>
+                        <a href="services/growth.html"
+                            class="inline-flex items-center gap-2 text-althr-gold text-xs font-black uppercase tracking-widest pt-4 hover:gap-4 transition-all">
+                            <span data-i18n="common.view_solution">View Solution</span>
+                            <span class="material-symbols-outlined text-sm" translate="no">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Solution 8: Sentiment & News Intelligence -->
+                <div class="space-y-10 group" id="sentiment">
+                    <a href="services/sentiment.html" class="flex items-center gap-6 group/title">
+                        <div
+                            class="size-16 bg-althr-cyan/10 rounded-2xl flex items-center justify-center text-althr-cyan border border-althr-cyan/20 group-hover:scale-110 transition-transform duration-500">
+                            <span class="material-symbols-outlined text-4xl" data-i18n="services.analytics"
+                                translate="no">analytics</span>
+                        </div>
+                        <h2 class="text-3xl font-black text-white uppercase tracking-widest italic group-hover:text-althr-cyan transition-colors"
+                            data-i18n="services.sentiment.title">
+                            Sentiment &amp; News Intel</h2>
+                    </a>
+                    <div
+                        class="frosted-glass p-12 rounded-[3.5rem] border border-white/5 space-y-10 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-althr-cyan/5 blur-[40px]"></div>
+                        <p class="text-slate-400 text-lg uppercase leading-relaxed font-light tracking-wide"
+                            data-i18n="services.sentiment.desc">Scale your business using real-time market sentiment and
+                            news cycles. For luxury verticals
+                            like Jewelry, we integrate live gold price telemetry and global economic news to
+                            automatically adjust pricing and marketing spend.</p>
+                        <div class="grid sm:grid-cols-2 gap-8">
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
+                                <p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none"
+                                    data-i18n="services.latency">
+                                    Latency</p>
+                                <p class="text-xl font-black text-white italic" data-i18n="services.realtime">REAL-TIME
+                                </p>
+                            </div>
+                            <div class="bg-white/5 p-6 rounded-2xl border border-white/10 space-y-2">
+                                <p class="text-[13px] font-black text-slate-500 uppercase tracking-widest leading-none"
+                                    data-i18n="services.integration">
+                                    Integration</p>
+                                <p class="text-xl font-black text-white italic" data-i18n="services.news_firehose">NEWS
+                                    FIREHOSE</p>
+                            </div>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]"
+                                data-i18n="services.live_commodity_telemetry">
+                                <span class="size-1.5 bg-althr-cyan rounded-full"></span> Live Commodity Telemetry
+                            </li>
+                            <li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]"
+                                data-i18n="services.market_sentiment_scraper">
+                                <span class="size-1.5 bg-althr-cyan rounded-full"></span> Market Sentiment Scraper
+                            </li>
+                            <li class="flex items-center gap-4 text-[14px] font-bold text-slate-500 uppercase tracking-[0.05em]"
+                                data-i18n="services.dynamic_pricing_engines">
+                                <span class="size-1.5 bg-althr-cyan rounded-full"></span> Dynamic Pricing Engines
+                            </li>
+                        </ul>
+                        <a href="services/sentiment.html"
+                            class="inline-flex items-center gap-2 text-althr-cyan text-xs font-black uppercase tracking-widest pt-4 hover:gap-4 transition-all">
+                            <span data-i18n="common.view_solution">View Solution</span>
+                            <span class="material-symbols-outlined text-sm" translate="no">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Strategic Infrastructure Engines -->
+        <section class="px-6 md:px-12 py-32 border-t border-white/5 bg-white/[0.01]">
+            <div class="max-w-[1600px] mx-auto space-y-24">
+                <div class="text-center space-y-6">
+                    <span class="text-althr-gold font-bold tracking-normal uppercase text-xs"
+                        data-i18n="services.core_infrastructure">Core Infrastructure</span>
+                    <h2 class="text-4xl md:text-6xl font-black text-white uppercase italic tracking-tighter leading-none"
+                        data-i18n="services.strategic_infrastructure_engines"><span data-i18n="index.solutions.title">
+                            Strategic </span><span
+                            class="text-althr-cyan underline underline-offset-8 decoration-white/10"
+                            data-i18n="services.infrastructure_engines">Infrastructure
+                            Engines</span>
+                    </h2>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-12">
+                    <!-- Engine 1 -->
+                    <div
+                        class="frosted-glass p-12 rounded-[3rem] border border-white/5 space-y-8 hover:translate-y-[-10px] transition-all duration-500 group">
+                        <div
+                            class="size-16 bg-althr-gold/10 rounded-2xl flex items-center justify-center text-althr-gold border border-althr-gold/20 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-4xl" translate="no">dns</span>
+                        </div>
+                        <h4 class="text-2xl font-black text-white uppercase tracking-widest"
+                            data-i18n="services.global_data_grids">Global Data Grids</h4>
+                        <p class="text-slate-400 text-[14px] uppercase leading-relaxed font-light tracking-wide"
+                            data-i18n="services.highthroughput_data_pipelines_designed_for">
+                            High-throughput data pipelines designed for sub-millisecond latency across multi-region
+                            cloud clusters. We ensure your data is where it needs to be, before you need it.
+                        </p>
+                        <ul class="space-y-3 pt-6 border-t border-white/5">
+                            <li class="flex items-center gap-3 text-[12px] font-bold text-slate-500 uppercase"
+                                data-i18n="services.multiregion_sync"><span
+                                    class="size-1 bg-althr-gold rounded-full"></span> Multi-Region Sync</li>
+                            <li class="flex items-center gap-3 text-[12px] font-bold text-slate-500 uppercase"
+                                data-i18n="services.subms_latency"><span
+                                    class="size-1 bg-althr-gold rounded-full"></span> Sub-ms Latency</li>
+                        </ul>
+                    </div>
+                    <!-- Engine 2 -->
+                    <div
+                        class="frosted-glass p-12 rounded-[3rem] border border-white/5 space-y-8 hover:translate-y-[-10px] transition-all duration-500 group">
+                        <div
+                            class="size-16 bg-althr-cyan/10 rounded-2xl flex items-center justify-center text-althr-cyan border border-althr-cyan/20 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-4xl" data-i18n="services.automode"
+                                translate="no">auto_mode</span>
+                        </div>
+                        <h4 class="text-2xl font-black text-white uppercase tracking-widest"
+                            data-i18n="services.logic_synthesis">Logic Synthesis</h4>
+                        <p class="text-slate-400 text-[14px] uppercase leading-relaxed font-light tracking-wide"
+                            data-i18n="services.automated_business_logic_deployment_that">
+                            Automated business logic deployment that adapts to real-time market conditions without
+                            manual intervention. Self-healing protocols for continuous operation.
+                        </p>
+                        <ul class="space-y-3 pt-6 border-t border-white/5">
+                            <li class="flex items-center gap-3 text-[12px] font-bold text-slate-500 uppercase"
+                                data-i18n="services.adaptive_execution"><span
+                                    class="size-1 bg-althr-cyan rounded-full"></span> Adaptive Execution</li>
+                            <li class="flex items-center gap-3 text-[12px] font-bold text-slate-500 uppercase"
+                                data-i18n="services.selfhealing_logic"><span
+                                    class="size-1 bg-althr-cyan rounded-full"></span> Self-Healing Logic</li>
+                        </ul>
+                    </div>
+                    <!-- Engine 3 -->
+                    <div
+                        class="frosted-glass p-12 rounded-[3rem] border border-white/5 space-y-8 hover:translate-y-[-10px] transition-all duration-500 group">
+                        <div
+                            class="size-16 bg-white/10 rounded-2xl flex items-center justify-center text-white border border-white/20 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-4xl" data-i18n="services.verifieduser"
+                                translate="no">verified_user</span>
+                        </div>
+                        <h4 class="text-2xl font-black text-white uppercase tracking-widest"
+                            data-i18n="services.protocol_integrity">Protocol Integrity</h4>
+                        <p class="text-slate-400 text-[14px] uppercase leading-relaxed font-light tracking-wide"
+                            data-i18n="services.hardened_security_layers_and_soc2ready">
+                            Hardened security layers and SOC2-ready automation workflows for mission-critical enterprise
+                            operations. Zero-trust architecture baked into every component.
+                        </p>
+                        <ul class="space-y-3 pt-6 border-t border-white/5">
+                            <li class="flex items-center gap-3 text-[12px] font-bold text-slate-500 uppercase"
+                                data-i18n="services.zerotrust_security"><span
+                                    class="size-1 bg-white rounded-full"></span> Zero-Trust Security</li>
+                            <li class="flex items-center gap-3 text-[12px] font-bold text-slate-500 uppercase"
+                                data-i18n="services.compliance_ready"><span class="size-1 bg-white rounded-full"></span>
+                                Compliance Ready</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer class="bg-althr-navy border-t border-white/10 py-24 px-6 md:px-12 relative z-20">
         <div class="max-w-[1600px] mx-auto">
             <div class="grid lg:grid-cols-5 gap-10">
@@ -701,7 +900,7 @@
             </div>
         </div>
     </footer>
-    
+
     <!-- Mobile Menu -->
     <div class="fixed inset-0 z-[100] bg-althr-navy/95 backdrop-blur-2xl translate-x-full transition-transform duration-500 lg:hidden"
         id="mobile-menu">
@@ -742,7 +941,7 @@
                         class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"
                         data-i18n="industry.jewelry.home">Home</span>
                 </a>
-                <a class="group flex items-end gap-4" href="index.html#industries-footer">
+                <a class="group flex items-end gap-4" href="industries.html">
                     <span class="text-althr-gold font-mono text-xs mb-2">02</span>
                     <span
                         class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"
@@ -789,7 +988,7 @@
             </div>
         </div>
     </div>
-    
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const openBtn = document.getElementById('open-menu');
@@ -817,7 +1016,8 @@
             }
         });
     </script>
-    
+
     <script src="motion.js"></script>
 </body>
+
 </html>
