@@ -1,7 +1,5 @@
 function setLanguage(lang) {
-    const currentLang = localStorage.getItem('althr_lang') || 'en';
-    if (lang === currentLang) return;
-
+    console.log('Setting language to:', lang);
     localStorage.setItem('althr_lang', lang);
     applyLanguage(lang);
     updateSelector(lang);
@@ -9,18 +7,26 @@ function setLanguage(lang) {
 
 function updateSelector(lang) {
     const els = document.querySelectorAll('#current-lang');
-    els.forEach(el => el.innerText = lang.toUpperCase());
+    els.forEach(el => {
+        el.innerText = lang.toUpperCase();
+    });
 
     // Update HTML lang attribute for accessibility/SEO
     document.documentElement.lang = lang;
 }
 
 function applyLanguage(lang) {
-    if (!window.translations || !window.translations[lang]) return;
+    console.log('Applying language:', lang);
+    if (!window.translations || !window.translations[lang]) {
+        console.warn('Translations not found for language:', lang);
+        return;
+    }
     const dictionary = window.translations[lang];
 
     // DETERMINISTIC KEY-BASED REPLACEMENT
     const elements = document.querySelectorAll('[data-i18n]');
+    console.log('Found', elements.length, 'i18n elements');
+
     elements.forEach(el => {
         const key = el.getAttribute('data-i18n');
         if (dictionary[key]) {
@@ -30,18 +36,34 @@ function applyLanguage(lang) {
     });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+function initI18n() {
+    console.log('Initializing i18n...');
     const savedLang = localStorage.getItem('althr_lang') || 'en';
     updateSelector(savedLang);
     applyLanguage(savedLang);
+}
 
-    // Attach event listeners to all language buttons (CSP-compliant)
-    const langButtons = document.querySelectorAll('[data-lang]');
-    langButtons.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            e.preventDefault();
-            const lang = btn.getAttribute('data-lang');
-            setLanguage(lang);
-        });
-    });
+// Global click listener for language buttons (supports dynamic content)
+document.addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-lang]');
+    if (btn) {
+        e.preventDefault();
+        const lang = btn.getAttribute('data-lang');
+        setLanguage(lang);
+    }
+});
+
+// Run on DOMContentLoaded
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initI18n);
+} else {
+    initI18n();
+}
+
+// In case translations.js is loaded with defer or async, or just late
+window.addEventListener('load', () => {
+    const savedLang = localStorage.getItem('althr_lang') || 'en';
+    if (window.translations && window.translations[savedLang]) {
+        applyLanguage(savedLang);
+    }
 });

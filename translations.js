@@ -799,7 +799,7 @@ window.translations = {
         "industry.jewelry.tech": "Tech",
         "industry.jewelry.start_project": "Start Project",
         "industry.jewelry.arrowforward": "arrow_forward",
-        "industry.jewelry.operational_menu_v20": "Operational Menu v2.0",,
+        "industry.jewelry.operational_menu_v20": "Operational Menu v2.0",
         "analytics-integration.google_analytics_integration": "Google Analytics Integration for ALTHR Automation",
         "analytics-integration.enhanced_contact_form": "Enhanced contact form integration",
         "privacy.classtext12px_fontbold_trackingnormal": "class=\"text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase\">AI Orchestration",

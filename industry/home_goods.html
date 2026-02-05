@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-
 <html class="dark" lang="en">
 <head>
-<meta charset="utf-8"/>
+    <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Home Goods &amp; Decor E-Commerce Solutions | ALTHR Automation</title>
 <meta content="Automated e-commerce solutions for home decor and furniture stores. Enable gift registries, room visualizers, and fragile shipping logic with ALTHR." name="description"/>
@@ -10,167 +9,232 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "althr-navy": "#080a12",
-                        "althr-gold": "#d4af37",
-                        "althr-cyan": "#00f0ff",
-                        "glass-white": "rgba(255, 255, 255, 0.05)",
-                    },
-                    fontFamily: {
-                        "display": ["Inter", "sans-serif"]
-                    },
-                },
-            },
-        }
-    </script>
+ tailwind.config = {
+ darkMode: "class",
+ theme: {
+ extend: {
+ colors: {
+ "althr-navy": "#080a12",
+ "althr-gold": "#d4af37",
+ "althr-cyan": "#00f0ff",
+ "glass-white": "rgba(255, 255, 255, 0.05)",
+ },
+ fontFamily: {
+ "display": ["Inter", "sans-serif"]
+ },
+ },
+ },
+ }
+ </script>
 <style type="text/tailwindcss">
-        @layer utilities {
-            .blueprint-grid {
-                background-image: 
-                    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-                    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-                background-size: 40px 40px;
-            }
-            .frosted-glass {
-                background: rgba(8, 10, 18, 0.95);
-                backdrop-filter: blur(24px);
-                border: 1px solid rgba(255, 255, 255, 0.12);
-                box-shadow: 0 8px 64px 0 rgba(0, 0, 0, 0.6);
-            }
-            .text-glow-gold {
-                text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
-            }
-            .text-glow-cyan {
-                text-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
-            }
-        }
-    </style>
-    <link rel="stylesheet" href="../motion.css">
+ @layer utilities {
+ .blueprint-grid {
+ background-image: 
+ linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+ linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+ background-size: 40px 40px;
+ }
+ .frosted-glass {
+ background: rgba(8, 10, 18, 0.95);
+ backdrop-filter: blur(24px);
+ border: 1px solid rgba(255, 255, 255, 0.12);
+ box-shadow: 0 8px 64px 0 rgba(0, 0, 0, 0.6);
+ }
+ .text-glow-gold {
+ text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+ }
+ .text-glow-cyan {
+ text-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+ }
+ }
+ </style>
+ <link rel="stylesheet" href="../motion.css">
+    <script src="../translations.js"></script>
+    <script src="../i18n.js"></script>
 </head>
 <body class="bg-althr-navy font-display text-slate-100 min-h-screen blueprint-grid selection:bg-althr-cyan selection:text-althr-navy">
-<!-- Navigation -->
-<header class="fixed top-0 w-full z-50 border-b border-white/5 bg-althr-navy/90 backdrop-blur-md">
-<div class="max-w-[1600px] mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
-<div class="flex items-center gap-3">
-<a class="flex items-center gap-3 group" data-i18n="industry.jewelry.althr" href="../index.html">
-<div class="size-10 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-<img alt="ALTHR" class="w-full h-full object-contain" src="../logo.png"/>
-</div>
-<span class="font-black text-2xl tracking-tighter uppercase" data-i18n="industry.jewelry.althr">ALTHR</span>
-</a>
-</div>
-<nav class="hidden lg:flex items-center gap-10">
-<div class="relative group">
-<button class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase flex items-center gap-1">
-<span data-i18n="nav.industries">Industries</span> <span class="material-symbols-outlined text-[14px]" data-i18n="industry.jewelry.expandmore" translate="no">expand_more</span>
-</button>
-<div class="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-<div class="frosted-glass p-6 rounded-2xl border border-white/10 w-64 grid grid-cols-1 gap-4">
-<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.jewelry_watch" href="jewelry.html"><span data-i18n="industries.jewelry">Jewelry &amp; Watch</span></a>
-<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.furniture_decor" href="furniture.html"><span data-i18n="industries.furniture">Furniture &amp; Decor</span></a>
-<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" href="grocery.html"><span data-i18n="industries.grocery">Grocery</span></a>
-<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.equipment_supply" href="equipment.html"><span data-i18n="industries.equipment">Equipment &amp; Supply</span></a>
-<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.gadgets_tech" href="gadget.html"><span data-i18n="industries.gadgets">Gadgets &amp; Tech</span></a>
-<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.fashion_boutique" href="fashion.html"><span data-i18n="industries.fashion">Fashion Boutique</span></a>
-<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.beauty_cosmo" href="beauty.html"><span data-i18n="industries.beauty">Beauty &amp; Cosmo</span></a>
-<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.pet_supply" href="pet.html"><span data-i18n="industries.pet">Pet Supply</span></a>
-<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.home_goods" href="home_goods.html"><span data-i18n="industries.home_goods">Home Goods</span></a>
-<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.sports_equipment" href="sports.html"><span data-i18n="industries.sports">Sports Equipment</span></a>
-<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.health_wellness" href="health.html"><span data-i18n="industries.health">Health &amp; Wellness</span></a>
-<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.toy_hobby" href="toy.html"><span data-i18n="industries.toy">Toy &amp; Hobby</span></a>
-</div>
-</div>
-</div>
-<div class="relative group">
-<button class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase flex items-center gap-1">
-<span data-i18n="nav.services">Services</span> <span class="material-symbols-outlined text-[14px]" data-i18n="industry.jewelry.expandmore" translate="no">expand_more</span>
-</button>
-<div class="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-<div class="frosted-glass p-6 rounded-2xl border border-white/10 w-72 grid grid-cols-1 gap-4">
-<a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.crm_architecture" href="../services.html#crm"><span data-i18n="services.crm">CRM Architecture</span></a>
-<a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.marketing_operations" href="../services.html#marketing"><span data-i18n="services.marketing">Marketing Operations</span></a>
-<a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.sales_pipeline" href="../services.html#sales"><span data-i18n="services.sales">Sales Pipeline</span></a>
-<a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.operational_flow" href="../services.html#ops"><span data-i18n="services.ops">Operational Flow</span></a>
-<a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.lead_generation" href="../services.html#lead-gen"><span data-i18n="services.lead_gen">Lead Generation</span></a>
-<a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.lead_tracking" href="../services.html#lead-track"><span data-i18n="services.lead_track">Lead Tracking</span></a>
-<a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.social_media_management" href="../services.html#social"><span data-i18n="services.social">Social Media Management</span></a>
-</div>
-</div>
-</div>
-<a class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" href="../intelligence.html"><span data-i18n="nav.technology">Technology</span></a>
-<a class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" href="../results.html"><span data-i18n="nav.results">Results</span></a>
-<a class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="index.about_us" href="../about.html"><span data-i18n="nav.about">About Us</span></a>
-<a class="bg-althr-gold text-althr-navy px-6 py-2.5 rounded-full text-[14px] font-black tracking-normal uppercase transition-all hover:scale-105 hover:bg-white" data-i18n="nav.get_started" href="../contact.html">Get
+    <!-- Navigation -->
+    <header class="fixed top-0 w-full z-50 border-b border-white/5 bg-althr-navy/90 backdrop-blur-md">
+        <div class="max-w-[1600px] mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <a class="flex items-center gap-3 group" data-i18n="industry.jewelry.althr" href="../index.html">
+                    <div class="size-10 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+                        <img alt="ALTHR" class="w-full h-full object-contain" src="../logo.png" />
+                    </div>
+                    <span class="font-black text-2xl tracking-tighter uppercase"
+                        data-i18n="industry.jewelry.althr">ALTHR</span>
+                </a>
+            </div>
+            <nav class="hidden lg:flex items-center gap-10">
+                <div class="relative group">
+                    <button
+                        class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase flex items-center gap-1">
+                        <span id="industries-footer" data-i18n="nav.industries">Industries</span> <span
+                            class="material-symbols-outlined text-[14px]" data-i18n="industry.jewelry.expandmore"
+                            translate="no">expand_more</span>
+                    </button>
+                    <div
+                        class="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <div class="frosted-glass p-6 rounded-2xl border border-white/10 w-64 grid grid-cols-1 gap-4">
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.jewelry" href="../industry/jewelry.html">Jewelry
+                                &amp; Watch</a>
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.furniture" href="../industry/furniture.html">Furniture
+                                &amp; Decor</a>
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                href="../industry/grocery.html"><span data-i18n="industries.grocery">Grocery</span></a>
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.equipment" href="../industry/equipment.html">Equipment
+                                &amp; Supply</a>
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.gadget" href="../industry/gadget.html">Gadgets
+                                &amp; Tech</a>
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.fashion" href="../industry/fashion.html">Fashion
+                                Boutique</a>
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.beauty" href="../industry/beauty.html">Beauty
+                                &amp; Cosmo</a>
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.pet" href="../industry/pet.html">Pet
+                                Supply</a>
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.home_goods" href="../industry/home_goods.html">Home
+                                Goods</a>
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.sports" href="../industry/sports.html">Sports
+                                Equipment</a>
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.health" href="../industry/health.html">Health
+                                &amp; Wellness</a>
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.toy" href="../industry/toy.html">Toy
+                                &amp; Hobby</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <button
+                        class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase flex items-center gap-1">
+                        <span data-i18n="nav.services">Services</span> <span
+                            class="material-symbols-outlined text-[14px]" data-i18n="industry.jewelry.expandmore"
+                            translate="no">expand_more</span>
+                    </button>
+                    <div
+                        class="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <div class="frosted-glass p-6 rounded-2xl border border-white/10 w-72 grid grid-cols-1 gap-4">
+                            <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="services.crm.title" href="../services/crm.html">CRM Architecture</a>
+                            <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="services.marketing.title" href="../services/marketing.html">Marketing
+                                Operations</a>
+                            <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="services.sales.title" href="../services/sales.html">Sales Pipeline</a>
+                            <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="services.ops.title" href="../services/ops.html">Operational Flow</a>
+                            <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industry.jewelry.lead_generation" href="../services/lead-gen.html">Lead
+                                Generation</a>
+                            <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industry.jewelry.lead_tracking" href="../services/lead-track.html">Lead
+                                Tracking</a>
+                            <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industry.jewelry.social_media_management" href="../services/social.html">Social
+                                Media Management</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                    href="../intelligence.html"><span data-i18n="nav.technology">Technology</span></a>
+                <a class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                    href="../results.html"><span data-i18n="nav.results">Results</span></a>
+                <a class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                    data-i18n="index.about_us" href="../about.html"><span data-i18n="nav.about">About Us</span></a>
+                <a class="bg-althr-gold text-althr-navy px-6 py-2.5 rounded-full text-[14px] font-black tracking-normal uppercase transition-all hover:scale-105 hover:bg-white"
+                    data-i18n="nav.get_started" href="../contact.html">Get
                     Started</a>
-<!-- Language Selector -->
-<div class="relative group ml-4">
-<button class="flex items-center gap-2 text-[12px] font-black tracking-normal hover:text-althr-gold transition-colors uppercase">
-<span class="material-symbols-outlined text-[18px]" data-i18n="industry.jewelry.language" translate="no">language</span>
-<span id="current-lang">EN</span>
-</button>
-<div class="absolute top-full right-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-<div class="frosted-glass p-4 rounded-xl border border-white/10 w-36 grid grid-cols-1 gap-3">
-<button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" data-i18n="privacy.english" data-lang="en">
-<span class="text-base">🇺🇸</span> English
+                <!-- Language Selector -->
+                <div class="relative group ml-4">
+                    <button
+                        class="flex items-center gap-2 text-[12px] font-black tracking-normal hover:text-althr-gold transition-colors uppercase">
+                        <span class="material-symbols-outlined text-[18px]" data-i18n="industry.jewelry.language"
+                            translate="no">language</span>
+                        <span id="current-lang">EN</span>
+                    </button>
+                    <div
+                        class="absolute top-full right-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <div class="frosted-glass p-4 rounded-xl border border-white/10 w-36 grid grid-cols-1 gap-3">
+                            <button
+                                class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3"
+                                data-i18n="privacy.english" data-lang="en">
+                                <span class="text-base">🇺🇸</span> English
                             </button>
-<button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" data-i18n="privacy.polish" data-lang="pl">
-<span class="text-base">🇵🇱</span> Polish
+                            <button
+                                class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3"
+                                data-i18n="privacy.polish" data-lang="pl">
+                                <span class="text-base">🇵🇱</span> Polish
                             </button>
-<button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" data-i18n="privacy.german" data-lang="de">
-<span class="text-base">🇩🇪</span> German
+                            <button
+                                class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3"
+                                data-i18n="privacy.german" data-lang="de">
+                                <span class="text-base">🇩🇪</span> German
                             </button>
-<button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" data-i18n="privacy.french" data-lang="fr">
-<span class="text-base">🇫🇷</span> French
+                            <button
+                                class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3"
+                                data-i18n="privacy.french" data-lang="fr">
+                                <span class="text-base">🇫🇷</span> French
                             </button>
-<button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" data-i18n="privacy.spanish" data-lang="es">
-<span class="text-base">🇪🇸</span> Spanish
+                            <button
+                                class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3"
+                                data-i18n="privacy.spanish" data-lang="es">
+                                <span class="text-base">🇪🇸</span> Spanish
                             </button>
-</div>
-</div>
-</div>
-</nav>
-<button class="lg:hidden text-white" data-i18n="industry.jewelry.menu" id="open-menu"><span class="material-symbols-outlined" data-i18n="industry.jewelry.menu" translate="no">menu</span></button>
-</div>
-</header>
-<main class="relative overflow-x-hidden pt-20">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <button class="lg:hidden text-white" data-i18n="industry.jewelry.menu" id="open-menu"><span
+                    class="material-symbols-outlined" data-i18n="industry.jewelry.menu"
+                    translate="no">menu</span></button>
+        </div>
+    </header>
+    
+    <main class="relative overflow-x-hidden pt-20">
 <!-- Hero Section -->
 <section class="min-h-[70vh] flex items-center px-6 md:px-12 py-20 relative">
-<div class="absolute inset-0 z-0 opacity-20"><img class="w-full h-full object-cover grayscale" src="../luxury_furniture_decor.png"/></div>
+<div class="absolute inset-0 z-0"><img class="w-full h-full object-cover opacity-40" src="../luxury_furniture_decor.jpg"/><div class="absolute inset-0 bg-gradient-to-r from-althr-navy via-althr-navy/40 to-transparent"></div></div>
 <div class="max-w-[1600px] mx-auto w-full grid lg:grid-cols-12 gap-12 items-center">
 <div class="lg:col-span-7 space-y-10">
 <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm">
 <span class="size-2 bg-althr-gold rounded-full animate-pulse"></span>
 <span class="text-[14px] font-bold tracking-[0.05em] uppercase text-althr-gold" data-i18n="industry.home_goods.decor_solutions">Decor
-                            Solutions</span>
+ Solutions</span>
 </div>
 <h1 class="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.9] text-white uppercase italic">
-                        The Digital <br/>
+ The Digital <br/>
 <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-white to-althr-gold" data-i18n="industry.home_goods.design_studio">Design
-                            Studio</span>
+ Studio</span>
 </h1>
 <div class="max-w-2xl space-y-6">
 <p class="text-xl md:text-2xl text-slate-400 font-light leading-relaxed uppercase tracking-wide">
-                            Stop <span class="text-white font-bold italic" data-i18n="industry.home_goods.indecision_paralysis">Indecision Paralysis</span>. Visualize the
-                            Vision.
-                        </p>
+ Stop <span class="text-white font-bold italic" data-i18n="industry.home_goods.indecision_paralysis">Indecision Paralysis</span>. Visualize the
+ Vision.
+ </p>
 <p class="text-slate-500 text-lg" data-i18n="industry.home_goods.we_build_visualfirst">
-                            We build visual-first home goods platforms featuring AR visualizers, gift registries, and
-                            complex fragile shipping logic.
-                        </p>
+ We build visual-first home goods platforms featuring AR visualizers, gift registries, and
+ complex fragile shipping logic.
+ </p>
 </div>
 <div class="flex flex-wrap gap-6 pt-4">
 <a class="bg-althr-gold text-althr-navy font-black text-xs tracking-[0.05em] uppercase px-10 py-5 rounded-full transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(212,000,55,0.4)]" data-i18n="common.get_demo" href="../contact.html">Get
-                            A Demo</a>
+ A Demo</a>
 </div>
 </div>
 <div class="lg:col-span-5 relative mt-12 lg:mt-0">
 <div class="frosted-glass p-12 rounded-[3.5rem] border border-white/10 relative overflow-hidden aspect-[4/5] flex flex-col justify-between group/card">
-<div class="absolute inset-0 z-0 opacity-40 pointer-events-none group-hover/card:scale-110 transition-transform duration-1000">
-<img class="w-full h-full object-cover" src="../luxury_furniture_decor.png"/>
+<div class="absolute inset-[-1px] z-0 opacity-40 pointer-events-none group-hover/card:scale-110 transition-transform duration-1000">
+<img class="w-full h-full object-cover" src="../luxury_furniture_decor.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-[#080a12] via-transparent to-transparent"></div>
 </div>
 <!-- Decorative Elements -->
@@ -183,12 +247,12 @@
 <div class="grid grid-cols-2 gap-4">
 <div>
 <p class="text-[14px] font-bold text-slate-500 uppercase tracking-widest" data-i18n="industry.home_goods.conversion_lift">Conversion
-                                        Lift</p>
+ Lift</p>
 <p class="text-3xl font-black text-white">+10%</p>
 </div>
 <div>
 <p class="text-[14px] font-bold text-slate-500 uppercase tracking-widest" data-i18n="industry.sports.growth_roi">Growth ROI
-                                    </p>
+ </p>
 <p class="text-3xl font-black text-teal-400">140%</p>
 </div>
 </div>
@@ -204,37 +268,37 @@
 <div class="space-y-12">
 <span class="text-red-500 font-bold tracking-normal uppercase text-xs" data-i18n="common.challenge">The Challenge</span>
 <h2 class="text-4xl md:text-6xl font-black tracking-tighter text-white uppercase italic leading-none">
-                            Doubt is <br/> <span class="text-slate-500" data-i18n="industry.home_goods.killing_your_conversion">Killing Your Conversion.</span>
+ Doubt is <br/> <span class="text-slate-500" data-i18n="industry.home_goods.killing_your_conversion">Killing Your Conversion.</span>
 </h2>
 <p class="text-xl text-white italic" data-i18n="industry.home_goods.they_stared_at">"They stared at the rug for 20 minutes, then left because
-                            they weren't sure if the blue matched their sofa."</p>
+ they weren't sure if the blue matched their sofa."</p>
 <div class="space-y-8">
 <div class="flex gap-6 items-start">
 <span class="material-symbols-outlined text-red-500 mt-1" data-i18n="contact.psychology" translate="no">psychology</span>
 <div>
 <h4 class="font-bold text-white uppercase tracking-widest text-sm" data-i18n="industry.home_goods.visualization_gap">Visualization Gap
-                                    </h4>
+ </h4>
 <p class="text-slate-400 text-xs mt-2 uppercase tracking-wide" data-i18n="industry.home_goods.if_they_cant">If they can't
-                                        visualize it, they don't buy it. "Indecision Paralysis" is the #1 killer of
-                                        decor sales.</p>
+ visualize it, they don't buy it. "Indecision Paralysis" is the #1 killer of
+ decor sales.</p>
 </div>
 </div>
 <div class="flex gap-6 items-start">
 <span class="material-symbols-outlined text-red-500 mt-1" data-i18n="industry.home_goods.cardgiftcard" translate="no">card_giftcard</span>
 <div>
 <h4 class="font-bold text-white uppercase tracking-widest text-sm" data-i18n="industry.home_goods.registry_miss">Registry Miss
-                                    </h4>
+ </h4>
 <p class="text-slate-400 text-xs mt-2 uppercase tracking-wide" data-i18n="industry.home_goods.losing_wedding_and">Losing wedding and
-                                        housewarming spenders who register at large chains because it's "easier."</p>
+ housewarming spenders who register at large chains because it's "easier."</p>
 </div>
 </div>
 <div class="flex gap-6 items-start">
 <span class="material-symbols-outlined text-red-500 mt-1" data-i18n="industry.home_goods.inventory" translate="no">inventory</span>
 <div>
 <h4 class="font-bold text-white uppercase tracking-widest text-sm" data-i18n="industry.home_goods.floor_space_limits">Floor Space
-                                        Limits</h4>
+ Limits</h4>
 <p class="text-slate-400 text-xs mt-2 uppercase tracking-wide" data-i18n="industry.home_goods.having_items_in">Having items in the
-                                        back that never sell because customers can't see them on the floor.</p>
+ back that never sell because customers can't see them on the floor.</p>
 </div>
 </div>
 </div>
@@ -244,17 +308,17 @@
 <div class="space-y-6">
 <div class="bg-white/5 p-6 rounded-2xl border border-white/5 flex justify-between items-center group hover:border-red-500/50 transition-colors">
 <span class="text-xs font-bold text-slate-400 uppercase tracking-widest" data-i18n="industry.home_goods.visualization_gap_loss">Visualization
-                                    Gap Loss</span>
+ Gap Loss</span>
 <span class="text-xl font-black text-red-500" data-i18n="industry.fashion.50kyr">-$50K/yr</span>
 </div>
 <div class="bg-white/5 p-6 rounded-2xl border border-white/5 flex justify-between items-center group hover:border-red-500/50 transition-colors">
 <span class="text-xs font-bold text-slate-400 uppercase tracking-widest" data-i18n="industry.home_goods.missed_registry_spend">Missed Registry
-                                    Spend</span>
+ Spend</span>
 <span class="text-xl font-black text-red-500" data-i18n="industry.jewelry.40kyr">-$40K/yr</span>
 </div>
 <div class="bg-white/5 p-6 rounded-2xl border border-white/5 flex justify-between items-center group hover:border-red-500/50 transition-colors">
 <span class="text-xs font-bold text-slate-400 uppercase tracking-widest" data-i18n="industry.home_goods.backroom_inventory_rot">Backroom
-                                    Inventory Rot</span>
+ Inventory Rot</span>
 <span class="text-xl font-black text-red-500" data-i18n="industry.toy.30kyr">-$30K/yr</span>
 </div>
 <div class="pt-6 border-t border-white/10 flex justify-between items-center text-red-500">
@@ -272,7 +336,7 @@
 <div class="text-center space-y-6 max-w-3xl mx-auto">
 <span class="text-althr-cyan font-bold tracking-normal uppercase text-xs" data-i18n="common.solution">The Solution</span>
 <h2 class="text-5xl md:text-7xl font-black tracking-tighter text-white uppercase italic">
-                        The Digital <br/><span class="text-althr-gold" data-i18n="industry.home_goods.design_studio">Design Studio</span>
+ The Digital <br/><span class="text-althr-gold" data-i18n="industry.home_goods.design_studio">Design Studio</span>
 </h2>
 </div>
 <div class="grid md:grid-cols-3 gap-8">
@@ -280,19 +344,19 @@
 <span class="material-symbols-outlined text-althr-cyan text-4xl" data-i18n="industry.home_goods.viewinar" translate="no">view_in_ar</span>
 <h4 class="font-black text-lg uppercase tracking-widest text-white" data-i18n="industry.home_goods.ar_visualizer">AR Visualizer</h4>
 <p class="text-slate-500 text-xs leading-relaxed uppercase tracking-wider" data-i18n="industry.home_goods.upload_a_photo">Upload a photo to
-                            virtually place items in a room. Overcome the "will it fit" hurdle.</p>
+ virtually place items in a room. Overcome the "will it fit" hurdle.</p>
 </div>
 <div class="frosted-glass p-10 rounded-3xl border border-white/5 space-y-6 hover:translate-y-[-10px] transition-transform duration-500">
 <span class="material-symbols-outlined text-althr-gold text-4xl" data-i18n="industry.home_goods.localmall" translate="no">local_mall</span>
 <h4 class="font-black text-lg uppercase tracking-widest text-white" data-i18n="industry.home_goods.gift_registry">Gift Registry</h4>
 <p class="text-slate-500 text-xs leading-relaxed uppercase tracking-wider" data-i18n="industry.home_goods.the_secret_weapon">The secret weapon of
-                            home goods. Capture big spend for weddings and housewarmings.</p>
+ home goods. Capture big spend for weddings and housewarmings.</p>
 </div>
 <div class="frosted-glass p-10 rounded-3xl border border-white/5 space-y-6 hover:translate-y-[-10px] transition-transform duration-500">
 <span class="material-symbols-outlined text-althr-cyan text-4xl" data-i18n="industry.home_goods.boxunpacking" translate="no">box_unpacking</span>
 <h4 class="font-black text-lg uppercase tracking-widest text-white" data-i18n="industry.home_goods.fragile_shipping">Fragile Shipping</h4>
 <p class="text-slate-500 text-xs leading-relaxed uppercase tracking-wider" data-i18n="industry.home_goods.advanced_logic_that">Advanced logic that
-                            calculates breakage insurance and custom packing fees automatically.</p>
+ calculates breakage insurance and custom packing fees automatically.</p>
 </div>
 </div>
 </div>
@@ -302,18 +366,18 @@
 <div class="max-w-[1600px] mx-auto grid lg:grid-cols-2 gap-20">
 <div class="space-y-10 opacity-50">
 <h3 class="text-2xl font-black text-slate-500 uppercase tracking-widest" data-i18n="industry.home_goods.the_old_way">The Old Way (The Doubt)
-                    </h3>
+ </h3>
 <ul class="space-y-4 text-slate-500 font-mono text-sm">
 <li class="flex gap-4"><span class="text-red-500">01.</span> Customer likes a lamp in your
-                            store.</li>
+ store.</li>
 <li class="flex gap-4"><span class="text-red-500">02.</span> "Is it too tall? Is the gold too
-                            shiny?"</li>
+ shiny?"</li>
 <li class="flex gap-4"><span class="text-red-500">03.</span> Takes a blurry photo to show
-                            partner later.</li>
+ partner later.</li>
 <li class="flex gap-4"><span class="text-red-500">04.</span> Partner says "I can't tell, looks
-                            weird."</li>
+ weird."</li>
 <li class="flex gap-4"><span class="text-red-500">05.</span> They forget about it or buy on
-                            Wayfair.</li>
+ Wayfair.</li>
 <li class="flex gap-4"><span class="text-red-500">06.</span> Potential Sale: $0.</li>
 </ul>
 </div>
@@ -321,15 +385,15 @@
 <h3 class="text-2xl font-black text-althr-gold uppercase tracking-widest" data-i18n="industry.home_goods.the_new_way">The New Way (Vision)</h3>
 <ul class="space-y-4 text-white font-mono text-sm">
 <li class="flex gap-4"><span class="text-althr-cyan">01.</span> Visits your site on mobile in
-                            the store.</li>
+ the store.</li>
 <li class="flex gap-4"><span class="text-althr-cyan">02.</span> Clicks "View in Room" on the
-                            product page.</li>
+ product page.</li>
 <li class="flex gap-4"><span class="text-althr-cyan">03.</span> Points camera at their end table
-                            at home.</li>
+ at home.</li>
 <li class="flex gap-4"><span class="text-althr-cyan">04.</span> Sees it sitting there: "Perfect
-                            height."</li>
+ height."</li>
 <li class="flex gap-4"><span class="text-althr-cyan">05.</span> Adds to cart + matching
-                            recommended mirror.</li>
+ recommended mirror.</li>
 <li class="flex gap-4"><span class="text-althr-cyan">06.</span> <span class="text-althr-gold italic" data-i18n="industry.home_goods.confidencedriven_sale_closed">Confidence-driven sale closed.</span></li>
 </ul>
 </div>
@@ -339,7 +403,7 @@
 <section class="px-6 md:px-12 py-32 border-t border-white/5 bg-white/[0.02]">
 <div class="max-w-[1600px] mx-auto text-center space-y-16">
 <h2 class="text-4xl md:text-6xl font-black tracking-tighter text-white uppercase italic">
-                    Investment &amp; <span class="text-althr-cyan" data-i18n="industry.jewelry.return">Return</span>
+ Investment &amp; <span class="text-althr-cyan" data-i18n="industry.jewelry.return">Return</span>
 </h2>
 <div class="grid lg:grid-cols-3 gap-8 max-w-5xl mx-auto items-center">
 <!-- Setup -->
@@ -359,8 +423,8 @@
 <p class="text-7xl font-black text-white italic">140%</p>
 <p class="text-xs font-bold text-slate-300 uppercase tracking-widest" data-i18n="industry.home_goods.confidence_lift">Confidence LIFT</p>
 <div class="text-[14px] text-slate-400 uppercase tracking-wide pt-4 border-t border-white/10">
-                            Based on capturing $80k in registry and visualization sales
-                        </div>
+ Based on capturing $80k in registry and visualization sales
+ </div>
 </div>
 <!-- Monthly -->
 <div class="frosted-glass p-8 rounded-3xl border border-white/10 space-y-4">
@@ -381,133 +445,223 @@
 <div class="absolute inset-0 bg-teal-500/5 blur-[150px] rounded-full scale-75 opacity-20"></div>
 <div class="max-w-4xl mx-auto space-y-14 relative z-10">
 <h2 class="text-6xl md:text-8xl font-black tracking-tighter uppercase italic text-white leading-none">
-                    Unveil <br/> <span class="text-teal-400" data-i18n="industry.home_goods.the_vision">The Vision.</span>
+ Unveil <br/> <span class="text-teal-400" data-i18n="industry.home_goods.the_vision">The Vision.</span>
 </h2>
 <div class="flex flex-wrap justify-center gap-8">
 <a class="bg-althr-gold text-althr-navy font-black text-sm tracking-normal uppercase px-14 py-6 rounded-full transition-all hover:scale-110 hover:shadow-[0_0_60px_rgba(212,000,55,0.4)]" data-i18n="common.talk_expert" href="../contact.html">Talk
-                        to an Expert</a>
+ to an Expert</a>
 </div>
 </div>
 </section>
 </main>
-<footer class="bg-althr-navy border-t border-white/10 py-24 px-6 md:px-12 relative z-20">
-<div class="max-w-[1600px] mx-auto">
-<div class="grid lg:grid-cols-5 gap-10">
-<div class="space-y-10">
-<div class="flex items-center gap-3 group">
-<div class="size-10 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-<img alt="ALTHR" class="w-full h-full object-contain" src="../logo.png"/>
-</div>
-<span class="font-black text-2xl tracking-tighter uppercase text-white" data-i18n="industry.jewelry.althr">ALTHR</span>
-</div>
-<p class="text-slate-400 text-[14px] font-medium leading-relaxed max-w-xs" data-i18n="footer.desc">
+    
+    <footer class="bg-althr-navy border-t border-white/10 py-24 px-6 md:px-12 relative z-20">
+        <div class="max-w-[1600px] mx-auto">
+            <div class="grid lg:grid-cols-5 gap-10">
+                <div class="space-y-10">
+                    <div class="flex items-center gap-3 group">
+                        <div class="size-10 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+                            <img alt="ALTHR" class="w-full h-full object-contain" src="../logo.png" />
+                        </div>
+                        <span class="font-black text-2xl tracking-tighter uppercase text-white"
+                            data-i18n="industry.jewelry.althr">ALTHR</span>
+                    </div>
+                    <p class="text-slate-400 text-[14px] font-medium leading-relaxed max-w-xs" data-i18n="footer.desc">
                         Transforming complexity into automated simplicity through high-end engineering and strategic
                         logic systems.
                     </p>
-</div>
-<div>
-<h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12"><span data-i18n="nav.services">Services</span>
-</h5>
-<ul class="space-y-4 text-[14px] font-medium text-slate-400">
-<li data-i18n="industry.jewelry.crm_automation"><a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.crm_automation" href="../services.html">CRM Automation</a>
-</li>
-<li data-i18n="industry.jewelry.marketing_logic"><a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.marketing_logic" href="../services.html">Marketing Logic</a>
-</li>
-<li data-i18n="industry.jewelry.advanced_analytics"><a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.advanced_analytics" href="../intelligence.html">Advanced
-                                Analytics</a></li>
-<li data-i18n="industry.jewelry.fulfillment_ops"><a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.fulfillment_ops" href="../services.html">Fulfillment Ops</a>
-</li>
-</ul>
-</div>
-<div>
-<h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12"><span data-i18n="nav.industries">Industries</span>
-</h5>
-<ul class="space-y-4 text-[14px] font-medium text-slate-400">
-<li data-i18n="industry.jewelry.jewelry_watch"><a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.jewelry_watch" href="jewelry.html"><span data-i18n="industries.jewelry">Jewelry &amp; Watch</span></a></li>
-<li data-i18n="industry.jewelry.furniture_decor"><a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.furniture_decor" href="furniture.html"><span data-i18n="industries.furniture">Furniture &amp; Decor</span></a></li>
-<li><a class="hover:text-althr-gold transition-colors" href="grocery.html"><span data-i18n="industries.grocery">Grocery</span></a></li>
-<li data-i18n="industry.jewelry.fashion"><a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.fashion" href="fashion.html">Fashion</a></li>
-</ul>
-</div>
-<div>
-<h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12" data-i18n="industry.jewelry.quick_links">Quick Links</h5>
-<ul class="space-y-4 text-[14px] font-medium text-slate-400">
-<li><a class="hover:text-althr-gold transition-colors" href="../about.html"><span data-i18n="footer.story">Our Story</span></a></li>
-<li><a class="hover:text-althr-gold transition-colors" href="../results.html"><span data-i18n="nav.results">Results</span></a>
-</li>
-<li><a class="hover:text-althr-gold transition-colors" href="../contact.html"><span data-i18n="footer.contact">Contact Us</span></a></li>
-<li data-i18n="industry.jewelry.privacy_protocol"><a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.privacy_protocol" href="../privacy.html"><span data-i18n="footer.privacy">Privacy Protocol</span></a>
-</li>
-</ul>
-</div>
-<div class="space-y-10">
-<h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12"><span data-i18n="footer.pulse">Pulse Status</span></h5>
-<div class="p-8 bg-white/5 border border-white/10 rounded-[2rem] flex items-center gap-6">
-<div class="size-2.5 bg-althr-cyan rounded-full animate-pulse shadow-[0_0_15px_rgba(0,000,255,0.7)]">
-</div>
-<span class="text-[12px] font-bold text-althr-cyan uppercase tracking-wider" data-i18n="common.systems_ready">Systems
+                </div>
+                <div>
+                    <h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12"><span
+                            data-i18n="nav.services">Services</span>
+                    </h5>
+                    <ul class="space-y-4 text-[14px] font-medium text-slate-400">
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="services.crm.title"
+                                href="../services/crm.html">CRM Architecture</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="services.marketing.title"
+                                href="../services/marketing.html">Marketing Operations</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="services.sales.title"
+                                href="../services/sales.html">Sales Pipeline</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="services.ops.title"
+                                href="../services/ops.html">Operational Flow</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors"
+                                data-i18n="industry.jewelry.lead_generation" href="../services/lead-gen.html">Lead
+                                Generation</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors"
+                                data-i18n="industry.jewelry.lead_tracking" href="../services/lead-track.html">Lead
+                                Tracking</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors"
+                                data-i18n="industry.jewelry.social_media_management" href="../services/social.html">Social
+                                Media Management</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12"><span
+                            id="industries-footer" data-i18n="nav.industries">Industries</span>
+                    </h5>
+                    <ul
+                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-8 gap-y-4 text-[14px] font-medium text-slate-400">
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.jewelry"
+                                href="../industry/jewelry.html">Jewelry & Watch</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.furniture"
+                                href="../industry/furniture.html">Furniture & Decor</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.grocery"
+                                href="../industry/grocery.html">Grocery</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.equipment"
+                                href="../industry/equipment.html">Equipment & Supply</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.gadget"
+                                href="../industry/gadget.html">Gadgets & Tech</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.fashion"
+                                href="../industry/fashion.html">Fashion Boutique</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.beauty"
+                                href="../industry/beauty.html">Beauty & Cosmo</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.pet"
+                                href="../industry/pet.html">Pet Supply</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.home_goods"
+                                href="../industry/home_goods.html">Home Goods</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.sports"
+                                href="../industry/sports.html">Sports Equipment</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.health"
+                                href="../industry/health.html">Health & Wellness</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.toy"
+                                href="../industry/toy.html">Toy & Hobby</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12"
+                        data-i18n="industry.jewelry.quick_links">Quick Links</h5>
+                    <ul class="space-y-4 text-[14px] font-medium text-slate-400">
+                        <li><a class="hover:text-althr-gold transition-colors" href="../about.html"><span
+                                    data-i18n="footer.story">Our Story</span></a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" href="../results.html"><span
+                                    data-i18n="nav.results">Results</span></a>
+                        </li>
+                        <li><a class="hover:text-althr-gold transition-colors" href="../contact.html"><span
+                                    data-i18n="footer.contact">Contact Us</span></a></li>
+                        <li data-i18n="industry.jewelry.privacy_protocol"><a
+                                class="hover:text-althr-gold transition-colors"
+                                data-i18n="industry.jewelry.privacy_protocol" href="../privacy.html"><span
+                                    data-i18n="footer.privacy">Privacy Protocol</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space-y-10">
+                    <h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12"><span
+                            data-i18n="footer.pulse">Pulse Status</span></h5>
+                    <div class="p-8 bg-white/5 border border-white/10 rounded-[2rem] flex items-center gap-6">
+                        <div
+                            class="size-2.5 bg-althr-cyan rounded-full animate-pulse shadow-[0_0_15px_rgba(0,000,255,0.7)]">
+                        </div>
+                        <span class="text-[12px] font-bold text-althr-cyan uppercase tracking-wider"
+                            data-i18n="common.systems_ready">Systems
                             Ready</span>
-</div>
-</div>
-</div>
-<div class="mt-32 pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[12px] text-slate-500 font-medium">
-<p data-i18n="industry.jewelry.2026_althr_agency_systems_european">© 2026 ALTHR AGENCY SYSTEMS | EUROPEAN HQ: POLAND. SYSTEM ID: GLOBAL-01</p>
-<div class="flex gap-12">
-<a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.privacy" href="../privacy.html">Privacy</a>
-<a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.terms" href="#">Terms</a>
-<a class="hover:text-althr-gold transition-colors" href="../contact.html">SLA</a>
-</div>
-</div>
-</div>
-</footer>
-<!-- Mobile Menu -->
-<div class="fixed inset-0 z-[100] bg-althr-navy/95 backdrop-blur-2xl translate-x-full transition-transform duration-500 lg:hidden" id="mobile-menu">
-<div class="flex flex-col h-full p-8 relative">
-<button class="absolute top-8 right-8 text-white/50 hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.close" id="close-menu">
-<span class="material-symbols-outlined text-4xl" data-i18n="industry.jewelry.close" translate="no">close</span>
-</button>
-<div class="mb-16">
-<div class="flex items-center gap-3">
-<img alt="ALTHR" class="size-10 object-contain" src="../logo.png"/>
-<span class="font-black text-2xl tracking-tighter uppercase text-white" data-i18n="industry.jewelry.althr">ALTHR</span>
-</div>
-</div>
-<div class="flex gap-4 mb-10 border-b border-white/10 pb-10">
-<button class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all" data-lang="en">🇺🇸</button>
-<button class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all" data-lang="pl">🇵🇱</button>
-<button class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all" data-lang="de">🇩🇪</button>
-<button class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all" data-lang="fr">🇫🇷</button>
-<button class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all" data-lang="es">🇪🇸</button>
-</div>
-<nav class="flex flex-col gap-10">
-<a class="group flex items-end gap-4" href="../index.html">
-<span class="text-althr-gold font-mono text-xs mb-2">01</span>
-<span class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic" data-i18n="industry.jewelry.home">Home</span>
-</a>
-<a class="group flex items-end gap-4" href="../services.html">
-<span class="text-althr-gold font-mono text-xs mb-2">02</span>
-<span class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"><span data-i18n="nav.services">Services</span>
-</span></a>
-<a class="group flex items-end gap-4" href="../intelligence.html">
-<span class="text-althr-gold font-mono text-xs mb-2">03</span>
-<span class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic" data-i18n="industry.jewelry.tech">Tech</span>
-</a>
-<a class="group flex items-end gap-4" href="../results.html">
-<span class="text-althr-gold font-mono text-xs mb-2">04</span>
-<span class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"><span data-i18n="nav.results">Results</span>
-</span></a>
-<a class="bg-althr-gold text-althr-navy p-6 rounded-2xl flex items-center justify-between group overflow-hidden relative" href="../contact.html">
-<span class="font-black uppercase tracking-tighter text-xl relative z-10" data-i18n="industry.jewelry.start_project">Start Project</span>
-<span class="material-symbols-outlined relative z-10" data-i18n="industry.jewelry.arrowforward" translate="no">arrow_forward</span>
-<div class="absolute inset-0 bg-white translate-x-[-101%] group-hover:translate-x-0 transition-transform duration-500"></div>
-</a>
-</nav>
-<div class="mt-auto border-t border-white/10 pt-8">
-<p class="text-[10px] font-bold tracking-normal text-white/30 uppercase" data-i18n="industry.jewelry.operational_menu_v20">Operational Menu v2.0</p>
-</div>
-</div>
-</div>
-<script>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="mt-32 pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[12px] text-slate-500 font-medium">
+                <p data-i18n="industry.jewelry.2026_althr_agency_systems_european">© 2026 ALTHR AGENCY SYSTEMS |
+                    EUROPEAN HQ: POLAND. SYSTEM ID: GLOBAL-01</p>
+                <div class="flex gap-12">
+                    <a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.privacy"
+                        href="../privacy.html#privacy">Privacy</a>
+                    <a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.terms"
+                        href="../privacy.html#terms">Terms</a>
+                    <a class="hover:text-althr-gold transition-colors" href="../privacy.html#sla">SLA</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Mobile Menu -->
+    <div class="fixed inset-0 z-[100] bg-althr-navy/95 backdrop-blur-2xl translate-x-full transition-transform duration-500 lg:hidden"
+        id="mobile-menu">
+        <div class="flex flex-col h-full p-8 relative">
+            <button class="absolute top-8 right-8 text-white/50 hover:text-althr-gold transition-colors"
+                data-i18n="industry.jewelry.close" id="close-menu">
+                <span class="material-symbols-outlined text-4xl" data-i18n="industry.jewelry.close"
+                    translate="no">close</span>
+            </button>
+            <div class="mb-16">
+                <div class="flex items-center gap-3">
+                    <img alt="ALTHR" class="size-10 object-contain" src="../logo.png" />
+                    <span class="font-black text-2xl tracking-tighter uppercase text-white"
+                        data-i18n="industry.jewelry.althr">ALTHR</span>
+                </div>
+            </div>
+            <div class="flex gap-4 mb-10 border-b border-white/10 pb-10">
+                <button
+                    class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all"
+                    data-lang="en">🇺🇸</button>
+                <button
+                    class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all"
+                    data-lang="pl">🇵🇱</button>
+                <button
+                    class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all"
+                    data-lang="de">🇩🇪</button>
+                <button
+                    class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all"
+                    data-lang="fr">🇫🇷</button>
+                <button
+                    class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all"
+                    data-lang="es">🇪🇸</button>
+            </div>
+            <nav class="flex flex-col gap-10 mt-20">
+                <a class="group flex items-end gap-4" href="../index.html">
+                    <span class="text-althr-gold font-mono text-xs mb-2">01</span>
+                    <span
+                        class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"
+                        data-i18n="industry.jewelry.home">Home</span>
+                </a>
+                <a class="group flex items-end gap-4" href="../index.html#industries-footer">
+                    <span class="text-althr-gold font-mono text-xs mb-2">02</span>
+                    <span
+                        class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"
+                        data-i18n="nav.industries">Industries</span>
+                </a>
+                <a class="group flex items-end gap-4" href="../services.html">
+                    <span class="text-althr-gold font-mono text-xs mb-2">03</span>
+                    <span
+                        class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"
+                        data-i18n="nav.services">Services</span>
+                </a>
+                <a class="group flex items-end gap-4" href="../intelligence.html">
+                    <span class="text-althr-gold font-mono text-xs mb-2">04</span>
+                    <span
+                        class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"
+                        data-i18n="industry.jewelry.tech">Tech</span>
+                </a>
+                <a class="group flex items-end gap-4" href="../results.html">
+                    <span class="text-althr-gold font-mono text-xs mb-2">05</span>
+                    <span
+                        class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"
+                        data-i18n="nav.results">Results</span>
+                </a>
+                <a class="group flex items-end gap-4" href="../about.html">
+                    <span class="text-althr-gold font-mono text-xs mb-2">06</span>
+                    <span
+                        class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"
+                        data-i18n="nav.about">About Us</span>
+                </a>
+                <a class="bg-althr-gold text-althr-navy p-6 rounded-2xl flex items-center justify-between group overflow-hidden relative"
+                    href="../contact.html">
+                    <span class="font-black uppercase tracking-tighter text-xl relative z-10"
+                        data-i18n="industry.jewelry.start_project">Start Project</span>
+                    <span class="material-symbols-outlined relative z-10" data-i18n="industry.jewelry.arrowforward"
+                        translate="no">arrow_forward</span>
+                    <div
+                        class="absolute inset-0 bg-white translate-x-[-101%] group-hover:translate-x-0 transition-transform duration-500">
+                    </div>
+                </a>
+            </nav>
+            <div class="mt-auto border-t border-white/10 pt-8">
+                <p class="text-[10px] font-bold tracking-normal text-white/30 uppercase"
+                    data-i18n="industry.jewelry.operational_menu_v20">Operational Menu v2.0</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
         document.addEventListener('DOMContentLoaded', () => {
             const openBtn = document.getElementById('open-menu');
             const closeBtn = document.getElementById('close-menu');
@@ -534,8 +688,7 @@
             }
         });
     </script>
-<script src="../translations.js"></script>
-<script src="../i18n.js"></script>
+    
     <script src="../motion.js"></script>
 </body>
 </html>

@@ -47,29 +47,31 @@
 .has-bg-asset::before {
     content: "";
     position: absolute;
-    inset: 0;
+    inset: -1px;
     background-size: cover;
     background-position: center;
-    opacity: 0.12;
+    background-repeat: no-repeat;
+    opacity: 0.35;
     z-index: 1;
     pointer-events: none;
-    transition: opacity 0.5s ease;
+    transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .group:hover.has-bg-asset::before {
-    opacity: 0.22;
+    opacity: 0.6;
+    transform: scale(1.02);
 }
 
 .asset-demand::before {
-    background-image: url('asset_demand.png');
+    background-image: url('asset_demand.jpg');
 }
 
 .asset-growth::before {
-    background-image: url('asset_growth.png');
+    background-image: url('asset_growth.jpg');
 }
 
 .asset-logic::before {
-    background-image: url('asset_logic.png');
+    background-image: url('asset_logic.jpg');
 }
 
 /* Ensure content stays above background asset */

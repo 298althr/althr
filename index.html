@@ -56,6 +56,8 @@
         }
     </style>
     <link rel="stylesheet" href="motion.css">
+    <script src="translations.js"></script>
+    <script src="i18n.js"></script>
 </head>
 
 <body
@@ -76,7 +78,7 @@
                 <div class="relative group">
                     <button
                         class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase flex items-center gap-1">
-                        <span data-i18n="nav.industries">Industries</span> <span
+                        <span id="industries-footer" data-i18n="nav.industries">Industries</span> <span
                             class="material-symbols-outlined text-[14px]" data-i18n="industry.jewelry.expandmore"
                             translate="no">expand_more</span>
                     </button>
@@ -132,25 +134,22 @@
                         class="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                         <div class="frosted-glass p-6 rounded-2xl border border-white/10 w-72 grid grid-cols-1 gap-4">
                             <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
-                                data-i18n="services.crm.title" href="services.html#crm">CRM
-                                Architecture</a>
+                                data-i18n="services.crm.title" href="services/crm.html">CRM Architecture</a>
                             <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
-                                data-i18n="services.marketing.title" href="services.html#marketing">Marketing
+                                data-i18n="services.marketing.title" href="services/marketing.html">Marketing
                                 Operations</a>
                             <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
-                                data-i18n="services.sales.title" href="services.html#sales">Sales
-                                Pipeline</a>
+                                data-i18n="services.sales.title" href="services/sales.html">Sales Pipeline</a>
                             <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
-                                data-i18n="services.ops.title" href="services.html#ops">Operational
-                                Flow</a>
+                                data-i18n="services.ops.title" href="services/ops.html">Operational Flow</a>
                             <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
-                                data-i18n="industry.jewelry.lead_generation" href="services.html#lead-gen">Lead
+                                data-i18n="industry.jewelry.lead_generation" href="services/lead-gen.html">Lead
                                 Generation</a>
                             <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
-                                data-i18n="industry.jewelry.lead_tracking" href="services.html#lead-track">Lead
+                                data-i18n="industry.jewelry.lead_tracking" href="services/lead-track.html">Lead
                                 Tracking</a>
                             <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
-                                data-i18n="industry.jewelry.social_media_management" href="services.html#social">Social
+                                data-i18n="industry.jewelry.social_media_management" href="services/social.html">Social
                                 Media Management</a>
                         </div>
                     </div>
@@ -442,7 +441,7 @@
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <!-- Srv 1 -->
                     <div
-                        class="frosted-glass p-10 rounded-3xl border border-white/5 space-y-8 group hover:bg-white/[0.04] transition-all relative overflow-hidden has-bg-asset asset-logic">
+                        class="frosted-glass p-10 rounded-3xl border border-white/5 space-y-8 group hover:bg-white/[0.04] transition-all relative overflow-hidden hover:scale-[1.02]">
                         <div
                             class="absolute top-0 left-0 w-1 h-0 group-hover:h-full bg-althr-cyan transition-all duration-700">
                         </div>
@@ -466,7 +465,7 @@
                     </div>
                     <!-- Srv 2 -->
                     <div
-                        class="frosted-glass p-10 rounded-3xl border border-white/5 space-y-8 group hover:bg-white/[0.04] transition-all relative overflow-hidden has-bg-asset asset-logic">
+                        class="frosted-glass p-10 rounded-3xl border border-white/5 space-y-8 group hover:bg-white/[0.04] transition-all relative overflow-hidden hover:scale-[1.02]">
                         <div
                             class="absolute top-0 left-0 w-1 h-0 group-hover:h-full bg-althr-gold transition-all duration-700">
                         </div>
@@ -489,7 +488,7 @@
                     </div>
                     <!-- Srv 3 -->
                     <div
-                        class="frosted-glass p-10 rounded-3xl border border-white/5 space-y-8 group hover:bg-white/[0.04] transition-all relative overflow-hidden has-bg-asset asset-logic">
+                        class="frosted-glass p-10 rounded-3xl border border-white/5 space-y-8 group hover:bg-white/[0.04] transition-all relative overflow-hidden hover:scale-[1.02]">
                         <div
                             class="absolute top-0 left-0 w-1 h-0 group-hover:h-full bg-althr-cyan transition-all duration-700">
                         </div>
@@ -514,7 +513,7 @@
                     </div>
                     <!-- Srv 4 -->
                     <div
-                        class="frosted-glass p-10 rounded-3xl border border-white/5 space-y-8 group hover:bg-white/[0.04] transition-all relative overflow-hidden has-bg-asset asset-logic">
+                        class="frosted-glass p-10 rounded-3xl border border-white/5 space-y-8 group hover:bg-white/[0.04] transition-all relative overflow-hidden hover:scale-[1.02]">
                         <div
                             class="absolute top-0 left-0 w-1 h-0 group-hover:h-full bg-althr-gold transition-all duration-700">
                         </div>
@@ -673,43 +672,55 @@
                             data-i18n="nav.services">Services</span>
                     </h5>
                     <ul class="space-y-4 text-[14px] font-medium text-slate-400">
-                        <li data-i18n="industry.jewelry.crm_automation"><a
-                                class="hover:text-althr-gold transition-colors"
-                                data-i18n="industry.jewelry.crm_automation" href="services.html">CRM Automation</a>
-                        </li>
-                        <li data-i18n="industry.jewelry.marketing_logic"><a
-                                class="hover:text-althr-gold transition-colors"
-                                data-i18n="industry.jewelry.marketing_logic" href="services.html">Marketing Logic</a>
-                        </li>
-                        <li data-i18n="industry.jewelry.advanced_analytics"><a
-                                class="hover:text-althr-gold transition-colors"
-                                data-i18n="industry.jewelry.advanced_analytics" href="intelligence.html">Advanced
-                                Analytics</a></li>
-                        <li data-i18n="industry.jewelry.fulfillment_ops"><a
-                                class="hover:text-althr-gold transition-colors"
-                                data-i18n="industry.jewelry.fulfillment_ops" href="services.html">Fulfillment Ops</a>
-                        </li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="services.crm.title"
+                                href="services/crm.html">CRM Architecture</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="services.marketing.title"
+                                href="services/marketing.html">Marketing Operations</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="services.sales.title"
+                                href="services/sales.html">Sales Pipeline</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="services.ops.title"
+                                href="services/ops.html">Operational Flow</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors"
+                                data-i18n="industry.jewelry.lead_generation" href="services/lead-gen.html">Lead
+                                Generation</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors"
+                                data-i18n="industry.jewelry.lead_tracking" href="services/lead-track.html">Lead
+                                Tracking</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors"
+                                data-i18n="industry.jewelry.social_media_management" href="services/social.html">Social
+                                Media Management</a></li>
                     </ul>
                 </div>
                 <div>
                     <h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12"><span
-                            data-i18n="nav.industries">Industries</span>
+                            id="industries-footer" data-i18n="nav.industries">Industries</span>
                     </h5>
-                    <ul class="space-y-4 text-[14px] font-medium text-slate-400">
-                        <li data-i18n="industry.jewelry.jewelry_watch"><a
-                                class="hover:text-althr-gold transition-colors" data-i18n="industries.jewelry"
-                                href="industry/jewelry.html">Jewelry &amp;
-                                Watch</a></li>
-                        <li data-i18n="industry.jewelry.furniture_decor"><a
-                                class="hover:text-althr-gold transition-colors" data-i18n="industries.furniture"
-                                href="industry/furniture.html">Furniture
-                                &amp; Decor</a></li>
-                        <li><a class="hover:text-althr-gold transition-colors" href="industry/grocery.html"><span
-                                    data-i18n="industries.grocery">Grocery</span></a>
-                        </li>
-                        <li data-i18n="industry.jewelry.fashion"><a class="hover:text-althr-gold transition-colors"
-                                data-i18n="industry.jewelry.fashion" href="industry/fashion.html">Fashion</a>
-                        </li>
+                    <ul
+                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-8 gap-y-4 text-[14px] font-medium text-slate-400">
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.jewelry"
+                                href="industry/jewelry.html">Jewelry & Watch</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.furniture"
+                                href="industry/furniture.html">Furniture & Decor</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.grocery"
+                                href="industry/grocery.html">Grocery</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.equipment"
+                                href="industry/equipment.html">Equipment & Supply</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.gadget"
+                                href="industry/gadget.html">Gadgets & Tech</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.fashion"
+                                href="industry/fashion.html">Fashion Boutique</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.beauty"
+                                href="industry/beauty.html">Beauty & Cosmo</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.pet"
+                                href="industry/pet.html">Pet Supply</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.home_goods"
+                                href="industry/home_goods.html">Home Goods</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.sports"
+                                href="industry/sports.html">Sports Equipment</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.health"
+                                href="industry/health.html">Health & Wellness</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.toy"
+                                href="industry/toy.html">Toy & Hobby</a></li>
                     </ul>
                 </div>
                 <div>
@@ -790,37 +801,42 @@
                     class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all"
                     data-lang="es">🇪🇸</button>
             </div>
-            <nav class="flex flex-col gap-10">
+            <nav class="flex flex-col gap-10 mt-20">
                 <a class="group flex items-end gap-4" href="index.html">
                     <span class="text-althr-gold font-mono text-xs mb-2">01</span>
                     <span
                         class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"
                         data-i18n="industry.jewelry.home">Home</span>
                 </a>
-                <a class="group flex items-end gap-4" href="services.html">
+                <a class="group flex items-end gap-4" href="index.html#industries-footer">
                     <span class="text-althr-gold font-mono text-xs mb-2">02</span>
                     <span
-                        class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"><span
-                            data-i18n="nav.services">Services</span>
-                    </span></a>
-                <a class="group flex items-end gap-4" href="intelligence.html">
+                        class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"
+                        data-i18n="nav.industries">Industries</span>
+                </a>
+                <a class="group flex items-end gap-4" href="services.html">
                     <span class="text-althr-gold font-mono text-xs mb-2">03</span>
+                    <span
+                        class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"
+                        data-i18n="nav.services">Services</span>
+                </a>
+                <a class="group flex items-end gap-4" href="intelligence.html">
+                    <span class="text-althr-gold font-mono text-xs mb-2">04</span>
                     <span
                         class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"
                         data-i18n="industry.jewelry.tech">Tech</span>
                 </a>
                 <a class="group flex items-end gap-4" href="results.html">
-                    <span class="text-althr-gold font-mono text-xs mb-2">04</span>
-                    <span
-                        class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"><span
-                            data-i18n="nav.results">Results</span>
-                    </span></a>
-                <a class="group flex items-end gap-4" href="about.html">
                     <span class="text-althr-gold font-mono text-xs mb-2">05</span>
                     <span
                         class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"
-                        data-i18n="nav.about">About
-                        Us</span>
+                        data-i18n="nav.results">Results</span>
+                </a>
+                <a class="group flex items-end gap-4" href="about.html">
+                    <span class="text-althr-gold font-mono text-xs mb-2">06</span>
+                    <span
+                        class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"
+                        data-i18n="nav.about">About Us</span>
                 </a>
                 <a class="bg-althr-gold text-althr-navy p-6 rounded-2xl flex items-center justify-between group overflow-hidden relative"
                     href="contact.html">
@@ -866,8 +882,8 @@
             }
         });
     </script>
-    <script src="translations.js"></script>
-    <script src="i18n.js"></script>
+
+
     <script src="motion.js"></script>
 </body>
 

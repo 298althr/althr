@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-
 <html class="dark" lang="en">
 <head>
-<meta charset="utf-8"/>
+    <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Strategic Engagement Center | ALTHR Automation</title>
 <meta content="Connect with ALTHR Automation experts. Initialize your enterprise transformation through our strategic engagement center." name="description"/>
@@ -10,154 +9,204 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "althr-navy": "#080a12",
-                        "althr-gold": "#d4af37",
-                        "althr-cyan": "#00f0ff",
-                        "glass-white": "rgba(255, 255, 255, 0.05)",
-                    },
-                    fontFamily: {
-                        "display": ["Inter", "sans-serif"]
-                    },
-                },
-            },
-        }
-    </script>
+ tailwind.config = {
+ darkMode: "class",
+ theme: {
+ extend: {
+ colors: {
+ "althr-navy": "#080a12",
+ "althr-gold": "#d4af37",
+ "althr-cyan": "#00f0ff",
+ "glass-white": "rgba(255, 255, 255, 0.05)",
+ },
+ fontFamily: {
+ "display": ["Inter", "sans-serif"]
+ },
+ },
+ },
+ }
+ </script>
 <style type="text/tailwindcss">
-        @layer utilities {
-            .blueprint-grid {
-                background-image: 
-                    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-                    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-                background-size: 40px 40px;
-            }
-            .frosted-glass {
-                background: rgba(8, 10, 18, 0.95);
-                backdrop-filter: blur(24px);
-                border: 1px solid rgba(255, 255, 255, 0.12);
-                box-shadow: 0 8px 64px 0 rgba(0, 0, 0, 0.6);
-            }
-        }
-    </style>
-    <link rel="stylesheet" href="motion.css">
+ @layer utilities {
+ .blueprint-grid {
+ background-image: 
+ linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+ linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+ background-size: 40px 40px;
+ }
+ .frosted-glass {
+ background: rgba(8, 10, 18, 0.95);
+ backdrop-filter: blur(24px);
+ border: 1px solid rgba(255, 255, 255, 0.12);
+ box-shadow: 0 8px 64px 0 rgba(0, 0, 0, 0.6);
+ }
+ }
+ </style>
+ <link rel="stylesheet" href="motion.css">
+    <script src="translations.js"></script>
+    <script src="i18n.js"></script>
 </head>
 <body class="bg-althr-navy font-display text-slate-100 min-h-screen blueprint-grid selection:bg-althr-cyan selection:text-althr-navy">
-<!-- Navigation -->
-<header class="fixed top-0 w-full z-50 border-b border-white/5 bg-althr-navy/90 backdrop-blur-md">
-<div class="max-w-[1600px] mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
-<div class="flex items-center gap-3">
-<a class="flex items-center gap-3 group" data-i18n="industry.jewelry.althr" href="index.html">
-<div class="size-10 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-<img alt="ALTHR" class="w-full h-full object-contain" src="logo.png"/>
-</div>
-<span class="font-black text-2xl tracking-tighter uppercase" data-i18n="industry.jewelry.althr">ALTHR</span>
-</a>
-</div>
-<nav class="hidden lg:flex items-center gap-10">
-<div class="relative group">
-<button class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase flex items-center gap-1">
-<span data-i18n="nav.industries">Industries</span> <span class="material-symbols-outlined text-[14px]" data-i18n="industry.jewelry.expandmore" translate="no">expand_more</span>
-</button>
-<div class="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-<div class="frosted-glass p-6 rounded-2xl border border-white/10 w-64 grid grid-cols-1 gap-4">
-<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industries.jewelry" href="industry/jewelry.html">Jewelry
+    <!-- Navigation -->
+    <header class="fixed top-0 w-full z-50 border-b border-white/5 bg-althr-navy/90 backdrop-blur-md">
+        <div class="max-w-[1600px] mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <a class="flex items-center gap-3 group" data-i18n="industry.jewelry.althr" href="index.html">
+                    <div class="size-10 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+                        <img alt="ALTHR" class="w-full h-full object-contain" src="logo.png" />
+                    </div>
+                    <span class="font-black text-2xl tracking-tighter uppercase"
+                        data-i18n="industry.jewelry.althr">ALTHR</span>
+                </a>
+            </div>
+            <nav class="hidden lg:flex items-center gap-10">
+                <div class="relative group">
+                    <button
+                        class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase flex items-center gap-1">
+                        <span id="industries-footer" data-i18n="nav.industries">Industries</span> <span
+                            class="material-symbols-outlined text-[14px]" data-i18n="industry.jewelry.expandmore"
+                            translate="no">expand_more</span>
+                    </button>
+                    <div
+                        class="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <div class="frosted-glass p-6 rounded-2xl border border-white/10 w-64 grid grid-cols-1 gap-4">
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.jewelry" href="industry/jewelry.html">Jewelry
                                 &amp; Watch</a>
-<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industries.furniture" href="industry/furniture.html">Furniture
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.furniture" href="industry/furniture.html">Furniture
                                 &amp; Decor</a>
-<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industries.grocery" href="industry/grocery.html"><span data-i18n="industries.grocery">Grocery</span></a>
-<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industries.equipment" href="industry/equipment.html">Equipment
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                href="industry/grocery.html"><span data-i18n="industries.grocery">Grocery</span></a>
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.equipment" href="industry/equipment.html">Equipment
                                 &amp; Supply</a>
-<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industries.gadget" href="industry/gadget.html">Gadgets
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.gadget" href="industry/gadget.html">Gadgets
                                 &amp; Tech</a>
-<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industries.fashion" href="industry/fashion.html">Fashion
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.fashion" href="industry/fashion.html">Fashion
                                 Boutique</a>
-<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industries.beauty" href="industry/beauty.html">Beauty
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.beauty" href="industry/beauty.html">Beauty
                                 &amp; Cosmo</a>
-<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industries.pet" href="industry/pet.html">Pet
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.pet" href="industry/pet.html">Pet
                                 Supply</a>
-<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industries.home_goods" href="industry/home_goods.html">Home
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.home_goods" href="industry/home_goods.html">Home
                                 Goods</a>
-<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industries.sports" href="industry/sports.html">Sports
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.sports" href="industry/sports.html">Sports
                                 Equipment</a>
-<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industries.health" href="industry/health.html">Health
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.health" href="industry/health.html">Health
                                 &amp; Wellness</a>
-<a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industries.toy" href="industry/toy.html">Toy
+                            <a class="text-[13px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industries.toy" href="industry/toy.html">Toy
                                 &amp; Hobby</a>
-</div>
-</div>
-</div>
-<div class="relative group">
-<button class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase flex items-center gap-1">
-<span data-i18n="nav.services">Services</span> <span class="material-symbols-outlined text-[14px]" data-i18n="industry.jewelry.expandmore" translate="no">expand_more</span>
-</button>
-<div class="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-<div class="frosted-glass p-6 rounded-2xl border border-white/10 w-72 grid grid-cols-1 gap-4">
-<a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="services.crm.title" href="services.html#crm"><span data-i18n="services.crm">CRM Architecture</span></a>
-<a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="services.marketing.title" href="services.html#marketing"><span data-i18n="services.marketing">Marketing
-                                    Operations</span></a>
-<a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="services.sales.title" href="services.html#sales"><span data-i18n="services.sales">Sales Pipeline</span></a>
-<a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="services.ops.title" href="services.html#ops"><span data-i18n="services.ops">Operational Flow</span></a>
-<a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.lead_generation" href="services.html#lead-gen"><span data-i18n="services.lead_gen">Lead
-                                    Generation</span></a>
-<a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.lead_tracking" href="services.html#lead-track"><span data-i18n="services.lead_track">Lead
-                                    Tracking</span></a>
-<a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="industry.jewelry.social_media_management" href="services.html#social"><span data-i18n="services.social">Social Media
-                                    Management</span></a>
-</div>
-</div>
-</div>
-<a class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="nav.technology" href="intelligence.html"><span data-i18n="nav.technology">Technology</span></a>
-<a class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="nav.results" href="results.html"><span data-i18n="nav.results">Results</span></a>
-<a class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase" data-i18n="nav.about" href="about.html"><span data-i18n="nav.about">About Us</span></a>
-<a class="bg-althr-gold text-althr-navy px-6 py-2.5 rounded-full text-[14px] font-black tracking-normal uppercase transition-all hover:scale-105 hover:bg-white text-althr-navy" data-i18n="nav.get_started" href="contact.html">Get
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <button
+                        class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase flex items-center gap-1">
+                        <span data-i18n="nav.services">Services</span> <span
+                            class="material-symbols-outlined text-[14px]" data-i18n="industry.jewelry.expandmore"
+                            translate="no">expand_more</span>
+                    </button>
+                    <div
+                        class="absolute top-full left-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <div class="frosted-glass p-6 rounded-2xl border border-white/10 w-72 grid grid-cols-1 gap-4">
+                            <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="services.crm.title" href="services/crm.html">CRM Architecture</a>
+                            <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="services.marketing.title" href="services/marketing.html">Marketing
+                                Operations</a>
+                            <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="services.sales.title" href="services/sales.html">Sales Pipeline</a>
+                            <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="services.ops.title" href="services/ops.html">Operational Flow</a>
+                            <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industry.jewelry.lead_generation" href="services/lead-gen.html">Lead
+                                Generation</a>
+                            <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industry.jewelry.lead_tracking" href="services/lead-track.html">Lead
+                                Tracking</a>
+                            <a class="text-[12px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                                data-i18n="industry.jewelry.social_media_management" href="services/social.html">Social
+                                Media Management</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                    href="intelligence.html"><span data-i18n="nav.technology">Technology</span></a>
+                <a class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                    href="results.html"><span data-i18n="nav.results">Results</span></a>
+                <a class="text-[14px] font-bold tracking-normal hover:text-althr-gold transition-colors uppercase"
+                    data-i18n="index.about_us" href="about.html"><span data-i18n="nav.about">About Us</span></a>
+                <a class="bg-althr-gold text-althr-navy px-6 py-2.5 rounded-full text-[14px] font-black tracking-normal uppercase transition-all hover:scale-105 hover:bg-white"
+                    data-i18n="nav.get_started" href="contact.html">Get
                     Started</a>
-<!-- Language Selector -->
-<div class="relative group ml-4">
-<button class="flex items-center gap-2 text-[12px] font-black tracking-normal hover:text-althr-gold transition-colors uppercase">
-<span class="material-symbols-outlined text-[18px]" data-i18n="industry.jewelry.language" translate="no">language</span>
-<span id="current-lang">EN</span>
-</button>
-<div class="absolute top-full right-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-<div class="frosted-glass p-4 rounded-xl border border-white/10 w-36 grid grid-cols-1 gap-3">
-<button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" data-i18n="privacy.english" data-lang="en">
-<span class="text-base">🇺🇸</span> English
+                <!-- Language Selector -->
+                <div class="relative group ml-4">
+                    <button
+                        class="flex items-center gap-2 text-[12px] font-black tracking-normal hover:text-althr-gold transition-colors uppercase">
+                        <span class="material-symbols-outlined text-[18px]" data-i18n="industry.jewelry.language"
+                            translate="no">language</span>
+                        <span id="current-lang">EN</span>
+                    </button>
+                    <div
+                        class="absolute top-full right-0 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <div class="frosted-glass p-4 rounded-xl border border-white/10 w-36 grid grid-cols-1 gap-3">
+                            <button
+                                class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3"
+                                data-i18n="privacy.english" data-lang="en">
+                                <span class="text-base">🇺🇸</span> English
                             </button>
-<button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" data-i18n="privacy.polish" data-lang="pl">
-<span class="text-base">🇵🇱</span> Polish
+                            <button
+                                class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3"
+                                data-i18n="privacy.polish" data-lang="pl">
+                                <span class="text-base">🇵🇱</span> Polish
                             </button>
-<button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" data-i18n="privacy.german" data-lang="de">
-<span class="text-base">🇩🇪</span> German
+                            <button
+                                class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3"
+                                data-i18n="privacy.german" data-lang="de">
+                                <span class="text-base">🇩🇪</span> German
                             </button>
-<button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" data-i18n="privacy.french" data-lang="fr">
-<span class="text-base">🇫🇷</span> French
+                            <button
+                                class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3"
+                                data-i18n="privacy.french" data-lang="fr">
+                                <span class="text-base">🇫🇷</span> French
                             </button>
-<button class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3" data-i18n="privacy.spanish" data-lang="es">
-<span class="text-base">🇪🇸</span> Spanish
+                            <button
+                                class="lang-select hover:text-althr-gold text-[10px] font-bold uppercase text-left flex items-center gap-3"
+                                data-i18n="privacy.spanish" data-lang="es">
+                                <span class="text-base">🇪🇸</span> Spanish
                             </button>
-</div>
-</div>
-</div>
-</nav>
-<button class="lg:hidden text-white" data-i18n="industry.jewelry.menu" id="open-menu"><span class="material-symbols-outlined" data-i18n="industry.jewelry.menu" translate="no">menu</span></button>
-</div>
-</header>
-<main class="relative pt-32 overflow-x-hidden">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <button class="lg:hidden text-white" data-i18n="industry.jewelry.menu" id="open-menu"><span
+                    class="material-symbols-outlined" data-i18n="industry.jewelry.menu"
+                    translate="no">menu</span></button>
+        </div>
+    </header>
+    
+    <main class="relative pt-32 overflow-x-hidden">
 <!-- Hero Section -->
 <section class="px-6 md:px-12 py-20 relative">
 <div class="max-w-[1600px] mx-auto text-center space-y-10">
 <span class="text-althr-cyan font-bold tracking-normal uppercase text-[14px]" data-i18n="contact.hero.badge">Communication
-                    Interface</span>
+ Interface</span>
 <h1 class="text-6xl md:text-9xl font-black tracking-tighter leading-tight text-white uppercase italic" data-i18n="common.talk_expert">
-                    Talk to an <br/> <span class="text-transparent bg-clip-text bg-gradient-to-r from-althr-gold to-white" data-i18n="contact.expert">Expert</span>
+ Talk to an <br/> <span class="text-transparent bg-clip-text bg-gradient-to-r from-althr-gold to-white" data-i18n="contact.expert">Expert</span>
 </h1>
 <p class="text-slate-500 text-xl font-light max-w-3xl mx-auto leading-relaxed uppercase tracking-wider" data-i18n="contact.hero.subtitle">
-                    Ready to transform your business operations? Our specialists are prepared to architect your success
-                    story.
-                </p>
+ Ready to transform your business operations? Our specialists are prepared to architect your success
+ story.
+ </p>
 </div>
 </section>
 <!-- Main Interaction Area -->
@@ -168,7 +217,7 @@
 <div class="space-y-6">
 <h2 class="text-3xl font-black text-white uppercase tracking-widest italic" data-i18n="contact.channels.title">Our <span class="text-althr-cyan" data-i18n="contact.contacts">Contacts</span></h2>
 <p class="text-slate-500 text-xs uppercase tracking-normal leading-loose" data-i18n="contact.channels.subtitle">Reach out directly to
-                            our specialized teams.</p>
+ our specialized teams.</p>
 </div>
 <div class="space-y-6">
 <!-- Business -->
@@ -219,10 +268,10 @@
 <div class="relative z-10 space-y-12">
 <div class="space-y-4">
 <h3 class="text-3xl font-black text-white uppercase tracking-tighter italic" data-i18n="contact.form.title">Send a
-                                    <span class="text-althr-gold" data-i18n="contact.message">Message</span>
+ <span class="text-althr-gold" data-i18n="contact.message">Message</span>
 </h3>
 <p class="text-slate-500 text-[14px] font-bold uppercase tracking-normal" data-i18n="contact.form.subtitle">Direct Client
-                                    Support Line</p>
+ Support Line</p>
 </div>
 <form class="grid md:grid-cols-2 gap-10" id="contactForm">
 <div class="space-y-8">
@@ -232,7 +281,7 @@
 </div>
 <div class="space-y-3">
 <label class="text-[13px] uppercase font-black tracking-normal text-slate-500 px-1" data-i18n="contact.form.field_email" for="email"><span data-i18n="contact.field_email">Email
-                                                Address</span></label>
+ Address</span></label>
 <input class="w-full bg-white/5 border border-white/10 rounded-2xl px-8 py-5 text-white focus:outline-none focus:border-althr-gold transition-all" id="email" name="email" placeholder="OPERATOR@ENTERPRISE.COM" required="" type="email"/>
 </div>
 <div class="space-y-3">
@@ -248,7 +297,7 @@
 <div class="space-y-8">
 <div class="space-y-3 h-full flex flex-col">
 <label class="text-[13px] uppercase font-black tracking-normal text-slate-500 px-1" data-i18n="contact.form.project_label" for="message">Tell us about your
-                                            project</label>
+ project</label>
 <textarea class="w-full bg-white/5 border border-white/10 rounded-2xl px-8 py-5 text-white focus:outline-none focus:border-althr-gold transition-all flex-grow min-h-[150px]" id="message" name="message" placeholder="WHAT ARE YOUR BUSINESS GOALS?" required=""></textarea>
 </div>
 </div>
@@ -266,9 +315,9 @@
 <div class="max-w-[1600px] mx-auto space-y-24">
 <div class="text-center space-y-6">
 <span class="text-althr-gold font-bold tracking-normal uppercase text-xs" data-i18n="contact.method.badge">Engagement
-                        Methodology</span>
+ Methodology</span>
 <h2 class="text-4xl md:text-6xl font-black text-white uppercase italic tracking-tighter leading-none" data-i18n="contact.method.title">
-                        The Path to <span class="text-althr-cyan underline underline-offset-8 decoration-white/10" data-i18n="about.scale">Scale</span>
+ The Path to <span class="text-althr-cyan underline underline-offset-8 decoration-white/10" data-i18n="about.scale">Scale</span>
 </h2>
 </div>
 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -278,10 +327,10 @@
 <div class="frosted-glass p-10 rounded-3xl border border-white/5 h-full space-y-6 hover:translate-y-[-8px] transition-transform">
 <h4 class="font-black text-lg text-white uppercase tracking-widest" data-i18n="contact.method.step1.title">Discovery <br/> <span class="text-althr-gold underline" data-i18n="contact.session">Session</span></h4>
 <p class="text-[14px] text-slate-500 uppercase leading-loose font-bold tracking-widest italic" data-i18n="contact.60_minutes">
-                                60 MINUTES</p>
+ 60 MINUTES</p>
 <p class="text-slate-400 text-xs uppercase leading-relaxed font-light tracking-wide" data-i18n="contact.method.step1.desc">
-                                Comprehensive analysis of current operations. Identification of automation
-                                opportunities.</p>
+ Comprehensive analysis of current operations. Identification of automation
+ opportunities.</p>
 </div>
 </div>
 <!-- Phase 2 -->
@@ -290,9 +339,9 @@
 <div class="frosted-glass p-10 rounded-3xl border border-white/5 h-full space-y-6 hover:translate-y-[-8px] transition-transform">
 <h4 class="font-black text-lg text-white uppercase tracking-widest" data-i18n="contact.method.step2.title">Strategy <br/> <span class="text-althr-cyan underline" data-i18n="contact.blueprint">Blueprint</span></h4>
 <p class="text-[14px] text-slate-500 uppercase leading-loose font-bold tracking-widest italic" data-i18n="contact.48_hours">
-                                48 HOURS</p>
+ 48 HOURS</p>
 <p class="text-slate-400 text-xs uppercase leading-relaxed font-light tracking-wide" data-i18n="contact.method.step2.desc">Custom
-                                solution proposal with detailed implementation roadmap and timeline.</p>
+ solution proposal with detailed implementation roadmap and timeline.</p>
 </div>
 </div>
 <!-- Phase 3 -->
@@ -301,9 +350,9 @@
 <div class="frosted-glass p-10 rounded-3xl border border-white/5 h-full space-y-6 hover:translate-y-[-8px] transition-transform">
 <h4 class="font-black text-lg text-white uppercase tracking-widest" data-i18n="contact.method.step3.title">Resource <br/> <span class="text-althr-gold underline" data-i18n="contact.sync">Sync</span></h4>
 <p class="text-[14px] text-slate-500 uppercase leading-loose font-bold tracking-widest italic" data-i18n="contact.1_week">
-                                1 WEEK</p>
+ 1 WEEK</p>
 <p class="text-slate-400 text-xs uppercase leading-relaxed font-light tracking-wide" data-i18n="contact.method.step3.desc">
-                                Resource allocation, milestone definition, and success metric establishment.</p>
+ Resource allocation, milestone definition, and success metric establishment.</p>
 </div>
 </div>
 <!-- Phase 4 -->
@@ -312,9 +361,9 @@
 <div class="frosted-glass p-10 rounded-3xl border border-white/5 h-full space-y-6 hover:translate-y-[-8px] transition-transform">
 <h4 class="font-black text-lg text-white uppercase tracking-widest" data-i18n="contact.method.step4.title">Execution <br/> <span class="text-althr-cyan underline" data-i18n="contact.phase">Phase</span></h4>
 <p class="text-[14px] text-slate-500 uppercase leading-loose font-bold tracking-widest italic" data-i18n="contact.ongoing">
-                                ONGOING</p>
+ ONGOING</p>
 <p class="text-slate-400 text-xs uppercase leading-relaxed font-light tracking-wide" data-i18n="contact.method.step4.desc">Phased
-                                implementation with continuous performance monitoring and optimization.</p>
+ implementation with continuous performance monitoring and optimization.</p>
 </div>
 </div>
 </div>
@@ -329,55 +378,55 @@
 <div class="space-y-6 border-l border-althr-gold/20 pl-8">
 <h5 class="font-black text-white uppercase tracking-widest text-lg" data-i18n="contact.hubs.na">North American Hub</h5>
 <p class="text-[13px] font-bold text-slate-500 uppercase tracking-widest" data-i18n="contact.est_utc5_900_1800">EST (UTC-5) | 9:00
-                                - 18:00</p>
+ - 18:00</p>
 <p class="text-slate-400 text-[13px] uppercase tracking-wide leading-relaxed" data-i18n="contact.strategic_planning_client_relations_and">Strategic
-                                planning, client relations, and core system architecture.</p>
+ planning, client relations, and core system architecture.</p>
 </div>
 <div class="space-y-6 border-l border-althr-cyan/20 pl-8">
 <h5 class="font-black text-white uppercase tracking-widest text-lg" data-i18n="contact.hubs.eu">European HQ (Poland)</h5>
 <p class="text-[13px] font-bold text-slate-500 uppercase tracking-widest" data-i18n="contact.cet_utc1_800_1700">CET (UTC+1) | 8:00
-                                - 17:00</p>
+ - 17:00</p>
 <p class="text-slate-400 text-[13px] uppercase tracking-wide leading-relaxed" data-i18n="contact.technical_support_implementation_and_client">Technical
-                                support, implementation, and client success operations.</p>
+ support, implementation, and client success operations.</p>
 </div>
 <div class="space-y-6 border-l border-white/20 pl-8">
 <h5 class="font-black text-white uppercase tracking-widest text-lg" data-i18n="contact.hubs.asia">Asia-Pacific Hub</h5>
 <p class="text-[13px] font-bold text-slate-500 uppercase tracking-widest" data-i18n="contact.sgt_utc8_900_1800">SGT (UTC+8) | 9:00
-                                - 18:00</p>
+ - 18:00</p>
 <p class="text-slate-400 text-[13px] uppercase tracking-wide leading-relaxed" data-i18n="contact.devops_quality_assurance_and_247">DevOps,
-                                Quality Assurance, and 24/7 system monitoring.</p>
+ Quality Assurance, and 24/7 system monitoring.</p>
 </div>
 </div>
 <div class="grid md:grid-cols-2 gap-24 items-start">
 <!-- Emergency Response -->
 <div class="space-y-12">
 <h3 class="text-3xl font-black text-white uppercase italic tracking-tighter leading-none" data-i18n="contact.support.priority">
-                                Priority <span class="text-althr-gold font-bold" data-i18n="contact.support">Support</span></h3>
+ Priority <span class="text-althr-gold font-bold" data-i18n="contact.support">Support</span></h3>
 <div class="space-y-6">
 <div class="bg-red-500/5 border border-red-500/10 p-8 rounded-3xl space-y-4">
 <div class="flex justify-between items-center text-red-500">
 <span class="text-[14px] font-black uppercase tracking-normal" data-i18n="contact.support.critical">Critical System
-                                            Issues</span>
+ Issues</span>
 <span class="size-2 bg-red-500 rounded-full animate-ping"></span>
 </div>
 <p class="text-2xl font-black text-white" data-i18n="contact.1555althr01">+1-555-ALTHR-01</p>
 <div class="flex justify-between text-[13px] font-bold uppercase tracking-widest text-slate-500">
 <span data-i18n="contact.support.availability">24/7 availability</span>
 <span class="text-red-400" data-i18n="contact.support.response_15m">Response:
-                                            15min</span>
+ 15min</span>
 </div>
 </div>
 <div class="bg-althr-cyan/5 border border-althr-cyan/10 p-8 rounded-3xl space-y-4">
 <div class="flex justify-between items-center text-althr-cyan">
 <span class="text-[14px] font-black uppercase tracking-normal" data-i18n="contact.support.security">Security
-                                            Incidents</span>
+ Incidents</span>
 <span class="size-2 bg-althr-cyan rounded-full animate-ping"></span>
 </div>
 <p class="text-2xl font-black text-white" data-i18n="contact.1555althrsec">+1-555-ALTHR-SEC</p>
 <div class="flex justify-between text-[13px] font-bold uppercase tracking-widest text-slate-500">
 <span data-i18n="contact.support.availability">24/7 availability</span>
 <span class="text-althr-cyan" data-i18n="contact.support.response_5m">Response:
-                                            5min</span>
+ 5min</span>
 </div>
 </div>
 </div>
@@ -385,59 +434,59 @@
 <!-- FAQ Comprehensive -->
 <div class="space-y-12">
 <h3 class="text-3xl font-black text-white uppercase italic tracking-tighter leading-none" data-i18n="contact.faq.title">
-                                Inquiry <span class="text-althr-cyan font-bold" data-i18n="contact.support">Support</span></h3>
+ Inquiry <span class="text-althr-cyan font-bold" data-i18n="contact.support">Support</span></h3>
 <div class="space-y-4" id="faq-container">
 <!-- FAQ Item 1 -->
 <div class="frosted-glass rounded-2xl border border-white/5 overflow-hidden">
 <button class="w-full px-8 py-6 flex items-center justify-between text-left group" onclick="toggleFAQ(this)">
 <span class="font-bold text-[13px] uppercase tracking-normal text-white/90 group-hover:text-althr-gold transition-colors" data-i18n="contact.faq.q1">How
-                                            long does a typical project take?</span>
+ long does a typical project take?</span>
 <span class="material-symbols-outlined text-althr-gold transition-transform duration-300 font-light" translate="no">add</span>
 </button>
 <div class="faq-answer px-8 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
 <p class="pb-8 text-slate-500 text-[13px] leading-relaxed uppercase tracking-wider font-medium" data-i18n="contact.most_projects_are_completed_within">
-                                            Most projects are completed within 4-8 weeks, depending on complexity and
-                                            integration requirements. Accelerated tracks available for priority cycles.
-                                        </p>
+ Most projects are completed within 4-8 weeks, depending on complexity and
+ integration requirements. Accelerated tracks available for priority cycles.
+ </p>
 </div>
 </div>
 <!-- FAQ Item 2 -->
 <div class="frosted-glass rounded-2xl border border-white/5 overflow-hidden">
 <button class="w-full px-8 py-6 flex items-center justify-between text-left group" onclick="toggleFAQ(this)">
 <span class="font-bold text-[13px] uppercase tracking-normal text-white/90 group-hover:text-althr-gold transition-colors" data-i18n="contact.faq.q2">What
-                                            are your pricing structures?</span>
+ are your pricing structures?</span>
 <span class="material-symbols-outlined text-althr-gold transition-transform duration-300 font-light" translate="no">add</span>
 </button>
 <div class="faq-answer px-8 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
 <p class="pb-8 text-slate-500 text-[13px] leading-relaxed uppercase tracking-wider font-medium" data-i18n="contact.we_offer_projectbased_pricing_retainers">
-                                            We offer project-based pricing, retainers, and performance-driven models.
-                                            Strategic discovery sessions define fixed-cost investments.</p>
+ We offer project-based pricing, retainers, and performance-driven models.
+ Strategic discovery sessions define fixed-cost investments.</p>
 </div>
 </div>
 <!-- FAQ Item 3 -->
 <div class="frosted-glass rounded-2xl border border-white/5 overflow-hidden">
 <button class="w-full px-8 py-6 flex items-center justify-between text-left group" onclick="toggleFAQ(this)">
 <span class="font-bold text-[13px] uppercase tracking-normal text-white/90 group-hover:text-althr-gold transition-colors" data-i18n="contact.what_systems_do_you_integrate">What
-                                            systems do you integrate with?</span>
+ systems do you integrate with?</span>
 <span class="material-symbols-outlined text-althr-gold transition-transform duration-300 font-light" translate="no">add</span>
 </button>
 <div class="faq-answer px-8 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
 <p class="pb-8 text-slate-500 text-[13px] leading-relaxed uppercase tracking-wider font-medium" data-i18n="contact.we_integrate_with_200_enterprise">
-                                            We integrate with 200+ enterprise platforms including Salesforce, HubSpot,
-                                            Shopify, custom JSON/REST APIs, and legacy ERP systems.</p>
+ We integrate with 200+ enterprise platforms including Salesforce, HubSpot,
+ Shopify, custom JSON/REST APIs, and legacy ERP systems.</p>
 </div>
 </div>
 <!-- FAQ Item 4 -->
 <div class="frosted-glass rounded-2xl border border-white/5 overflow-hidden">
 <button class="w-full px-8 py-6 flex items-center justify-between text-left group" onclick="toggleFAQ(this)">
 <span class="font-bold text-[13px] uppercase tracking-normal text-white/90 group-hover:text-althr-gold transition-colors" data-i18n="contact.how_do_you_ensure_data">How
-                                            do you ensure data protection?</span>
+ do you ensure data protection?</span>
 <span class="material-symbols-outlined text-althr-gold transition-transform duration-300 font-light" translate="no">add</span>
 </button>
 <div class="faq-answer px-8 max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
 <p class="pb-8 text-slate-500 text-[13px] leading-relaxed uppercase tracking-wider font-medium" data-i18n="contact.soc2_compliance_pathways_aes256_encryption">
-                                            SOC2 compliance pathways, AES-256 encryption at rest, and zero-trust data
-                                            exchange protocols. See our Security Protocol page for details.</p>
+ SOC2 compliance pathways, AES-256 encryption at rest, and zero-trust data
+ exchange protocols. See our Security Protocol page for details.</p>
 </div>
 </div>
 </div>
@@ -451,29 +500,29 @@
 <div class="max-w-[1600px] mx-auto grid lg:grid-cols-2 gap-24 items-center">
 <div class="space-y-12">
 <h3 class="text-4xl md:text-6xl font-black text-white uppercase italic tracking-tighter"><span data-i18n="index.solutions.title">Strategic
-                        </span><br/><span class="text-althr-cyan" data-i18n="contact.session_booking">Session Booking</span>
+ </span><br/><span class="text-althr-cyan" data-i18n="contact.session_booking">Session Booking</span>
 </h3>
 <div class="grid sm:grid-cols-2 gap-6">
 <div class="bg-white/5 p-8 rounded-3xl border border-white/10 space-y-4 hover:border-althr-gold transition-colors cursor-pointer">
 <h5 class="text-white font-black uppercase text-sm tracking-widest" data-i18n="contact.initial_consultation">Initial Consultation
-                            </h5>
+ </h5>
 <p class="text-slate-500 text-[13px] font-bold uppercase tracking-widest italic" data-i18n="contact.60_min_complimentary">60 MIN |
-                                COMPLIMENTARY</p>
+ COMPLIMENTARY</p>
 <p class="text-[14px] text-slate-400 uppercase leading-relaxed tracking-wide" data-i18n="contact.discovery_opportunity_audit_and_highlevel">Discovery,
-                                opportunity audit, and high-level roadmap.</p>
+ opportunity audit, and high-level roadmap.</p>
 </div>
 <div class="bg-white/5 p-8 rounded-3xl border border-white/10 space-y-4 hover:border-althr-gold transition-colors cursor-pointer">
 <h5 class="text-white font-black uppercase text-sm tracking-widest" data-i18n="contact.deepdive_analysis">Deep-Dive Analysis</h5>
 <p class="text-slate-500 text-[13px] font-bold uppercase tracking-widest italic" data-i18n="contact.120_min_500">120 MIN |
-                                $500</p>
+ $500</p>
 <p class="text-[14px] text-slate-400 uppercase leading-relaxed tracking-wide" data-i18n="contact.technical_reqs_integration_planning_and">Technical
-                                reqs, integration planning, and fixed proposal.</p>
+ reqs, integration planning, and fixed proposal.</p>
 </div>
 </div>
 </div>
 <div class="space-y-12">
 <h3 class="text-4xl md:text-6xl font-black text-white uppercase italic tracking-tighter">SLA
-                        <br/><span class="text-althr-gold" data-i18n="contact.commitments">Commitments</span>
+ <br/><span class="text-althr-gold" data-i18n="contact.commitments">Commitments</span>
 </h3>
 <div class="space-y-8">
 <div class="flex justify-between items-center text-[13px] font-bold uppercase tracking-widest border-b border-white/10 pb-4">
@@ -493,158 +542,214 @@
 </div>
 </section>
 </main>
-<footer class="bg-althr-navy border-t border-white/10 py-24 px-6 md:px-12 relative z-20">
-<div class="max-w-[1600px] mx-auto">
-<div class="grid lg:grid-cols-5 gap-10">
-<div class="space-y-10">
-<div class="flex items-center gap-3 group">
-<div class="size-10 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-<img alt="ALTHR" class="w-full h-full object-contain" src="logo.png"/>
-</div>
-<span class="font-black text-2xl tracking-tighter uppercase text-white" data-i18n="industry.jewelry.althr">ALTHR</span>
-</div>
-<p class="text-slate-400 text-[14px] font-medium leading-relaxed max-w-xs" data-i18n="footer.desc">
+    
+    <footer class="bg-althr-navy border-t border-white/10 py-24 px-6 md:px-12 relative z-20">
+        <div class="max-w-[1600px] mx-auto">
+            <div class="grid lg:grid-cols-5 gap-10">
+                <div class="space-y-10">
+                    <div class="flex items-center gap-3 group">
+                        <div class="size-10 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+                            <img alt="ALTHR" class="w-full h-full object-contain" src="logo.png" />
+                        </div>
+                        <span class="font-black text-2xl tracking-tighter uppercase text-white"
+                            data-i18n="industry.jewelry.althr">ALTHR</span>
+                    </div>
+                    <p class="text-slate-400 text-[14px] font-medium leading-relaxed max-w-xs" data-i18n="footer.desc">
                         Transforming complexity into automated simplicity through high-end engineering and strategic
                         logic systems.
                     </p>
-</div>
-<div>
-<h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12" data-i18n="nav.services"><span data-i18n="nav.services">Services</span>
-</h5>
-<ul class="space-y-4 text-[14px] font-medium text-slate-400">
-<li data-i18n="industry.jewelry.crm_automation"><a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.crm_automation" href="services.html">CRM Automation</a>
-</li>
-<li data-i18n="industry.jewelry.marketing_logic"><a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.marketing_logic" href="services.html">Marketing Logic</a>
-</li>
-<li data-i18n="industry.jewelry.advanced_analytics"><a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.advanced_analytics" href="intelligence.html">Advanced
-                                Analytics</a></li>
-<li data-i18n="industry.jewelry.fulfillment_ops"><a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.fulfillment_ops" href="services.html">Fulfillment Ops</a>
-</li>
-</ul>
-</div>
-<div>
-<h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12" data-i18n="nav.industries"><span data-i18n="nav.industries">Industries</span>
-</h5>
-<ul class="space-y-4 text-[14px] font-medium text-slate-400">
-<li data-i18n="industries.jewelry"><a class="hover:text-althr-gold transition-colors" data-i18n="industries.jewelry" href="industry/jewelry.html">Jewelry &amp;
-                                Watch</a></li>
-<li data-i18n="industries.furniture"><a class="hover:text-althr-gold transition-colors" data-i18n="industries.furniture" href="industry/furniture.html">Furniture
-                                &amp; Decor</a></li>
-<li data-i18n="industries.grocery"><a class="hover:text-althr-gold transition-colors" data-i18n="industries.grocery" href="industry/grocery.html"><span data-i18n="industries.grocery">Grocery</span></a>
-</li>
-<li data-i18n="industry.jewelry.fashion"><a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.fashion" href="industry/fashion.html">Fashion</a>
-</li>
-</ul>
-</div>
-<div>
-<h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12" data-i18n="industry.jewelry.quick_links">Quick Links</h5>
-<ul class="space-y-4 text-[14px] font-medium text-slate-400">
-<li data-i18n="footer.story"><a class="hover:text-althr-gold transition-colors" data-i18n="footer.story" href="about.html"><span data-i18n="footer.story">Our Story</span></a></li>
-<li data-i18n="nav.results"><a class="hover:text-althr-gold transition-colors" data-i18n="nav.results" href="results.html"><span data-i18n="nav.results">Results</span></a>
-</li>
-<li data-i18n="footer.contact"><a class="hover:text-althr-gold transition-colors" data-i18n="footer.contact" href="contact.html"><span data-i18n="footer.contact">Contact Us</span></a></li>
-<li data-i18n="footer.privacy"><a class="hover:text-althr-gold transition-colors" data-i18n="footer.privacy" href="privacy.html"><span data-i18n="footer.privacy">Privacy Protocol</span></a>
-</li>
-</ul>
-</div>
-<div class="space-y-10">
-<h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12" data-i18n="footer.pulse"><span data-i18n="footer.pulse">Pulse Status</span></h5>
-<div class="p-8 bg-white/5 border border-white/10 rounded-[2rem] flex items-center gap-6">
-<div class="size-2.5 bg-althr-cyan rounded-full animate-pulse shadow-[0_0_15px_rgba(0,000,255,0.7)]">
-</div>
-<span class="text-[12px] font-bold text-althr-cyan uppercase tracking-wider" data-i18n="common.systems_ready">Systems
+                </div>
+                <div>
+                    <h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12"><span
+                            data-i18n="nav.services">Services</span>
+                    </h5>
+                    <ul class="space-y-4 text-[14px] font-medium text-slate-400">
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="services.crm.title"
+                                href="services/crm.html">CRM Architecture</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="services.marketing.title"
+                                href="services/marketing.html">Marketing Operations</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="services.sales.title"
+                                href="services/sales.html">Sales Pipeline</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="services.ops.title"
+                                href="services/ops.html">Operational Flow</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors"
+                                data-i18n="industry.jewelry.lead_generation" href="services/lead-gen.html">Lead
+                                Generation</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors"
+                                data-i18n="industry.jewelry.lead_tracking" href="services/lead-track.html">Lead
+                                Tracking</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors"
+                                data-i18n="industry.jewelry.social_media_management" href="services/social.html">Social
+                                Media Management</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12"><span
+                            id="industries-footer" data-i18n="nav.industries">Industries</span>
+                    </h5>
+                    <ul
+                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-8 gap-y-4 text-[14px] font-medium text-slate-400">
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.jewelry"
+                                href="industry/jewelry.html">Jewelry & Watch</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.furniture"
+                                href="industry/furniture.html">Furniture & Decor</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.grocery"
+                                href="industry/grocery.html">Grocery</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.equipment"
+                                href="industry/equipment.html">Equipment & Supply</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.gadget"
+                                href="industry/gadget.html">Gadgets & Tech</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.fashion"
+                                href="industry/fashion.html">Fashion Boutique</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.beauty"
+                                href="industry/beauty.html">Beauty & Cosmo</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.pet"
+                                href="industry/pet.html">Pet Supply</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.home_goods"
+                                href="industry/home_goods.html">Home Goods</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.sports"
+                                href="industry/sports.html">Sports Equipment</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.health"
+                                href="industry/health.html">Health & Wellness</a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" data-i18n="industries.toy"
+                                href="industry/toy.html">Toy & Hobby</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12"
+                        data-i18n="industry.jewelry.quick_links">Quick Links</h5>
+                    <ul class="space-y-4 text-[14px] font-medium text-slate-400">
+                        <li><a class="hover:text-althr-gold transition-colors" href="about.html"><span
+                                    data-i18n="footer.story">Our Story</span></a></li>
+                        <li><a class="hover:text-althr-gold transition-colors" href="results.html"><span
+                                    data-i18n="nav.results">Results</span></a>
+                        </li>
+                        <li><a class="hover:text-althr-gold transition-colors" href="contact.html"><span
+                                    data-i18n="footer.contact">Contact Us</span></a></li>
+                        <li data-i18n="industry.jewelry.privacy_protocol"><a
+                                class="hover:text-althr-gold transition-colors"
+                                data-i18n="industry.jewelry.privacy_protocol" href="privacy.html"><span
+                                    data-i18n="footer.privacy">Privacy Protocol</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space-y-10">
+                    <h5 class="text-white text-[14px] font-black uppercase tracking-normal mb-12"><span
+                            data-i18n="footer.pulse">Pulse Status</span></h5>
+                    <div class="p-8 bg-white/5 border border-white/10 rounded-[2rem] flex items-center gap-6">
+                        <div
+                            class="size-2.5 bg-althr-cyan rounded-full animate-pulse shadow-[0_0_15px_rgba(0,000,255,0.7)]">
+                        </div>
+                        <span class="text-[12px] font-bold text-althr-cyan uppercase tracking-wider"
+                            data-i18n="common.systems_ready">Systems
                             Ready</span>
-</div>
-</div>
-</div>
-<div class="mt-32 pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[12px] text-slate-500 font-medium">
-<p data-i18n="contact.2026_althr_agency_systems_system">© 2026 ALTHR AGENCY SYSTEMS. SYSTEM ID: GLOBAL-01</p>
-<div class="flex gap-12">
-<a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.privacy" href="privacy.html">Privacy</a>
-<a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.terms" href="#">Terms</a>
-<a class="hover:text-althr-gold transition-colors" href="contact.html">SLA</a>
-</div>
-</div>
-</div>
-</footer>
-<script>
-        function toggleFAQ(element) {
-            const answer = element.nextElementSibling;
-            const icon = element.querySelector('span:last-child');
-            const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
-
-            // Close all others
-            document.querySelectorAll('.faq-answer').forEach(el => {
-                el.style.maxHeight = '0px';
-                el.previousElementSibling.querySelector('span:last-child').style.transform = 'rotate(0deg)';
-                el.previousElementSibling.querySelector('span:last-child').innerText = 'add';
-            });
-
-            if (!isOpen) {
-                answer.style.maxHeight = answer.scrollHeight + 'px';
-                icon.style.transform = 'rotate(45deg)';
-                icon.innerText = 'add';
-            }
-        }
-
-        document.getElementById('contactForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
-            const emailContent = `Name: ${data.name}\nEmail: ${data.email}\nInquiry Type: ${data.service}\n\nProject Details:\n${data.message}`;
-            const mailtoLink = `mailto:consult@althr.com?subject=New Business Inquiry - ${data.name}&body=${encodeURIComponent(emailContent)}`;
-            window.location.href = mailtoLink;
-        });
-    </script>
-<!-- Mobile Menu -->
-<div class="fixed inset-0 z-[100] bg-althr-navy/95 backdrop-blur-2xl translate-x-full transition-transform duration-500 lg:hidden" id="mobile-menu">
-<div class="flex flex-col h-full p-8 relative">
-<button class="absolute top-8 right-8 text-white/50 hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.close" id="close-menu">
-<span class="material-symbols-outlined text-4xl" data-i18n="industry.jewelry.close" translate="no">close</span>
-</button>
-<div class="mb-16">
-<div class="flex items-center gap-3">
-<img alt="ALTHR" class="size-10 object-contain" src="logo.png"/>
-<span class="font-black text-2xl tracking-tighter uppercase text-white" data-i18n="industry.jewelry.althr">ALTHR</span>
-</div>
-</div>
-<div class="flex gap-4 mb-10 border-b border-white/10 pb-10">
-<button class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all" data-lang="en">🇺🇸</button>
-<button class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all" data-lang="pl">🇵🇱</button>
-<button class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all" data-lang="de">🇩🇪</button>
-<button class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all" data-lang="fr">🇫🇷</button>
-<button class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all" data-lang="es">🇪🇸</button>
-</div>
-<nav class="flex flex-col gap-10">
-<a class="group flex items-end gap-4" href="index.html">
-<span class="text-althr-gold font-mono text-xs mb-2">01</span>
-<span class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic" data-i18n="industry.jewelry.home">Home</span>
-</a>
-<a class="group flex items-end gap-4" href="services.html">
-<span class="text-althr-gold font-mono text-xs mb-2">02</span>
-<span class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic" data-i18n="nav.services"><span data-i18n="nav.services">Services</span>
-</span></a>
-<a class="group flex items-end gap-4" href="intelligence.html">
-<span class="text-althr-gold font-mono text-xs mb-2">03</span>
-<span class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic" data-i18n="industry.jewelry.tech">Tech</span>
-</a>
-<a class="group flex items-end gap-4" href="results.html">
-<span class="text-althr-gold font-mono text-xs mb-2">04</span>
-<span class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic" data-i18n="nav.results"><span data-i18n="nav.results">Results</span>
-</span></a>
-<a class="bg-althr-gold text-althr-navy p-6 rounded-2xl flex items-center justify-between group overflow-hidden relative" href="contact.html">
-<span class="font-black uppercase tracking-tighter text-xl relative z-10" data-i18n="industry.jewelry.start_project">Start Project</span>
-<span class="material-symbols-outlined relative z-10" data-i18n="industry.jewelry.arrowforward" translate="no">arrow_forward</span>
-<div class="absolute inset-0 bg-white translate-x-[-101%] group-hover:translate-x-0 transition-transform duration-500">
-</div>
-</a>
-</nav>
-<div class="mt-auto border-t border-white/10 pt-8">
-<p class="text-[10px] font-bold tracking-normal text-white/30 uppercase" data-i18n="industry.jewelry.operational_menu_v20">Operational Menu v2.0</p>
-</div>
-</div>
-</div>
-<script>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="mt-32 pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-[12px] text-slate-500 font-medium">
+                <p data-i18n="industry.jewelry.2026_althr_agency_systems_european">© 2026 ALTHR AGENCY SYSTEMS |
+                    EUROPEAN HQ: POLAND. SYSTEM ID: GLOBAL-01</p>
+                <div class="flex gap-12">
+                    <a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.privacy"
+                        href="privacy.html#privacy">Privacy</a>
+                    <a class="hover:text-althr-gold transition-colors" data-i18n="industry.jewelry.terms"
+                        href="privacy.html#terms">Terms</a>
+                    <a class="hover:text-althr-gold transition-colors" href="privacy.html#sla">SLA</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Mobile Menu -->
+    <div class="fixed inset-0 z-[100] bg-althr-navy/95 backdrop-blur-2xl translate-x-full transition-transform duration-500 lg:hidden"
+        id="mobile-menu">
+        <div class="flex flex-col h-full p-8 relative">
+            <button class="absolute top-8 right-8 text-white/50 hover:text-althr-gold transition-colors"
+                data-i18n="industry.jewelry.close" id="close-menu">
+                <span class="material-symbols-outlined text-4xl" data-i18n="industry.jewelry.close"
+                    translate="no">close</span>
+            </button>
+            <div class="mb-16">
+                <div class="flex items-center gap-3">
+                    <img alt="ALTHR" class="size-10 object-contain" src="logo.png" />
+                    <span class="font-black text-2xl tracking-tighter uppercase text-white"
+                        data-i18n="industry.jewelry.althr">ALTHR</span>
+                </div>
+            </div>
+            <div class="flex gap-4 mb-10 border-b border-white/10 pb-10">
+                <button
+                    class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all"
+                    data-lang="en">🇺🇸</button>
+                <button
+                    class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all"
+                    data-lang="pl">🇵🇱</button>
+                <button
+                    class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all"
+                    data-lang="de">🇩🇪</button>
+                <button
+                    class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all"
+                    data-lang="fr">🇫🇷</button>
+                <button
+                    class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:border-althr-gold transition-all"
+                    data-lang="es">🇪🇸</button>
+            </div>
+            <nav class="flex flex-col gap-10 mt-20">
+                <a class="group flex items-end gap-4" href="index.html">
+                    <span class="text-althr-gold font-mono text-xs mb-2">01</span>
+                    <span
+                        class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"
+                        data-i18n="industry.jewelry.home">Home</span>
+                </a>
+                <a class="group flex items-end gap-4" href="index.html#industries-footer">
+                    <span class="text-althr-gold font-mono text-xs mb-2">02</span>
+                    <span
+                        class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"
+                        data-i18n="nav.industries">Industries</span>
+                </a>
+                <a class="group flex items-end gap-4" href="services.html">
+                    <span class="text-althr-gold font-mono text-xs mb-2">03</span>
+                    <span
+                        class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"
+                        data-i18n="nav.services">Services</span>
+                </a>
+                <a class="group flex items-end gap-4" href="intelligence.html">
+                    <span class="text-althr-gold font-mono text-xs mb-2">04</span>
+                    <span
+                        class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"
+                        data-i18n="industry.jewelry.tech">Tech</span>
+                </a>
+                <a class="group flex items-end gap-4" href="results.html">
+                    <span class="text-althr-gold font-mono text-xs mb-2">05</span>
+                    <span
+                        class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"
+                        data-i18n="nav.results">Results</span>
+                </a>
+                <a class="group flex items-end gap-4" href="about.html">
+                    <span class="text-althr-gold font-mono text-xs mb-2">06</span>
+                    <span
+                        class="text-4xl font-black uppercase tracking-tighter group-hover:text-althr-cyan transition-colors italic"
+                        data-i18n="nav.about">About Us</span>
+                </a>
+                <a class="bg-althr-gold text-althr-navy p-6 rounded-2xl flex items-center justify-between group overflow-hidden relative"
+                    href="contact.html">
+                    <span class="font-black uppercase tracking-tighter text-xl relative z-10"
+                        data-i18n="industry.jewelry.start_project">Start Project</span>
+                    <span class="material-symbols-outlined relative z-10" data-i18n="industry.jewelry.arrowforward"
+                        translate="no">arrow_forward</span>
+                    <div
+                        class="absolute inset-0 bg-white translate-x-[-101%] group-hover:translate-x-0 transition-transform duration-500">
+                    </div>
+                </a>
+            </nav>
+            <div class="mt-auto border-t border-white/10 pt-8">
+                <p class="text-[10px] font-bold tracking-normal text-white/30 uppercase"
+                    data-i18n="industry.jewelry.operational_menu_v20">Operational Menu v2.0</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
         document.addEventListener('DOMContentLoaded', () => {
             const openBtn = document.getElementById('open-menu');
             const closeBtn = document.getElementById('close-menu');
@@ -671,8 +776,7 @@
             }
         });
     </script>
-<script src="translations.js"></script>
-<script src="i18n.js"></script>
+    
     <script src="motion.js"></script>
 </body>
 </html>
